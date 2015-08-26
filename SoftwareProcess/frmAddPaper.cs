@@ -24,7 +24,7 @@ namespace SoftwareProcess
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello");
+            
         }
 
         private void btnPreRemove_Click(object sender, EventArgs e)
