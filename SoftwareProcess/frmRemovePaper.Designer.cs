@@ -58,7 +58,7 @@
             this.btnERRemove.Name = "btnERRemove";
             this.btnERRemove.Size = new System.Drawing.Size(106, 23);
             this.btnERRemove.TabIndex = 2;
-            this.btnERRemove.Text = "Remove";
+            this.btnERRemove.Text = "Archive";
             this.btnERRemove.UseVisualStyleBackColor = true;
             // 
             // btnERCancel
