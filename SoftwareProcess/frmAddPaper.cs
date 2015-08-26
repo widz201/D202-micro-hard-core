@@ -26,5 +26,10 @@ namespace SoftwareProcess
         {
 
         }
+
+        private void btnPreRemove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
