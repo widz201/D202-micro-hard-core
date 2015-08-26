@@ -77,6 +77,7 @@
             this.btnPreRemove.TabIndex = 1;
             this.btnPreRemove.Text = "Remove";
             this.btnPreRemove.UseVisualStyleBackColor = true;
+            this.btnPreRemove.Click += new System.EventHandler(this.btnPreRemove_Click);
             // 
             // textBox1
             // 
