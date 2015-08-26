@@ -21,5 +21,10 @@ namespace SoftwareProcess
         {
             this.Close();
         }
+
+        private void btnPreAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

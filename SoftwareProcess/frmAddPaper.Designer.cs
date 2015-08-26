@@ -35,9 +35,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lstAPapers = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.cboAPapers = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.chkWebDev = new System.Windows.Forms.CheckBox();
             this.chkSoftwareArch = new System.Windows.Forms.CheckBox();
             this.chkAnal = new System.Windows.Forms.CheckBox();
@@ -47,10 +47,10 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.chkAYear1 = new System.Windows.Forms.CheckBox();
-            this.chkAYear3 = new System.Windows.Forms.CheckBox();
-            this.chkAYear2 = new System.Windows.Forms.CheckBox();
             this.chkACompulsory = new System.Windows.Forms.CheckBox();
+            this.chkAYear2 = new System.Windows.Forms.CheckBox();
+            this.chkAYear3 = new System.Windows.Forms.CheckBox();
+            this.chkAYear1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,6 +66,7 @@
             this.btnPreAdd.TabIndex = 0;
             this.btnPreAdd.Text = "Add";
             this.btnPreAdd.UseVisualStyleBackColor = true;
+            this.btnPreAdd.Click += new System.EventHandler(this.btnPreAdd_Click);
             // 
             // btnPreRemove
             // 
@@ -127,6 +128,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paper Information";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Description";
+            // 
             // cboAPapers
             // 
             this.cboAPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,16 +160,6 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prerequisites";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Description";
             // 
             // chkWebDev
             // 
@@ -264,27 +265,16 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Year/Compulsory";
             // 
-            // chkAYear1
+            // chkACompulsory
             // 
-            this.chkAYear1.AutoSize = true;
-            this.chkAYear1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAYear1.Location = new System.Drawing.Point(6, 19);
-            this.chkAYear1.Name = "chkAYear1";
-            this.chkAYear1.Size = new System.Drawing.Size(57, 17);
-            this.chkAYear1.TabIndex = 0;
-            this.chkAYear1.Text = "Year 1";
-            this.chkAYear1.UseVisualStyleBackColor = true;
-            // 
-            // chkAYear3
-            // 
-            this.chkAYear3.AutoSize = true;
-            this.chkAYear3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAYear3.Location = new System.Drawing.Point(157, 19);
-            this.chkAYear3.Name = "chkAYear3";
-            this.chkAYear3.Size = new System.Drawing.Size(57, 17);
-            this.chkAYear3.TabIndex = 1;
-            this.chkAYear3.Text = "Year 3";
-            this.chkAYear3.UseVisualStyleBackColor = true;
+            this.chkACompulsory.AutoSize = true;
+            this.chkACompulsory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkACompulsory.Location = new System.Drawing.Point(157, 42);
+            this.chkACompulsory.Name = "chkACompulsory";
+            this.chkACompulsory.Size = new System.Drawing.Size(80, 17);
+            this.chkACompulsory.TabIndex = 3;
+            this.chkACompulsory.Text = "Compulsory";
+            this.chkACompulsory.UseVisualStyleBackColor = true;
             // 
             // chkAYear2
             // 
@@ -297,16 +287,27 @@
             this.chkAYear2.Text = "Year 2";
             this.chkAYear2.UseVisualStyleBackColor = true;
             // 
-            // chkACompulsory
+            // chkAYear3
             // 
-            this.chkACompulsory.AutoSize = true;
-            this.chkACompulsory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkACompulsory.Location = new System.Drawing.Point(157, 42);
-            this.chkACompulsory.Name = "chkACompulsory";
-            this.chkACompulsory.Size = new System.Drawing.Size(80, 17);
-            this.chkACompulsory.TabIndex = 3;
-            this.chkACompulsory.Text = "Compulsory";
-            this.chkACompulsory.UseVisualStyleBackColor = true;
+            this.chkAYear3.AutoSize = true;
+            this.chkAYear3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAYear3.Location = new System.Drawing.Point(157, 19);
+            this.chkAYear3.Name = "chkAYear3";
+            this.chkAYear3.Size = new System.Drawing.Size(57, 17);
+            this.chkAYear3.TabIndex = 1;
+            this.chkAYear3.Text = "Year 3";
+            this.chkAYear3.UseVisualStyleBackColor = true;
+            // 
+            // chkAYear1
+            // 
+            this.chkAYear1.AutoSize = true;
+            this.chkAYear1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAYear1.Location = new System.Drawing.Point(6, 19);
+            this.chkAYear1.Name = "chkAYear1";
+            this.chkAYear1.Size = new System.Drawing.Size(57, 17);
+            this.chkAYear1.TabIndex = 0;
+            this.chkAYear1.Text = "Year 1";
+            this.chkAYear1.UseVisualStyleBackColor = true;
             // 
             // frmAddPaper
             // 
