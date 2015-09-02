@@ -19,6 +19,10 @@ namespace SoftwareProcess
             InitializeComponent();
             FillListbox();
         }
+        public class List<ListItem>
+        {
+
+        }
         void FillListbox()
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -41,7 +45,7 @@ namespace SoftwareProcess
             }
             catch (Exception)
             {
-                MessageBox.Show("NIGGER");
+                MessageBox.Show("");
             }
         }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,6 +69,15 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if(lstSelected.Items.Contains(lstPapers.Text))
+            {
+                MessageBox.Show("You have already selected this paper!");
+            }
+            else
+            {
+                lstSelected.Items.Add(lstPapers.SelectedItem);
+            }
+
             
         }
     }
