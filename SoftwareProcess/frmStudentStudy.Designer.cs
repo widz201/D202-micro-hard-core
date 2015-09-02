@@ -487,6 +487,7 @@
             this.textBox32.TabStop = false;
             this.textBox32.Text = "T206\r\n\r\nNetworks\r\nCisco";
             this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox32, resources.GetString("textBox32.ToolTip"));
             // 
             // textBox31
             // 
@@ -502,6 +503,7 @@
             this.textBox31.TabStop = false;
             this.textBox31.Text = "T205\r\n\r\nNetworks\r\nCisco";
             this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox31, resources.GetString("textBox31.ToolTip"));
             // 
             // textBox30
             // 
@@ -533,6 +535,7 @@
             this.textBox29.TabStop = false;
             this.textBox29.Text = "T301\r\n\r\nNetwork\r\nDesign";
             this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox29, resources.GetString("textBox29.ToolTip"));
             // 
             // textBox27
             // 
@@ -548,6 +551,7 @@
             this.textBox27.TabStop = false;
             this.textBox27.Text = "I321\r\n\r\nAdvanced\r\nSystems";
             this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox27, resources.GetString("textBox27.ToolTip"));
             // 
             // textBox25
             // 
@@ -563,13 +567,14 @@
             this.textBox25.TabStop = false;
             this.textBox25.Text = "T302\r\n\r\nCisco Scaling\r\n& Connecting";
             this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox25, resources.GetString("textBox25.ToolTip"));
             // 
             // textBox26
             // 
             this.textBox26.BackColor = System.Drawing.Color.LightCoral;
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox26.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox26.Location = new System.Drawing.Point(625, 337);
+            this.textBox26.Location = new System.Drawing.Point(625, 338);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
@@ -578,13 +583,14 @@
             this.textBox26.TabStop = false;
             this.textBox26.Text = "T311\r\n\r\nSystems\r\nAdministration";
             this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox26, resources.GetString("textBox26.ToolTip"));
             // 
             // textBox23
             // 
             this.textBox23.BackColor = System.Drawing.Color.LightGreen;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox23.Location = new System.Drawing.Point(379, 456);
+            this.textBox23.Location = new System.Drawing.Point(431, 444);
             this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
@@ -608,6 +614,7 @@
             this.textBox24.TabStop = false;
             this.textBox24.Text = "I303\r\n\r\nManagerial\r\nPractice";
             this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox24, resources.GetString("textBox24.ToolTip"));
             // 
             // textBox10
             // 
@@ -623,6 +630,7 @@
             this.textBox10.TabStop = false;
             this.textBox10.Text = "I302\r\n\r\nIndustry\r\nProject";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox10, resources.GetString("textBox10.ToolTip"));
             // 
             // textBox17
             // 
@@ -638,6 +646,7 @@
             this.textBox17.TabStop = false;
             this.textBox17.Text = "I301\r\n\r\nProfessional\r\nPractice";
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox17, resources.GetString("textBox17.ToolTip"));
             // 
             // textBox21
             // 
@@ -724,7 +733,7 @@
             this.textBox16.BackColor = System.Drawing.Color.LightCoral;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox16.Location = new System.Drawing.Point(625, 136);
+            this.textBox16.Location = new System.Drawing.Point(625, 137);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
@@ -733,6 +742,7 @@
             this.textBox16.TabStop = false;
             this.textBox16.Text = "T211\r\n\r\nSystem\r\nSecurities";
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox16, resources.GetString("textBox16.ToolTip"));
             // 
             // textBox15
             // 
@@ -748,6 +758,7 @@
             this.textBox15.TabStop = false;
             this.textBox15.Text = "T201\r\n\r\nNetwork\r\nServices";
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox15, resources.GetString("textBox15.ToolTip"));
             // 
             // textBox14
             // 
@@ -843,6 +854,7 @@
             this.textBox8.TabStop = false;
             this.textBox8.Text = "T111\r\n\r\nComputer\r\nFundamentals";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox8, resources.GetString("textBox8.ToolTip"));
             // 
             // textBox7
             // 
@@ -858,6 +870,7 @@
             this.textBox7.TabStop = false;
             this.textBox7.Text = "T101\r\n\r\nNetwork\r\nFundamentals";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox7, resources.GetString("textBox7.ToolTip"));
             // 
             // textBox6
             // 
