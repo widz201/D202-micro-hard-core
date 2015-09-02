@@ -18,12 +18,7 @@ namespace SoftwareProcess
             InitializeComponent();
         }
 
-        static void Main(string[] args)
-        {
-            SqlConnection conn = new SqlConnection("Data Source=tfs;Initial Catalog=study1;Integrated Security=True");
 
-
-        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
