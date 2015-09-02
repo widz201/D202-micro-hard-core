@@ -358,6 +358,16 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>258, 17</value>
   </metadata>
+  <data name="textBox30.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: I111
+To create a dynamic web application utilising a variety of open-source technologies 
+Learning Outcomes:
+- Design and document a web application
+- Secure critical business data within the web application
+- Interface with a web based database management system
+- Implement user security and session management</value>
+  </data>
   <data name="textBox21.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: D201
@@ -408,6 +418,46 @@ Learning Outcomes:
 - Analyse and process data for management reporting
 - View pre-processed information from the data warehouse from a separate application</value>
   </data>
+  <data name="textBox14.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: I111
+To introduce principles and application of electronic commerce technologies
+Learning Outcomes:
+- Define Electronic Commerce and describe its various categories
+- Describe the major types of Electronic Commerce transactions
+- Describe the limitations of Electronic Commerce
+- Develop an online commercial Web site for selling products
+- Implement user security and session management for the Web site</value>
+  </data>
+  <data name="textBox13.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+PREREQUISITE PAPER: I102
+This paper will give an understanding of project management theory and practice as it relates to the ICT industry.
+Learning Outcomes:
+- Analyse and discuss the nine knowledge areas of project management
+- Demonstrate knowledge of project teams including co-located and virtual teams
+- Develop a project plan for an IT related project
+- Demonstrate the practical application of a project management tool </value>
+  </data>
+  <data name="textBox12.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+PREREQUISITE PAPER: I121
+To create quality analysis and design documentation for a moderately complex system		
+Learning Outcomes:
+- Compare and select an appropriate analysis methodology for a project
+- Create analysis documentation for a moderately complex system
+- Create design documentation for the system under investigation
+- Implement quality processes to ensure accuracy of analysis and design documentation</value>
+  </data>
+  <data name="textBox11.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: I102
+To apply principles and techniques relating to the application of digital multimedia technologies
+Learning Outcomes:
+- Describe the concepts of digital images, video and audio
+- Create and manipulate digital image, video and audio files according to a technical specification for distribution across the ICT infrastructure
+- Optimise digital multimedia for commonly used ICT mediums</value>
+  </data>
   <data name="textBox9.ToolTip" xml:space="preserve">
     <value>COMPULSARY PAPER
 PREREQUISITE PAPER: D111
@@ -417,6 +467,16 @@ Learning Outcomes:
 - Design a complex information system
 - Create a prototype from a design
 - Formulate quality processes </value>
+  </data>
+  <data name="textBox6.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To introduce the use of the World Wide Web (WWW) as an information medium
+Learning Outcomes:
+- Describe aspects of Internet history
+- Describe the common underlying protocols of the Internet 
+- Describe current web development technologies
+- Interpret end user needs and design a web site to meet these needs
+- Construct a web site from a design using common web development techniques and applying good web design principles</value>
   </data>
   <data name="textBox5.ToolTip" xml:space="preserve">
     <value>COMPULSARY PAPER
@@ -429,6 +489,14 @@ Learning Outcomes:
 - Train a user
 - Evaluate training sessions
 - Demonstrate knowledge of user support</value>
+  </data>
+  <data name="textBox4.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To provide an introduction to the principles of systems analysis and systems requirements elicitation techniques
+Learning Outcomes:
+- Analyse situations requiring problem solving
+- Elicit and model user requirements using a variety of techniques
+- Construct accurate systems analysis documentation reflecting requirements</value>
   </data>
   <data name="textBox3.ToolTip" xml:space="preserve">
     <value>COMPULSARY PAPER

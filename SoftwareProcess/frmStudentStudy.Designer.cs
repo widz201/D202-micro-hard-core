@@ -517,6 +517,7 @@
             this.textBox30.TabStop = false;
             this.textBox30.Text = "I213\r\n\r\nDynamic Web\r\nSolutions";
             this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox30, resources.GetString("textBox30.ToolTip"));
             // 
             // textBox29
             // 
@@ -762,6 +763,7 @@
             this.textBox14.TabStop = false;
             this.textBox14.Text = "I211\r\n\r\neCommerce\r\nSystems";
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox14, resources.GetString("textBox14.ToolTip"));
             // 
             // textBox13
             // 
@@ -777,6 +779,7 @@
             this.textBox13.TabStop = false;
             this.textBox13.Text = "I202\r\n\r\nIT Project\r\nManagement";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox13, resources.GetString("textBox13.ToolTip"));
             // 
             // textBox12
             // 
@@ -792,6 +795,7 @@
             this.textBox12.TabStop = false;
             this.textBox12.Text = "I221\r\n\r\nAnalysis &\r\nDesign";
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox12, resources.GetString("textBox12.ToolTip"));
             // 
             // textBox11
             // 
@@ -807,6 +811,7 @@
             this.textBox11.TabStop = false;
             this.textBox11.Text = "I203\r\n\r\nDigital\r\nMultimedia";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox11, resources.GetString("textBox11.ToolTip"));
             // 
             // textBox9
             // 
@@ -868,6 +873,7 @@
             this.textBox6.TabStop = false;
             this.textBox6.Text = "I111\r\n\r\nWeb\r\nFundamentals";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox6, resources.GetString("textBox6.ToolTip"));
             // 
             // textBox5
             // 
@@ -899,6 +905,7 @@
             this.textBox4.TabStop = false;
             this.textBox4.Text = "I121\r\n\r\nSystems\r\nAnalysis";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox4, resources.GetString("textBox4.ToolTip"));
             // 
             // textBox3
             // 
