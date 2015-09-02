@@ -24,10 +24,15 @@ namespace SoftwareProcess
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This is a beeast");
+            MessageBox.Show("This is a test");
         }
 
         private void btnPreRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
