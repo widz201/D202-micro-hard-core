@@ -358,13 +358,107 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>258, 17</value>
   </metadata>
-  <data name="textBox1.ToolTip" xml:space="preserve">
-    <value>To provide an introduction to software engineering techniques and processes.
+  <data name="textBox21.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: D201
+To create quality software applications utilising a modern development approach
+Learning Outcomes:
+- Undertake a team based iterative development project 
+- Effectively manage an individual development task
+- Implement processes to ensure quality
+- Compare and select an appropriate development method for a given problem</value>
+  </data>
+  <data name="textBox22.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER 
+PREREQUSITE PAPER: D101
+To introduce standard algorithms required for business application programming.
+Learning Outcomes:
+- Design and Construct small applications using a variety of algorithms
+- Devise test plans to ensure quality software
+- Create system maintenance documentation</value>
+  </data>
+  <data name="textBox20.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: D211
+To develop a small, enterprise-level Java application that provides support for a mobile workforce
+Learning Outcomes:
+- Design and construct an application for a mobile device
+- Interface with business data held in a legacy relational database system</value>
+  </data>
+  <data name="textBox19.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: D201
+To design and construct quality software ready for distribution
+Learning Outcomes:
+- Perform object-oriented design and programming with a high level of proficiency
+- Secure applications so that they are ready for distribution
+- Conduct effective and efficient inspections
+- Evaluate software user interfaces for accessibility and usability 
+- Design and implement comprehensive test plans</value>
+  </data>
+  <data name="textBox18.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: D211
+To enable a student to successfully design, create and administer a data warehouse using a server-based database management system.
+Learning Outcomes:
+- Discuss and argue a given data warehousing topic
+- Install a server-based database management system
+- Design and create a data warehouse schema
+- Transfer and transform data from more than one data source into a data warehouse
+- Analyse and process data for management reporting
+- View pre-processed information from the data warehouse from a separate application</value>
+  </data>
+  <data name="textBox9.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+PREREQUISITE PAPER: D111
+To effectively design an information system for a complex business application
+Learning Outcomes:
+- Evaluate alternative design solutions
+- Design a complex information system
+- Create a prototype from a design
+- Formulate quality processes </value>
+  </data>
+  <data name="textBox5.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To enable students to understand the components of training and user support.  
+Learning Outcomes:
+- Apply a user needs analysis
+- Create a training plan for a specified topic
+- Create a computer based training resource
+- Create paper based user documentation
+- Train a user
+- Evaluate training sessions
+- Demonstrate knowledge of user support</value>
+  </data>
+  <data name="textBox3.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To introduce students to business fundamentals and essential components of the ICT profession.
+Learning Outcomes:
+- Describe organisational entities and structures
+- Define legislative and ethical issues in relations to the ICT industry
+- Apply collaborative business tools
+- Describe information systems principles, roles and functional business areas
+- Use APA referencing in academic writing</value>
+  </data>
+  <data name="textBox2.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To provide an introduction to software engineering techniques and processes.
 Learning Outcomes:
 - Describe the software development lifecycle
 - Design small programs using an industry standard format
 - Write small programs in a current language
 - Systematically test and debug small programs</value>
+  </data>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value>COMPULSARY PAPER
+To provide an introduction to data characteristics, data organisation and data management relating to a business environment.
+Learning Outcomes:
+- Describe common methods of data organisation
+- Describe common database models
+- Create a simple Entity Relationship Diagram (ERD)
+- Construct a simple relational database using Structured Query Language (SQL)
+- Perform basic Data Manipulation Language (DML) operations on the database.
+- Use data integrity techniques</value>
   </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>

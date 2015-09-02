@@ -651,6 +651,7 @@
             this.textBox21.TabStop = false;
             this.textBox21.Text = "D202\r\n\r\nSoftware\r\nProcess";
             this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox21, resources.GetString("textBox21.ToolTip"));
             // 
             // textBox22
             // 
@@ -666,6 +667,7 @@
             this.textBox22.TabStop = false;
             this.textBox22.Text = "D201\r\n\r\nAdvanced\r\nProgramming";
             this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox22, resources.GetString("textBox22.ToolTip"));
             // 
             // textBox20
             // 
@@ -681,6 +683,7 @@
             this.textBox20.TabStop = false;
             this.textBox20.Text = "D303\r\n\r\nJava Mobile\r\n& Web";
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox20, resources.GetString("textBox20.ToolTip"));
             // 
             // textBox19
             // 
@@ -696,6 +699,7 @@
             this.textBox19.TabStop = false;
             this.textBox19.Text = "D301\r\n\r\nSoftware\r\nEngineering";
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox19, resources.GetString("textBox19.ToolTip"));
             // 
             // textBox18
             // 
@@ -711,6 +715,7 @@
             this.textBox18.TabStop = false;
             this.textBox18.Text = "D311\r\n\r\nAdvanced\r\nDatabase";
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox18, resources.GetString("textBox18.ToolTip"));
             // 
             // textBox16
             // 
@@ -816,6 +821,7 @@
             this.textBox9.TabStop = false;
             this.textBox9.Text = "D211\r\n\r\nDatabase\r\nDevelopment";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
             // 
             // textBox8
             // 
@@ -876,6 +882,7 @@
             this.textBox5.TabStop = false;
             this.textBox5.Text = "I102\r\n\r\nUser\r\nSupport";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox5, resources.GetString("textBox5.ToolTip"));
             // 
             // textBox4
             // 
@@ -906,6 +913,7 @@
             this.textBox3.TabStop = false;
             this.textBox3.Text = "I101\r\n\r\nInfomation\r\nSystems";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox3, resources.GetString("textBox3.ToolTip"));
             // 
             // textBox2
             // 
@@ -921,6 +929,7 @@
             this.textBox2.TabStop = false;
             this.textBox2.Text = "D101\r\n\r\nSoftware\r\nDevelopment";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
             // 
             // textBox1
             // 
