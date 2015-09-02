@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace SoftwareProcess
 {
@@ -16,10 +17,33 @@ namespace SoftwareProcess
         public frmStudentStudy()
         {
             InitializeComponent();
+            FillListbox();
         }
+        void FillListbox()
+        {
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            string Query = "select * from tblPaper";
+            SqlConnection connection = new SqlConnection(constring);
+            SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+            SqlDataReader myReader;
+            try
+            {
+                connection.Open();
+                myReader = cmdDatabase.ExecuteReader();
 
-
-
+                while (myReader.Read())
+                {
+                    string sName = myReader.GetString(1);
+                    lstPapers.Items.Add(sName);
+                    lstInfoPapers.Items.Add(sName);
+                    
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("NIGGER");
+            }
+        }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
