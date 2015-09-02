@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRemovePaper));
             this.lstERPapers = new System.Windows.Forms.ListBox();
             this.btnEREdit = new System.Windows.Forms.Button();
             this.btnERRemove = new System.Windows.Forms.Button();
@@ -90,6 +91,7 @@
             this.Controls.Add(this.btnERRemove);
             this.Controls.Add(this.btnEREdit);
             this.Controls.Add(this.lstERPapers);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRemovePaper";
             this.Text = "Edit/Remove Paper";
             this.ResumeLayout(false);
