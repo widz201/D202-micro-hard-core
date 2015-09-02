@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SoftwareProcess
 {
@@ -15,6 +16,13 @@ namespace SoftwareProcess
         public frmStudentStudy()
         {
             InitializeComponent();
+        }
+
+        static void Main(string[] args)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=tfs;Initial Catalog=study1;Integrated Security=True");
+
+
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,6 +42,11 @@ namespace SoftwareProcess
             frmRemovePaper removeForm = new frmRemovePaper();
 
             removeForm.Show();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
