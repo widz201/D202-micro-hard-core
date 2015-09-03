@@ -358,6 +358,35 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>258, 17</value>
   </metadata>
+  <data name="textBox32.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T205
+To enable students to gain practical and technical networking knowledge that will allow them to configure and troubleshoot routers, 
+switches and resolve common issues with RIPv1, RIPng, single-area and multi-area OSPF, virtual LANs, and inter-VLAN routing in both IPv4 and IPv6 networks.
+Learning Outcomes:
+- Describe basic switching concepts and the operation of Cisco switches
+- Describe the purpose, nature, and operations of a router, routing tables, and the route lookup process 
+- Describe how VLANs create logically separate networks and how routing occurs between them
+- Describe dynamic routing protocols, distance vector routing protocols, and link-state routing protocols 
+- Configure and troubleshoot static routing and default routing (RIP and RIPng) 
+- Configure and troubleshoot an Open Shortest Path First (OSPF) network
+- Configure and troubleshoot access control lists (ACLs) for IPv4 and IPv6 networks
+- Configure and troubleshoot Dynamic Host Configuration Protocol (DHCP) for IPv4 and IPv6 networks
+- Configure and troubleshoot Network Address Translation (NAT) operations</value>
+  </data>
+  <data name="textBox31.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+To enable students to gain practical and technical networking knowledge that will assist them to build simple LANs, perform basic configurations for routers and switches, and implement IP addressing schemes.
+Learning Outcomes:
+- Describe the devices and services used to support communications in data networks and the internet
+- Describe the role of protocol layers in data networks 
+- Describe the importance of addressing and naming schemes at various layers of data networks in IPv4 and IPv6 environments 
+- Design, calculate, and apply subnet masks and addresses to fulfil given requirements in IPv4 and IPv6 networks 
+- Explain fundamental Ethernet concepts such as media, services, and operations
+- Build a simple Ethernet network using routers and switches
+- Use Cisco command-line interface (CLI) commands to perform basic router and switch configurations
+- Utilise common network utilities to verify small network operations and analyse data traffic</value>
+  </data>
   <data name="textBox30.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I111
@@ -367,6 +396,93 @@ Learning Outcomes:
 - Secure critical business data within the web application
 - Interface with a web based database management system
 - Implement user security and session management</value>
+  </data>
+  <data name="textBox29.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T201
+To recommend uses for thin and thick client architectures and to design a thin client architecture. 
+Students will be able to analyse and evaluate network designs, select an appropriate technology and design for a given situation, and justify their selection.
+Learning Outcomes:
+- Assess and recommend at least two different thin client technologies
+- Select an appropriate thin/thick architecture for a given situation and justify the selection
+- Evaluate the performance differences between different thin/thick architectures
+- Devise and create a proof of technology
+- Assess server and client virtualisation strategies</value>
+  </data>
+  <data name="textBox27.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREQUISITE PAPER: I221
+To introduce tools and techniques used to assess feasibility and present a business case; to complete an analysis of a complex information system based on the recommendation from the feasibility phase.
+Learning Outcomes:
+- Undertake a feasibility study to recommend a solution to business problems
+- Present a business case to project stakeholders  
+- Develop a model of the proposed complex system
+- Implement quality processes to ensure accuracy of analysis and design documentation</value>
+  </data>
+  <data name="textBox25.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T211
+To provide the ability to design and construct a complex multi-user client/server network. Students will gain skills needed to configure and integrate complex systems.
+Learning Outcomes:
+- Create a multi-user implementation of a client/server network
+- Implement techniques to integrate multi-vendor operating systems
+- Implement a common authentication source for drivers systems which may include file, database, web and proxy servers
+- Devise and implement strategies which will ease the administrative burden through automation and log checking
+- Implement remote administration of central services
+- Assess the advantages and disadvantages of open source systems</value>
+  </data>
+  <data name="textBox26.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T206
+To gain practical and technical networking knowledge that will assist in designing, building and analysing networks and their protocols using advanced technologies
+Learning Outcomes:
+- Configure and troubleshoot enhanced switching technologies such as VLANs, Rapid Spanning Tree Protocol (RSTP), Per VLAN Spanning Tree Plus Protocol (PVST+), and EtherChannel
+- Configure and troubleshoot first hop redundancy protocols (HSRP) in a switched network 
+- Configure and troubleshoot wireless routers and wireless clients 
+- Configure and troubleshoot routers in a complex routed IPv4 or IPv6 network using single-area OSPF, multi-area OSPF, and Enhanced Interior Gateway Routing Protocol (EIGRP) 
+- Manage Cisco IOS Software licensing and configuration files
+- Describe different WAN technologies and their benefits
+- Describe the operations and benefits of virtual private networks (VPNs) and tunnelling
+- Configure and troubleshoot serial and broadband connections
+- Configure and troubleshoot Network Address Translation (NAT) operations
+- Configure and troubleshoot tunneling operations
+- Monitor and troubleshoot network operations using syslog, SNMP, and NetFlow
+- Describe network architectures:  Borderless networks, Data centres and virtualization, Collaboration technology and solutions</value>
+  </data>
+  <data name="textBox24.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: I201
+To enable students to analyse and evaluate management practices as they relate to the ICT industry
+Learning Outcomes:
+- Discuss and analyse key issues associated with managing and structuring the ICT capability within an organisation
+- Recommend and design a quality management programme for an organisation
+- Apply best practice human resource management techniques 
+- Commentate on relevant legislation and social responsibility issues as they relate to the ICT industry
+</value>
+  </data>
+  <data name="textBox10.ToolTip" xml:space="preserve">
+    <value>COMPULSORY PAPER
+PREREQUISITES: 285 credits including I301 and all compulsory level 5 &amp; 6 papers 
+To enable students to undertake an industry based project of a complex nature.  
+Learning Outcomes:
+- Manage an ICT project for industry
+- Produce original work and project deliverables
+- Consider and apply professional work ethics
+- Meet project timelines and goals
+- Record and evaluate project work and progress 
+- Present project outcomes to sponsors and academic supervisors</value>
+  </data>
+  <data name="textBox17.ToolTip" xml:space="preserve">
+    <value>COMPULSORY PAPER
+PREREQUISITES: 240 credits includes all level 5 &amp; level 6 compulsory papers
+To apply communication theories and practice in a professional context.  Students will also source an industry project and produce appropriate documentation.
+Learning Outcomes:
+- Analyse and evaluate applied communication principles
+- Demonstrate effective communication skills
+- Procure an industry based project
+- Create project scope documentation
+- Demonstrate ability to work in teams
+</value>
   </data>
   <data name="textBox21.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
@@ -418,6 +534,37 @@ Learning Outcomes:
 - Analyse and process data for management reporting
 - View pre-processed information from the data warehouse from a separate application</value>
   </data>
+  <data name="textBox16.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T111
+To analyse and implement computer systems security, including operating systems, server applications &amp; networks;
+and to enable students to explain the fundamentals of computer forensics. 
+Learning Outcomes:
+- Demonstrate knowledge of operating systems security
+- Analyse the security and security weaknesses affecting operating systems
+- Demonstrate configuring operating system security
+- Analyse server application security considerations
+- Analyse and contrast server application technologies
+- Demonstrate successful implementation of a server application/s
+- Demonstrate theoretical and practically applied knowledge of securing server application technologies
+- Demonstrate knowledge of network security technology
+- Analyse and contrast network security technology
+- Demonstrate an ability to practically implement network security technologies
+- Demonstrate knowledge of computer forensic practices</value>
+  </data>
+  <data name="textBox15.ToolTip" xml:space="preserve">
+    <value>ELLECTIVE PAPER
+PREREQUISITE PAPER: T101
+To implement key network services as used in modern LANs and to explain the network protocols that these services use.
+Learning Outcomes:
+- Implement and explain the operation of name resolution
+- Implement automatic network configuration
+- Implement and explain the operation of directory services
+- Implement and explain the operation of a web proxy
+- Implement automatic browser configuration when a web proxy is used
+- Implement and explain the operation of time synchronisation in the LAN
+- Implement a mail gateway and explain the operation of common email protocols</value>
+  </data>
   <data name="textBox14.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I111
@@ -430,7 +577,7 @@ Learning Outcomes:
 - Implement user security and session management for the Web site</value>
   </data>
   <data name="textBox13.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 PREREQUISITE PAPER: I102
 This paper will give an understanding of project management theory and practice as it relates to the ICT industry.
 Learning Outcomes:
@@ -440,7 +587,7 @@ Learning Outcomes:
 - Demonstrate the practical application of a project management tool </value>
   </data>
   <data name="textBox12.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 PREREQUISITE PAPER: I121
 To create quality analysis and design documentation for a moderately complex system		
 Learning Outcomes:
@@ -459,7 +606,7 @@ Learning Outcomes:
 - Optimise digital multimedia for commonly used ICT mediums</value>
   </data>
   <data name="textBox9.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 PREREQUISITE PAPER: D111
 To effectively design an information system for a complex business application
 Learning Outcomes:
@@ -468,8 +615,32 @@ Learning Outcomes:
 - Create a prototype from a design
 - Formulate quality processes </value>
   </data>
+  <data name="textBox8.ToolTip" xml:space="preserve">
+    <value>COMPULSORY PAPER
+To gain an understanding of the fundamentals of computer hardware, operating systems and troubleshooting techniques.
+Learning Outcomes:
+- Demonstrate an understanding of computer hardware
+- Demonstrate practical troubleshooting skills with computer systems
+- Explain the performance determinants and metrics of computer systems
+- Demonstrate an understanding of the purpose and function of an operating system
+- Describe and demonstrate operating system management techniques. (e.g. process, memory, disk) 
+-Demonstrate a practical knowledge of writing operating system scripts</value>
+  </data>
+  <data name="textBox7.ToolTip" xml:space="preserve">
+    <value>COMPULSORY PAPER
+To provide an introduction to the fundamentals of computer networks as they currently exist in industry and to enable students to configure, test and troubleshoot local area networks.
+Learning Outcomes:
+- Classify computer networks. Examples may include but are not limited to LAN, MAN, WAN and PAN
+- Select the most appropriate network media for a given scenario. Network media will include fibre optic, copper and wireless
+- Describe the operation and performance of network protocols. Examples may include but are not limited to TCP/IP and Ethernet
+- Describe the operation and performance of network hardware. Examples may include but are not limited to hub, switches, routers and wireless access points
+- Describe the fundamentals of encryption and its application in computer networks
+- Describe the fundamentals of authentication in networks
+- Construct a small LAN using current operating systems and technology
+- Test and troubleshoot network problems</value>
+  </data>
   <data name="textBox6.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To introduce the use of the World Wide Web (WWW) as an information medium
 Learning Outcomes:
 - Describe aspects of Internet history
@@ -479,7 +650,7 @@ Learning Outcomes:
 - Construct a web site from a design using common web development techniques and applying good web design principles</value>
   </data>
   <data name="textBox5.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To enable students to understand the components of training and user support.  
 Learning Outcomes:
 - Apply a user needs analysis
@@ -491,7 +662,7 @@ Learning Outcomes:
 - Demonstrate knowledge of user support</value>
   </data>
   <data name="textBox4.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To provide an introduction to the principles of systems analysis and systems requirements elicitation techniques
 Learning Outcomes:
 - Analyse situations requiring problem solving
@@ -499,7 +670,7 @@ Learning Outcomes:
 - Construct accurate systems analysis documentation reflecting requirements</value>
   </data>
   <data name="textBox3.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To introduce students to business fundamentals and essential components of the ICT profession.
 Learning Outcomes:
 - Describe organisational entities and structures
@@ -509,7 +680,7 @@ Learning Outcomes:
 - Use APA referencing in academic writing</value>
   </data>
   <data name="textBox2.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To provide an introduction to software engineering techniques and processes.
 Learning Outcomes:
 - Describe the software development lifecycle
@@ -518,7 +689,7 @@ Learning Outcomes:
 - Systematically test and debug small programs</value>
   </data>
   <data name="textBox1.ToolTip" xml:space="preserve">
-    <value>COMPULSARY PAPER
+    <value>COMPULSORY PAPER
 To provide an introduction to data characteristics, data organisation and data management relating to a business environment.
 Learning Outcomes:
 - Describe common methods of data organisation
