@@ -80,5 +80,10 @@ namespace SoftwareProcess
 
             
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstSelected.Items.Remove(lstSelected.Text);
+        }
     }
 }
