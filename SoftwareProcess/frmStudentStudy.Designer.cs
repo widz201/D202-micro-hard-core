@@ -584,7 +584,7 @@
             this.textBox23.BackColor = System.Drawing.Color.LightGreen;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox23.Location = new System.Drawing.Point(379, 456);
+            this.textBox23.Location = new System.Drawing.Point(417, 456);
             this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
@@ -724,7 +724,7 @@
             this.textBox16.BackColor = System.Drawing.Color.LightCoral;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox16.Location = new System.Drawing.Point(625, 136);
+            this.textBox16.Location = new System.Drawing.Point(625, 137);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
