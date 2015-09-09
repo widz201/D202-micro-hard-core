@@ -103,16 +103,30 @@ namespace SoftwareProcess
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
                     
+                    /*
                     switch (sCatergory)
                     {
                         case 1:
                             lblCareerOpp.Text = "Software Architecture";
+                            break;
 
                         case 2:
-                            lblCareerOpp.Text = "Software Architecture"
+                            lblCareerOpp.Text = "Web Development";
+                            break;
 
-                        case 3:    
+                        case 3:
+                            lblCareerOpp.Text = "Analysis & Design";
+                            break;
+
+                        case 4:
+                            lblCareerOpp.Text = "Networking";
+                            break;
+
+                        case 5:
+                            lblCareerOpp.Text = "Database Development";
+                            break;
                     }
+                     */
                       
                 }
             }
