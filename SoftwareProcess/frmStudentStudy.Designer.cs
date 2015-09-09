@@ -111,8 +111,8 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkSem1 = new System.Windows.Forms.CheckBox();
+            this.chkSem2 = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -364,8 +364,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.chkSem2);
+            this.groupBox2.Controls.Add(this.chkSem1);
             this.groupBox2.Controls.Add(this.chkYear2);
             this.groupBox2.Controls.Add(this.chkYear3);
             this.groupBox2.Location = new System.Drawing.Point(6, 57);
@@ -1157,29 +1157,29 @@
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // checkBox1
+            // chkSem1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(6, 42);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Semester 1";
-            this.toolTip1.SetToolTip(this.checkBox1, "Show year 2 papers");
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkSem1.AutoSize = true;
+            this.chkSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem1.Location = new System.Drawing.Point(6, 42);
+            this.chkSem1.Name = "chkSem1";
+            this.chkSem1.Size = new System.Drawing.Size(79, 17);
+            this.chkSem1.TabIndex = 2;
+            this.chkSem1.Text = "Semester 1";
+            this.toolTip1.SetToolTip(this.chkSem1, "Show year 2 papers");
+            this.chkSem1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkSem2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(157, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Semester 2";
-            this.toolTip1.SetToolTip(this.checkBox2, "Show year 2 papers");
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkSem2.AutoSize = true;
+            this.chkSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem2.Location = new System.Drawing.Point(157, 42);
+            this.chkSem2.Name = "chkSem2";
+            this.chkSem2.Size = new System.Drawing.Size(79, 17);
+            this.chkSem2.TabIndex = 3;
+            this.chkSem2.Text = "Semester 2";
+            this.toolTip1.SetToolTip(this.chkSem2, "Show year 2 papers");
+            this.chkSem2.UseVisualStyleBackColor = true;
             // 
             // frmStudentStudy
             // 
@@ -1307,8 +1307,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxD111;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkSem2;
+        private System.Windows.Forms.CheckBox chkSem1;
     }
 }
 
