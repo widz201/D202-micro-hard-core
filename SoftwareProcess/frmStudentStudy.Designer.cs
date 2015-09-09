@@ -55,6 +55,8 @@
             this.chkNetwork = new System.Windows.Forms.CheckBox();
             this.chkDB = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkSem2 = new System.Windows.Forms.CheckBox();
+            this.chkSem1 = new System.Windows.Forms.CheckBox();
             this.chkYear2 = new System.Windows.Forms.CheckBox();
             this.chkYear3 = new System.Windows.Forms.CheckBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -111,8 +113,6 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.chkSem1 = new System.Windows.Forms.CheckBox();
-            this.chkSem2 = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -375,6 +375,30 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter by year and semester";
+            // 
+            // chkSem2
+            // 
+            this.chkSem2.AutoSize = true;
+            this.chkSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem2.Location = new System.Drawing.Point(157, 42);
+            this.chkSem2.Name = "chkSem2";
+            this.chkSem2.Size = new System.Drawing.Size(79, 17);
+            this.chkSem2.TabIndex = 3;
+            this.chkSem2.Text = "Semester 2";
+            this.toolTip1.SetToolTip(this.chkSem2, "Show year 2 papers");
+            this.chkSem2.UseVisualStyleBackColor = true;
+            // 
+            // chkSem1
+            // 
+            this.chkSem1.AutoSize = true;
+            this.chkSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem1.Location = new System.Drawing.Point(6, 42);
+            this.chkSem1.Name = "chkSem1";
+            this.chkSem1.Size = new System.Drawing.Size(79, 17);
+            this.chkSem1.TabIndex = 2;
+            this.chkSem1.Text = "Semester 1";
+            this.toolTip1.SetToolTip(this.chkSem1, "Show year 2 papers");
+            this.chkSem1.UseVisualStyleBackColor = true;
             // 
             // chkYear2
             // 
@@ -1134,9 +1158,10 @@
             // lblPaperName
             // 
             this.lblPaperName.AutoSize = true;
+            this.lblPaperName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaperName.Location = new System.Drawing.Point(10, 13);
             this.lblPaperName.Name = "lblPaperName";
-            this.lblPaperName.Size = new System.Drawing.Size(35, 13);
+            this.lblPaperName.Size = new System.Drawing.Size(57, 20);
             this.lblPaperName.TabIndex = 0;
             this.lblPaperName.Text = "label1";
             // 
@@ -1156,30 +1181,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1098, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // chkSem1
-            // 
-            this.chkSem1.AutoSize = true;
-            this.chkSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSem1.Location = new System.Drawing.Point(6, 42);
-            this.chkSem1.Name = "chkSem1";
-            this.chkSem1.Size = new System.Drawing.Size(79, 17);
-            this.chkSem1.TabIndex = 2;
-            this.chkSem1.Text = "Semester 1";
-            this.toolTip1.SetToolTip(this.chkSem1, "Show year 2 papers");
-            this.chkSem1.UseVisualStyleBackColor = true;
-            // 
-            // chkSem2
-            // 
-            this.chkSem2.AutoSize = true;
-            this.chkSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSem2.Location = new System.Drawing.Point(157, 42);
-            this.chkSem2.Name = "chkSem2";
-            this.chkSem2.Size = new System.Drawing.Size(79, 17);
-            this.chkSem2.TabIndex = 3;
-            this.chkSem2.Text = "Semester 2";
-            this.toolTip1.SetToolTip(this.chkSem2, "Show year 2 papers");
-            this.chkSem2.UseVisualStyleBackColor = true;
             // 
             // frmStudentStudy
             // 
