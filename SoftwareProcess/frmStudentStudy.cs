@@ -19,10 +19,7 @@ namespace SoftwareProcess
             InitializeComponent();
             FillListbox();
         }
-        public class List<ListItem>
-        {
 
-        }
         void FillListbox()
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -86,20 +83,10 @@ namespace SoftwareProcess
             lstSelected.Items.Remove(lstSelected.Text);
         }
 
-        private void lstInfoPapers_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstInfoPapers_Click(object sender, EventArgs e)
         {
-
+            lstInfoPapers.GetSelected
         }
 
-        private void chkYear2_CheckedChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -311,7 +311,6 @@
             this.chkWebDev.Text = "Web Development";
             this.toolTip1.SetToolTip(this.chkWebDev, "Show papers with specialization in the field of Web Development");
             this.chkWebDev.UseVisualStyleBackColor = true;
-            this.chkWebDev.CheckedChanged += new System.EventHandler(this.chkWebDev_CheckedChanged);
             // 
             // chkSoftwareArch
             // 
@@ -386,7 +385,6 @@
             this.chkYear2.Text = "Year 2 Papers";
             this.toolTip1.SetToolTip(this.chkYear2, "Show year 2 papers");
             this.chkYear2.UseVisualStyleBackColor = true;
-            this.chkYear2.CheckedChanged += new System.EventHandler(this.chkYear2_CheckedChanged);
             // 
             // chkYear3
             // 
@@ -1147,7 +1145,7 @@
             this.lstInfoPapers.Name = "lstInfoPapers";
             this.lstInfoPapers.Size = new System.Drawing.Size(193, 498);
             this.lstInfoPapers.TabIndex = 0;
-            this.lstInfoPapers.SelectedIndexChanged += new System.EventHandler(this.lstInfoPapers_SelectedIndexChanged);
+            this.lstInfoPapers.Click += new System.EventHandler(this.lstInfoPapers_Click);
             // 
             // statusStrip1
             // 
