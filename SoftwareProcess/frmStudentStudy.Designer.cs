@@ -47,6 +47,7 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.chkWebDev = new System.Windows.Forms.CheckBox();
             this.chkSoftwareArch = new System.Windows.Forms.CheckBox();
@@ -61,6 +62,8 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
@@ -108,9 +111,6 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -273,6 +273,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter Papers";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 26);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
+    "tion";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.chkWebDev);
@@ -296,6 +307,7 @@
             this.chkWebDev.Size = new System.Drawing.Size(115, 17);
             this.chkWebDev.TabIndex = 4;
             this.chkWebDev.Text = "Web Development";
+            this.toolTip1.SetToolTip(this.chkWebDev, "Show papers with specialization in the field of Web Development");
             this.chkWebDev.UseVisualStyleBackColor = true;
             this.chkWebDev.CheckedChanged += new System.EventHandler(this.chkWebDev_CheckedChanged);
             // 
@@ -309,6 +321,7 @@
             this.chkSoftwareArch.Size = new System.Drawing.Size(128, 17);
             this.chkSoftwareArch.TabIndex = 2;
             this.chkSoftwareArch.Text = "Software Architecture";
+            this.toolTip1.SetToolTip(this.chkSoftwareArch, "Show papers with specialization in the field of Software Architecture");
             this.chkSoftwareArch.UseVisualStyleBackColor = true;
             // 
             // chkAnal
@@ -320,6 +333,7 @@
             this.chkAnal.Size = new System.Drawing.Size(119, 17);
             this.chkAnal.TabIndex = 6;
             this.chkAnal.Text = "Analysis and design";
+            this.toolTip1.SetToolTip(this.chkAnal, "Show papers with specialization in the field of Analysis and Design\r\n");
             this.chkAnal.UseVisualStyleBackColor = true;
             // 
             // chkNetwork
@@ -331,6 +345,7 @@
             this.chkNetwork.Size = new System.Drawing.Size(80, 17);
             this.chkNetwork.TabIndex = 3;
             this.chkNetwork.Text = "Networking";
+            this.toolTip1.SetToolTip(this.chkNetwork, "Show papers with specialization in the field of Networking\r\n");
             this.chkNetwork.UseVisualStyleBackColor = true;
             // 
             // chkDB
@@ -342,6 +357,7 @@
             this.chkDB.Size = new System.Drawing.Size(138, 17);
             this.chkDB.TabIndex = 5;
             this.chkDB.Text = "Database Development";
+            this.toolTip1.SetToolTip(this.chkDB, "Show papers with specialization in the field of Database Development\r\n");
             this.chkDB.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -441,6 +457,26 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(198, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Selected Papers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Available Papers";
             // 
             // panel1
             // 
@@ -1116,37 +1152,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1098, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Available Papers";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(198, 219);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Selected Papers";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 26);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
-    "tion";
             // 
             // frmStudentStudy
             // 
