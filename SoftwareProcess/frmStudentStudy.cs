@@ -85,7 +85,41 @@ namespace SoftwareProcess
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
         {
-            lstInfoPapers.GetSelected
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            string Query = "select * from tblPaper";
+            SqlConnection connection = new SqlConnection(constring);
+            SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+            SqlDataReader myReader;
+            try
+            {
+                connection.Open();
+                myReader = cmdDatabase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    string sName = myReader.GetString(1);
+                    string sDescription = myReader.GetString(2);
+                    string sCatergory = myReader.GetString(6);
+                    lblPaperName.Text = sName;
+                    lblPaperDesc.Text = sDescription;
+                    
+                    switch (sCatergory)
+                    {
+                        case 1:
+                            lblCareerOpp.Text = "Software Architecture";
+
+                        case 2:
+                            lblCareerOpp.Text = "Software Architecture"
+
+                        case 3:    
+                    }
+                      
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("");
+            }
         }
 
     }
