@@ -108,6 +108,9 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -210,27 +213,27 @@
             // lstPapers
             // 
             this.lstPapers.FormattingEnabled = true;
-            this.lstPapers.Location = new System.Drawing.Point(6, 183);
+            this.lstPapers.Location = new System.Drawing.Point(7, 235);
             this.lstPapers.Name = "lstPapers";
-            this.lstPapers.Size = new System.Drawing.Size(157, 134);
+            this.lstPapers.Size = new System.Drawing.Size(155, 186);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
             // 
             // lstSelected
             // 
             this.lstSelected.FormattingEnabled = true;
-            this.lstSelected.Location = new System.Drawing.Point(169, 183);
+            this.lstSelected.Location = new System.Drawing.Point(169, 235);
             this.lstSelected.Name = "lstSelected";
-            this.lstSelected.Size = new System.Drawing.Size(157, 342);
+            this.lstSelected.Size = new System.Drawing.Size(157, 290);
             this.lstSelected.TabIndex = 3;
             this.lstSelected.TabStop = false;
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnAdd.Location = new System.Drawing.Point(6, 327);
+            this.btnAdd.Location = new System.Drawing.Point(7, 429);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(157, 28);
+            this.btnAdd.Size = new System.Drawing.Size(75, 28);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -239,9 +242,9 @@
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnRemove.Location = new System.Drawing.Point(6, 361);
+            this.btnRemove.Location = new System.Drawing.Point(87, 429);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(157, 28);
+            this.btnRemove.Size = new System.Drawing.Size(75, 28);
             this.btnRemove.TabIndex = 8;
             this.btnRemove.Text = "REMOVE";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -250,24 +253,25 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnClear.Location = new System.Drawing.Point(6, 395);
+            this.btnClear.Location = new System.Drawing.Point(7, 463);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(157, 28);
+            this.btnClear.Size = new System.Drawing.Size(75, 28);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 171);
+            this.groupBox1.Size = new System.Drawing.Size(320, 210);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Criteria";
+            this.groupBox1.Text = "Filter Papers";
             // 
             // groupBox3
             // 
@@ -276,12 +280,12 @@
             this.groupBox3.Controls.Add(this.chkAnal);
             this.groupBox3.Controls.Add(this.chkNetwork);
             this.groupBox3.Controls.Add(this.chkDB);
-            this.groupBox3.Location = new System.Drawing.Point(6, 72);
+            this.groupBox3.Location = new System.Drawing.Point(6, 110);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(308, 90);
+            this.groupBox3.Size = new System.Drawing.Size(308, 94);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Specialization";
+            this.groupBox3.Text = "Filter by specialization";
             // 
             // chkWebDev
             // 
@@ -344,12 +348,12 @@
             // 
             this.groupBox2.Controls.Add(this.chkYear2);
             this.groupBox2.Controls.Add(this.chkYear3);
-            this.groupBox2.Location = new System.Drawing.Point(6, 19);
+            this.groupBox2.Location = new System.Drawing.Point(6, 57);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(308, 47);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Years";
+            this.groupBox2.Text = "Filter by year";
             // 
             // chkYear2
             // 
@@ -360,6 +364,7 @@
             this.chkYear2.Size = new System.Drawing.Size(93, 17);
             this.chkYear2.TabIndex = 0;
             this.chkYear2.Text = "Year 2 Papers";
+            this.toolTip1.SetToolTip(this.chkYear2, "Show year 2 papers");
             this.chkYear2.UseVisualStyleBackColor = true;
             this.chkYear2.CheckedChanged += new System.EventHandler(this.chkYear2_CheckedChanged);
             // 
@@ -372,14 +377,15 @@
             this.chkYear3.Size = new System.Drawing.Size(93, 17);
             this.chkYear3.TabIndex = 1;
             this.chkYear3.Text = "Year 3 Papers";
+            this.toolTip1.SetToolTip(this.chkYear3, "Show year 3 papers");
             this.chkYear3.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnSave.Location = new System.Drawing.Point(6, 429);
+            this.btnSave.Location = new System.Drawing.Point(8, 497);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(157, 28);
+            this.btnSave.Size = new System.Drawing.Size(74, 28);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -387,9 +393,9 @@
             // btnLoad
             // 
             this.btnLoad.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnLoad.Location = new System.Drawing.Point(6, 463);
+            this.btnLoad.Location = new System.Drawing.Point(87, 497);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(157, 28);
+            this.btnLoad.Size = new System.Drawing.Size(75, 28);
             this.btnLoad.TabIndex = 11;
             this.btnLoad.Text = "LOAD";
             this.btnLoad.UseVisualStyleBackColor = false;
@@ -397,9 +403,9 @@
             // btnPrint
             // 
             this.btnPrint.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnPrint.Location = new System.Drawing.Point(6, 497);
+            this.btnPrint.Location = new System.Drawing.Point(87, 463);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(157, 28);
+            this.btnPrint.Size = new System.Drawing.Size(75, 28);
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "PRINT";
             this.btnPrint.UseVisualStyleBackColor = false;
@@ -417,6 +423,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.lstSelected);
             this.tabPage1.Controls.Add(this.btnPrint);
             this.tabPage1.Controls.Add(this.panel1);
@@ -1109,6 +1117,37 @@
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Available Papers";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(198, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Selected Papers";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 26);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
+    "tion";
+            // 
             // frmStudentStudy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1124,12 +1163,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1228,6 +1269,10 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxD111;
     }
 }
