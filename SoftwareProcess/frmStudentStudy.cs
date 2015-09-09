@@ -69,14 +69,22 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if(lstSelected.Items.Contains(lstPapers.Text))
+            try
             {
-                MessageBox.Show("You have already selected this paper!");
+                if(lstSelected.Items.Contains(lstPapers.Text))
+                    {
+                        MessageBox.Show("You have already selected this paper!");
+                    }
+                    else
+                    {
+                        lstSelected.Items.Add(lstPapers.SelectedItem);
+                    }
             }
-            else
+            catch
             {
-                lstSelected.Items.Add(lstPapers.SelectedItem);
+                MessageBox.Show("You need to select a paper");
             }
+            
 
             
         }
@@ -84,6 +92,35 @@ namespace SoftwareProcess
         private void btnRemove_Click(object sender, EventArgs e)
         {
             lstSelected.Items.Remove(lstSelected.Text);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+            lstSelected.Items.Clear();
+
+
+        }
+
+        private void lstPapers_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lstSelected.Items.Contains(lstPapers.Text))
+                {
+                    MessageBox.Show("You have already selected this paper!");
+                }
+                else
+                {
+                   lstPapers.SelectedItem = lstSelected.Items.Add(lstPapers.SelectedItem);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("You need to select a paper");
+            }
+            
+            
         }
     }
 }

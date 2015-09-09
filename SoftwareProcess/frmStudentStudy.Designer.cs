@@ -215,6 +215,7 @@
             this.lstPapers.Size = new System.Drawing.Size(157, 134);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
+            this.lstPapers.DoubleClick += new System.EventHandler(this.lstPapers_DoubleClick);
             // 
             // lstSelected
             // 
@@ -256,6 +257,7 @@
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // groupBox1
             // 
