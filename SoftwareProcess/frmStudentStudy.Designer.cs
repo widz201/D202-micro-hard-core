@@ -111,6 +111,8 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -213,18 +215,18 @@
             // lstPapers
             // 
             this.lstPapers.FormattingEnabled = true;
-            this.lstPapers.Location = new System.Drawing.Point(7, 235);
+            this.lstPapers.Location = new System.Drawing.Point(7, 261);
             this.lstPapers.Name = "lstPapers";
-            this.lstPapers.Size = new System.Drawing.Size(155, 186);
+            this.lstPapers.Size = new System.Drawing.Size(155, 160);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
             // 
             // lstSelected
             // 
             this.lstSelected.FormattingEnabled = true;
-            this.lstSelected.Location = new System.Drawing.Point(169, 235);
+            this.lstSelected.Location = new System.Drawing.Point(169, 261);
             this.lstSelected.Name = "lstSelected";
-            this.lstSelected.Size = new System.Drawing.Size(157, 290);
+            this.lstSelected.Size = new System.Drawing.Size(157, 264);
             this.lstSelected.TabIndex = 3;
             this.lstSelected.TabStop = false;
             // 
@@ -268,7 +270,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 210);
+            this.groupBox1.Size = new System.Drawing.Size(320, 236);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter Papers";
@@ -291,7 +293,7 @@
             this.groupBox3.Controls.Add(this.chkAnal);
             this.groupBox3.Controls.Add(this.chkNetwork);
             this.groupBox3.Controls.Add(this.chkDB);
-            this.groupBox3.Location = new System.Drawing.Point(6, 110);
+            this.groupBox3.Location = new System.Drawing.Point(6, 136);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(308, 94);
             this.groupBox3.TabIndex = 8;
@@ -362,14 +364,16 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox2);
+            this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.chkYear2);
             this.groupBox2.Controls.Add(this.chkYear3);
             this.groupBox2.Location = new System.Drawing.Point(6, 57);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 47);
+            this.groupBox2.Size = new System.Drawing.Size(308, 73);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Filter by year";
+            this.groupBox2.Text = "Filter by year and semester";
             // 
             // chkYear2
             // 
@@ -462,7 +466,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(198, 219);
+            this.label2.Location = new System.Drawing.Point(198, 245);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 13;
@@ -472,7 +476,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 219);
+            this.label1.Location = new System.Drawing.Point(31, 245);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 9;
@@ -1153,6 +1157,30 @@
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(6, 42);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(79, 17);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "Semester 1";
+            this.toolTip1.SetToolTip(this.checkBox1, "Show year 2 papers");
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(157, 42);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(79, 17);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Semester 2";
+            this.toolTip1.SetToolTip(this.checkBox2, "Show year 2 papers");
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // frmStudentStudy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1279,6 +1307,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxD111;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
