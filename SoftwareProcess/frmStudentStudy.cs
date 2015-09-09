@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
-
+//https://www.youtube.com/watch?v=dwG6eg5UofI
 namespace SoftwareProcess
 {
     public partial class frmStudentStudy : Form
@@ -18,11 +18,13 @@ namespace SoftwareProcess
         {
             InitializeComponent();
             FillListbox();
+            
         }
         public class List<ListItem>
         {
 
         }
+
         void FillListbox()
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -48,6 +50,24 @@ namespace SoftwareProcess
                 MessageBox.Show("");
             }
         }
+            private void frmStudentStudy_Load(object sender, EventArgs e)
+            {
+                SqlConnection con = new SqlConnection(@"Data  Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\visits.mdf;Integrated  Security=True;User Instance=True");
+                    con.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT Paper_ID, Paper_Name", con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                while (sdr.Read())
+            {
+                tbxD111.Text = sdr["Paper_ID, Paper_Name"].ToString(); 
+                //this.txtCustomerAddress.Text = sdr["CustomerAddress"].ToString();
+                //this.txtArrivalTime.Text = sdr["ArrivalTime"].ToString();
+            }
+        
+            sdr.Close();
+
+            }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

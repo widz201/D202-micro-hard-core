@@ -47,6 +47,7 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.chkWebDev = new System.Windows.Forms.CheckBox();
             this.chkSoftwareArch = new System.Windows.Forms.CheckBox();
@@ -61,6 +62,8 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
@@ -108,9 +111,6 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -272,6 +272,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter Papers";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 26);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
+    "tion";
             // 
             // groupBox3
             // 
@@ -441,6 +452,26 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(198, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Selected Papers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Available Papers";
             // 
             // panel1
             // 
@@ -975,7 +1006,6 @@
             this.tbxD111.Size = new System.Drawing.Size(76, 55);
             this.tbxD111.TabIndex = 0;
             this.tbxD111.TabStop = false;
-            this.tbxD111.Text = "D111\r\n\r\nData\r\nFundamentals";
             this.tbxD111.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.tbxD111, resources.GetString("tbxD111.ToolTip"));
             // 
@@ -1116,37 +1146,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1098, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Available Papers";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(198, 219);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Selected Papers";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 26);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
-    "tion";
             // 
             // frmStudentStudy
             // 
