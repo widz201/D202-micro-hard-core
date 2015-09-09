@@ -48,5 +48,10 @@ namespace SoftwareProcess
         {
             this.Close();
         }
+
+        private void lstERPapers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

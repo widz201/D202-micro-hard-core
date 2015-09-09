@@ -85,5 +85,21 @@ namespace SoftwareProcess
         {
             lstSelected.Items.Remove(lstSelected.Text);
         }
+
+        private void lstInfoPapers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkYear2_CheckedChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

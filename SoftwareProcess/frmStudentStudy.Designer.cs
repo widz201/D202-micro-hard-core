@@ -77,14 +77,14 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.tbxD311 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbxD211 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -92,7 +92,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxD111 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -297,6 +297,7 @@
             this.chkWebDev.TabIndex = 4;
             this.chkWebDev.Text = "Web Development";
             this.chkWebDev.UseVisualStyleBackColor = true;
+            this.chkWebDev.CheckedChanged += new System.EventHandler(this.chkWebDev_CheckedChanged);
             // 
             // chkSoftwareArch
             // 
@@ -365,6 +366,7 @@
             this.chkYear2.Text = "Year 2 Papers";
             this.toolTip1.SetToolTip(this.chkYear2, "Show year 2 papers");
             this.chkYear2.UseVisualStyleBackColor = true;
+            this.chkYear2.CheckedChanged += new System.EventHandler(this.chkYear2_CheckedChanged);
             // 
             // chkYear3
             // 
@@ -461,14 +463,14 @@
             this.panel1.Controls.Add(this.textBox22);
             this.panel1.Controls.Add(this.textBox20);
             this.panel1.Controls.Add(this.textBox19);
-            this.panel1.Controls.Add(this.textBox18);
+            this.panel1.Controls.Add(this.tbxD311);
             this.panel1.Controls.Add(this.textBox16);
             this.panel1.Controls.Add(this.textBox15);
             this.panel1.Controls.Add(this.textBox14);
             this.panel1.Controls.Add(this.textBox13);
             this.panel1.Controls.Add(this.textBox12);
             this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.tbxD211);
             this.panel1.Controls.Add(this.textBox8);
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.textBox6);
@@ -476,7 +478,7 @@
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbxD111);
             this.panel1.Location = new System.Drawing.Point(336, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 519);
@@ -516,7 +518,7 @@
             // 
             // textBox30
             // 
-            this.textBox30.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox30.BackColor = System.Drawing.Color.Violet;
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox30.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox30.Location = new System.Drawing.Point(461, 223);
@@ -596,7 +598,7 @@
             // 
             // textBox23
             // 
-            this.textBox23.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox23.BackColor = System.Drawing.Color.DarkGray;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox23.Location = new System.Drawing.Point(431, 444);
@@ -691,7 +693,7 @@
             // 
             // textBox20
             // 
-            this.textBox20.BackColor = System.Drawing.Color.PowderBlue;
+            this.textBox20.BackColor = System.Drawing.Color.Violet;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox20.Location = new System.Drawing.Point(133, 422);
@@ -721,21 +723,21 @@
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox19, resources.GetString("textBox19.ToolTip"));
             // 
-            // textBox18
+            // tbxD311
             // 
-            this.textBox18.BackColor = System.Drawing.Color.PowderBlue;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox18.Location = new System.Drawing.Point(51, 338);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(76, 55);
-            this.textBox18.TabIndex = 17;
-            this.textBox18.TabStop = false;
-            this.textBox18.Text = "D311\r\n\r\nAdvanced\r\nDatabase";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox18, resources.GetString("textBox18.ToolTip"));
+            this.tbxD311.BackColor = System.Drawing.Color.Khaki;
+            this.tbxD311.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD311.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD311.Location = new System.Drawing.Point(51, 338);
+            this.tbxD311.Multiline = true;
+            this.tbxD311.Name = "tbxD311";
+            this.tbxD311.ReadOnly = true;
+            this.tbxD311.Size = new System.Drawing.Size(76, 55);
+            this.tbxD311.TabIndex = 17;
+            this.tbxD311.TabStop = false;
+            this.tbxD311.Text = "D311\r\n\r\nAdvanced\r\nDatabase";
+            this.tbxD311.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD311, resources.GetString("tbxD311.ToolTip"));
             // 
             // textBox16
             // 
@@ -771,7 +773,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox14.BackColor = System.Drawing.Color.Violet;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox14.Location = new System.Drawing.Point(461, 137);
@@ -833,21 +835,21 @@
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox11, resources.GetString("textBox11.ToolTip"));
             // 
-            // textBox9
+            // tbxD211
             // 
-            this.textBox9.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox9.Location = new System.Drawing.Point(51, 137);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(76, 55);
-            this.textBox9.TabIndex = 8;
-            this.textBox9.TabStop = false;
-            this.textBox9.Text = "D211\r\n\r\nDatabase\r\nDevelopment";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
+            this.tbxD211.BackColor = System.Drawing.Color.Yellow;
+            this.tbxD211.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD211.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD211.Location = new System.Drawing.Point(51, 137);
+            this.tbxD211.Multiline = true;
+            this.tbxD211.Name = "tbxD211";
+            this.tbxD211.ReadOnly = true;
+            this.tbxD211.Size = new System.Drawing.Size(76, 55);
+            this.tbxD211.TabIndex = 8;
+            this.tbxD211.TabStop = false;
+            this.tbxD211.Text = "D211\r\n\r\nDatabase\r\nDevelopment";
+            this.tbxD211.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD211, resources.GetString("tbxD211.ToolTip"));
             // 
             // textBox8
             // 
@@ -883,7 +885,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.LimeGreen;
+            this.textBox6.BackColor = System.Drawing.Color.MediumOrchid;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox6.Location = new System.Drawing.Point(461, 18);
@@ -961,21 +963,21 @@
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
             // 
-            // textBox1
+            // tbxD111
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Location = new System.Drawing.Point(51, 18);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(76, 55);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "D111\r\n\r\nData\r\nFundamentals";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
+            this.tbxD111.BackColor = System.Drawing.Color.Yellow;
+            this.tbxD111.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD111.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD111.Location = new System.Drawing.Point(51, 18);
+            this.tbxD111.Multiline = true;
+            this.tbxD111.Name = "tbxD111";
+            this.tbxD111.ReadOnly = true;
+            this.tbxD111.Size = new System.Drawing.Size(76, 55);
+            this.tbxD111.TabIndex = 0;
+            this.tbxD111.TabStop = false;
+            this.tbxD111.Text = "D111\r\n\r\nData\r\nFundamentals";
+            this.tbxD111.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD111, resources.GetString("tbxD111.ToolTip"));
             // 
             // tabPage2
             // 
@@ -1105,6 +1107,7 @@
             this.lstInfoPapers.Name = "lstInfoPapers";
             this.lstInfoPapers.Size = new System.Drawing.Size(193, 498);
             this.lstInfoPapers.TabIndex = 0;
+            this.lstInfoPapers.SelectedIndexChanged += new System.EventHandler(this.lstInfoPapers_SelectedIndexChanged);
             // 
             // statusStrip1
             // 
@@ -1251,14 +1254,14 @@
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tbxD311;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbxD211;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
@@ -1270,6 +1273,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxD111;
     }
 }
 
