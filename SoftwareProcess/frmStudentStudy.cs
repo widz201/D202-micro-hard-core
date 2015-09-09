@@ -127,6 +127,8 @@ namespace SoftwareProcess
             SqlConnection connection = new SqlConnection(constring);
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
+
+            
             try
             {
                 connection.Open();
@@ -140,7 +142,7 @@ namespace SoftwareProcess
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
                     
-                    /*
+                    
                     switch (sCatergory)
                     {
                         case 1:
@@ -163,7 +165,7 @@ namespace SoftwareProcess
                             lblCareerOpp.Text = "Database Development";
                             break;
                     }
-                     */
+                     
                       
                 }
             }
