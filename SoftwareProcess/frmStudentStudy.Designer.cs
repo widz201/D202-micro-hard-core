@@ -1147,6 +1147,7 @@
             this.lstInfoPapers.Name = "lstInfoPapers";
             this.lstInfoPapers.Size = new System.Drawing.Size(193, 498);
             this.lstInfoPapers.TabIndex = 0;
+            this.lstInfoPapers.Click += new System.EventHandler(this.lstInfoPapers_Click);
             // 
             // statusStrip1
             // 
