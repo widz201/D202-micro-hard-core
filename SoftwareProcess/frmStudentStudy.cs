@@ -136,11 +136,10 @@ namespace SoftwareProcess
                 {
                     string sName = myReader.GetString(1);
                     string sDescription = myReader.GetString(2);
-                    string sCatergory = myReader.GetString(6);
+                    int sCatergory = myReader.GetInt32(6);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
                     
-                    /*
                     switch (sCatergory)
                     {
                         case 1:
@@ -163,7 +162,7 @@ namespace SoftwareProcess
                             lblCareerOpp.Text = "Database Development";
                             break;
                     }
-                     */
+                    
                       
                 }
             }
