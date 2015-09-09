@@ -85,5 +85,6 @@ namespace SoftwareProcess
         {
             lstSelected.Items.Remove(lstSelected.Text);
         }
+        
     }
 }
