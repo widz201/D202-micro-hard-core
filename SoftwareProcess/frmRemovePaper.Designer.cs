@@ -43,6 +43,7 @@
             this.lstERPapers.Name = "lstERPapers";
             this.lstERPapers.Size = new System.Drawing.Size(223, 316);
             this.lstERPapers.TabIndex = 0;
+            this.lstERPapers.SelectedIndexChanged += new System.EventHandler(this.lstERPapers_SelectedIndexChanged);
             // 
             // btnEREdit
             // 
