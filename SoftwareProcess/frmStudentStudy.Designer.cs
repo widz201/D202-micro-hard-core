@@ -1071,6 +1071,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.lblCareerOpp);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(576, 93);
@@ -1081,6 +1082,7 @@
             // lblCareerOpp
             // 
             this.lblCareerOpp.AutoSize = true;
+            this.lblCareerOpp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCareerOpp.Location = new System.Drawing.Point(7, 20);
             this.lblCareerOpp.Name = "lblCareerOpp";
             this.lblCareerOpp.Size = new System.Drawing.Size(35, 13);
@@ -1100,6 +1102,7 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.lblPrereq);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(576, 102);
@@ -1110,6 +1113,7 @@
             // lblPrereq
             // 
             this.lblPrereq.AutoSize = true;
+            this.lblPrereq.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrereq.Location = new System.Drawing.Point(7, 20);
             this.lblPrereq.Name = "lblPrereq";
             this.lblPrereq.Size = new System.Drawing.Size(35, 13);
@@ -1129,6 +1133,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lblPaperDesc);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(576, 216);
@@ -1139,7 +1144,9 @@
             // lblPaperDesc
             // 
             this.lblPaperDesc.AutoSize = true;
+            this.lblPaperDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaperDesc.Location = new System.Drawing.Point(7, 20);
+            this.lblPaperDesc.MaximumSize = new System.Drawing.Size(570, 0);
             this.lblPaperDesc.Name = "lblPaperDesc";
             this.lblPaperDesc.Size = new System.Drawing.Size(35, 13);
             this.lblPaperDesc.TabIndex = 0;
