@@ -14,6 +14,7 @@ namespace SoftwareProcess
 {
     public partial class frmStudentStudy : Form
     {
+
         public frmStudentStudy()
         {
             InitializeComponent();
@@ -37,7 +38,6 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     lstPapers.Items.Add(sName);
                     lstInfoPapers.Items.Add(sName);
-                    
                 }
             }
             catch (Exception)
@@ -52,16 +52,16 @@ namespace SoftwareProcess
 
         private void mnuAdminAdd_Click(object sender, EventArgs e)
         {
-            frmAddPaper addForm = new frmAddPaper();
+            frmAddPassword PasswordForm = new frmAddPassword();
 
-            addForm.Show();
+            PasswordForm.Show();
         }
 
         private void editPaperToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRemovePaper removeForm = new frmRemovePaper();
+            frmPassword2 PasswordForm2 = new frmPassword2();
 
-            removeForm.Show();
+            PasswordForm2.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -81,9 +81,6 @@ namespace SoftwareProcess
             {
                 MessageBox.Show("You need to select a paper");
             }
-
-            
-            
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -93,10 +90,7 @@ namespace SoftwareProcess
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
             lstSelected.Items.Clear();
-
-
         }
 
         private void lstPapers_DoubleClick(object sender, EventArgs e)
@@ -115,9 +109,7 @@ namespace SoftwareProcess
             catch
             {
                 MessageBox.Show("You need to select a paper");
-            }
-            
-            
+            } 
         }
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
