@@ -16,6 +16,7 @@ namespace SoftwareProcess
         public frmPassword2()
         {
             InitializeComponent();
+            this.AcceptButton = btnAccept;
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
