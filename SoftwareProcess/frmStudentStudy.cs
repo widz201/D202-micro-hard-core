@@ -122,8 +122,9 @@ namespace SoftwareProcess
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
         {
+            string selectedPaper = lstInfoPapers.SelectedItem.ToString();
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            string Query = "select * from tblPaper WHERE Paper_Name ='lstInfoPapers.SelectedText.ToString()'";
+            string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
             SqlConnection connection = new SqlConnection(constring);
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
@@ -146,31 +147,49 @@ namespace SoftwareProcess
                     {
                         case 1:
                             lblCareerOpp.Text = "Software Architecture";
+                            panel2.BackColor = Color.PowderBlue;
+                            panel3.BackColor = Color.PowderBlue;
+                            panel4.BackColor = Color.PowderBlue;
+                            panel5.BackColor = Color.PowderBlue;
                             break;
 
                         case 2:
                             lblCareerOpp.Text = "Web Development";
+                            panel2.BackColor = Color.LightCoral;
+                            panel3.BackColor = Color.LightCoral;
+                            panel4.BackColor = Color.LightCoral;
+                            panel5.BackColor = Color.LightCoral;
                             break;
 
                         case 3:
-                            lblCareerOpp.Text = "Analysis & Design";
+                            lblCareerOpp.Text = "Analysis and Design";
+                            panel2.BackColor = Color.LightGreen;
+                            panel3.BackColor = Color.LightGreen;
+                            panel4.BackColor = Color.LightGreen;
+                            panel5.BackColor = Color.LightGreen;
                             break;
 
                         case 4:
                             lblCareerOpp.Text = "Networking";
+                            panel2.BackColor = Color.Violet;
+                            panel3.BackColor = Color.Violet;
+                            panel4.BackColor = Color.Violet;
+                            panel5.BackColor = Color.Violet;
                             break;
 
                         case 5:
                             lblCareerOpp.Text = "Database Development";
+                            panel2.BackColor = Color.Khaki;
+                            panel3.BackColor = Color.Khaki;
+                            panel4.BackColor = Color.Khaki;
+                            panel5.BackColor = Color.Khaki;
                             break;
                     }
-                    
-                      
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Failed to pull information from the database","Connection error");
             }
         }
 
