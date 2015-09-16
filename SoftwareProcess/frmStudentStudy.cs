@@ -123,7 +123,7 @@ namespace SoftwareProcess
         private void lstInfoPapers_Click(object sender, EventArgs e)
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            string Query = "select * from tblPaper";
+            string Query = "select * from tblPaper WHERE Paper_Name ='lstInfoPapers.SelectedText.ToString()'";
             SqlConnection connection = new SqlConnection(constring);
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
@@ -137,7 +137,7 @@ namespace SoftwareProcess
                 while (myReader.Read())
                 {
                     string sName = myReader.GetString(1);
-                    string sDescription = myReader.GetString(2);
+                    string sDescription = myReader.GetString(3);
                     int sCatergory = myReader.GetInt32(6);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
