@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
-//https://www.youtube.com/watch?v=dwG6eg5UofI
+
 namespace SoftwareProcess
 {
     public partial class frmStudentStudy : Form
@@ -18,11 +18,6 @@ namespace SoftwareProcess
         {
             InitializeComponent();
             FillListbox();
-            
-        }
-        public class List<ListItem>
-        {
-
         }
 
         void FillListbox()
@@ -50,8 +45,6 @@ namespace SoftwareProcess
                 MessageBox.Show("");
             }
         }
-
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -73,6 +66,8 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
             if(lstSelected.Items.Contains(lstPapers.Text))
             {
                 MessageBox.Show("You have already selected this paper!");
@@ -81,7 +76,13 @@ namespace SoftwareProcess
             {
                 lstSelected.Items.Add(lstPapers.SelectedItem);
             }
+            }
+            catch
+            {
+                MessageBox.Show("You need to select a paper");
+            }
 
+            
             
         }
 
@@ -90,115 +91,107 @@ namespace SoftwareProcess
             lstSelected.Items.Remove(lstSelected.Text);
         }
 
-        private void lstInfoPapers_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
+
+            lstSelected.Items.Clear();
+
 
         }
 
-        private void chkYear2_CheckedChanged(object sender, EventArgs e)
+        private void lstPapers_DoubleClick(object sender, EventArgs e)
         {
-            if (chkYear2.Checked == true)
+            try
             {
-                tbxD101.Visible = false;
-                tbxD111.Visible = false;
-                tbxD101.Visible = false;
-                tbxD201.Visible = true;
-                tbxD202.Visible = true;
-                tbxD211.Visible = true;
-                tbxD301.Visible = false;
-                tbxD303.Visible = false;
-                tbxD311.Visible = false;
-                tbxI101.Visible = false;
-                tbxI121.Visible = false;
-                tbxI202.Visible = true;
-                tbxI203.Visible = true;
-                tbxI221.Visible = true;
-                tbxI102.Visible = false;
-                tbxI301.Visible = false;
-                tbxI302.Visible = false;
-                tbxI303.Visible = false;
-                tbxI321.Visible = false;
-                tbxT101.Visible = false;
-                tbxT111.Visible = false;
-                tbxT201.Visible = true;
-                tbxT205.Visible = true;
-                tbxT206.Visible = true;
-                tbxT211.Visible = true;
-                tbxT301.Visible = false;
-                tbxT302.Visible = false;
-                tbxT311.Visible = false;
+                if (lstSelected.Items.Contains(lstPapers.Text))
+                {
+                    MessageBox.Show("You have already selected this paper!");
+                }
+                else
+                {
+                   lstPapers.SelectedItem = lstSelected.Items.Add(lstPapers.SelectedItem);
+                }
             }
-
+            catch
+            {
+                MessageBox.Show("You need to select a paper");
+            }
+            
+            
         }
 
-        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
+        private void lstInfoPapers_Click(object sender, EventArgs e)
         {
-            if (chkWebDev.Checked == true)
+            string selectedPaper = lstInfoPapers.SelectedItem.ToString();
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
+            SqlConnection connection = new SqlConnection(constring);
+            SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+            SqlDataReader myReader;
+
+            
+            try
             {
-                tbxD101.Visible = true;
-                tbxD111.Visible = true;
-                tbxD101.Visible = true;
-                tbxD201.Visible = false;
-                tbxD202.Visible = false;
-                tbxD211.Visible = true;
-                tbxD301.Visible = false;
-                tbxD303.Visible = true;
-                tbxD311.Visible = false;
-                tbxI101.Visible = true;
-                tbxI102.Visible = true;
-                tbxI111.Visible = true;
-                tbxI121.Visible = true;
-                tbxI202.Visible = true;
-                tbxI203.Visible = false;
-                tbxI221.Visible = true;
-                tbxI301.Visible = true;
-                tbxI302.Visible = true;
-                tbxI303.Visible = false;
-                tbxI321.Visible = false;
-                tbxT101.Visible = true;
-                tbxT111.Visible = true;
-                tbxT201.Visible = false;
-                tbxT205.Visible = false;
-                tbxT206.Visible = false;
-                tbxT211.Visible = false;
-                tbxT301.Visible = false;
-                tbxT302.Visible = false;
-                tbxT311.Visible = false;
+                connection.Open();
+                myReader = cmdDatabase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    string sName = myReader.GetString(1);
+                    string sDescription = myReader.GetString(2);
+                    int sCatergory = myReader.GetInt32(6);
+                    lblPaperName.Text = sName;
+                    lblPaperDesc.Text = sDescription;
+
+                    switch (sCatergory)
+                    {
+                        case 1:
+                            lblCareerOpp.Text = "Software Architecture";
+                            panel2.BackColor = Color.PowderBlue;
+                            panel3.BackColor = Color.PowderBlue;
+                            panel4.BackColor = Color.PowderBlue;
+                            panel5.BackColor = Color.PowderBlue;
+                            break;
+
+                        case 2:
+                            lblCareerOpp.Text = "Web Development";
+                            panel2.BackColor = Color.LightCoral;
+                            panel3.BackColor = Color.LightCoral;
+                            panel4.BackColor = Color.LightCoral;
+                            panel5.BackColor = Color.LightCoral;
+                            break;
+
+                        case 3:
+                            lblCareerOpp.Text = "Analysis and Design";
+                            panel2.BackColor = Color.LightGreen;
+                            panel3.BackColor = Color.LightGreen;
+                            panel4.BackColor = Color.LightGreen;
+                            panel5.BackColor = Color.LightGreen;
+                            break;
+
+                        case 4:
+                            lblCareerOpp.Text = "Networking";
+                            panel2.BackColor = Color.Violet;
+                            panel3.BackColor = Color.Violet;
+                            panel4.BackColor = Color.Violet;
+                            panel5.BackColor = Color.Violet;
+                            break;
+
+                        case 5:
+                            lblCareerOpp.Text = "Database Development";
+                            panel2.BackColor = Color.Khaki;
+                            panel3.BackColor = Color.Khaki;
+                            panel4.BackColor = Color.Khaki;
+                            panel5.BackColor = Color.Khaki;
+                            break;
+                    }    
+                }
             }
-            else
+            catch (Exception)
             {
-                tbxD101.Visible = true;
-                tbxD111.Visible = true;
-                tbxD101.Visible = true;
-                tbxD201.Visible = true;
-                tbxD202.Visible = true;
-                tbxD211.Visible = true;
-                tbxD301.Visible = true;
-                tbxD303.Visible = true;
-                tbxD311.Visible = true;
-                tbxI111.Visible = true;
-                tbxI101.Visible = true;
-                tbxI121.Visible = true;
-                tbxI202.Visible = true;
-                tbxI203.Visible = true;
-                tbxI221.Visible = true;
-                tbxI102.Visible = true;
-                tbxI301.Visible = true;
-                tbxI302.Visible = true;
-                tbxI303.Visible = true;
-                tbxI321.Visible = true;
-                tbxT101.Visible = true;
-                tbxT111.Visible = true;
-                tbxT201.Visible = true;
-                tbxT205.Visible = true;
-                tbxT206.Visible = true;
-                tbxT211.Visible = true;
-                tbxT301.Visible = true;
-                tbxT302.Visible = true;
-                tbxT311.Visible = true;
+                MessageBox.Show("Failed to pull information from the database","Connection error");
             }
         }
-        
-        
+
     }
 }

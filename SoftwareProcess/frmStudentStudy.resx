@@ -358,7 +358,7 @@
         IAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgP/Z
 </value>
   </data>
-  <data name="tbxT206.ToolTip" xml:space="preserve">
+  <data name="textBox32.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T205
 To enable students to gain practical and technical networking knowledge that will allow them to configure and troubleshoot routers, 
@@ -374,7 +374,7 @@ Learning Outcomes:
 - Configure and troubleshoot Dynamic Host Configuration Protocol (DHCP) for IPv4 and IPv6 networks
 - Configure and troubleshoot Network Address Translation (NAT) operations</value>
   </data>
-  <data name="tbxT205.ToolTip" xml:space="preserve">
+  <data name="textBox31.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 To enable students to gain practical and technical networking knowledge that will assist them to build simple LANs, perform basic configurations for routers and switches, and implement IP addressing schemes.
 Learning Outcomes:
@@ -387,7 +387,7 @@ Learning Outcomes:
 - Use Cisco command-line interface (CLI) commands to perform basic router and switch configurations
 - Utilise common network utilities to verify small network operations and analyse data traffic</value>
   </data>
-  <data name="tbxI213.ToolTip" xml:space="preserve">
+  <data name="textBox30.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I111
 To create a dynamic web application utilising a variety of open-source technologies 
@@ -397,7 +397,7 @@ Learning Outcomes:
 - Interface with a web based database management system
 - Implement user security and session management</value>
   </data>
-  <data name="tbxT301.ToolTip" xml:space="preserve">
+  <data name="textBox29.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T201
 To recommend uses for thin and thick client architectures and to design a thin client architecture. 
@@ -409,7 +409,7 @@ Learning Outcomes:
 - Devise and create a proof of technology
 - Assess server and client virtualisation strategies</value>
   </data>
-  <data name="tbxI321.ToolTip" xml:space="preserve">
+  <data name="textBox27.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREQUISITE PAPER: I221
 To introduce tools and techniques used to assess feasibility and present a business case; to complete an analysis of a complex information system based on the recommendation from the feasibility phase.
@@ -419,7 +419,7 @@ Learning Outcomes:
 - Develop a model of the proposed complex system
 - Implement quality processes to ensure accuracy of analysis and design documentation</value>
   </data>
-  <data name="tbxT302.ToolTip" xml:space="preserve">
+  <data name="textBox25.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T211
 To provide the ability to design and construct a complex multi-user client/server network. Students will gain skills needed to configure and integrate complex systems.
@@ -431,7 +431,7 @@ Learning Outcomes:
 - Implement remote administration of central services
 - Assess the advantages and disadvantages of open source systems</value>
   </data>
-  <data name="tbxT311.ToolTip" xml:space="preserve">
+  <data name="textBox26.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T206
 To gain practical and technical networking knowledge that will assist in designing, building and analysing networks and their protocols using advanced technologies
@@ -449,7 +449,7 @@ Learning Outcomes:
 - Monitor and troubleshoot network operations using syslog, SNMP, and NetFlow
 - Describe network architectures:  Borderless networks, Data centres and virtualization, Collaboration technology and solutions</value>
   </data>
-  <data name="tbxI303.ToolTip" xml:space="preserve">
+  <data name="textBox24.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I201
 To enable students to analyse and evaluate management practices as they relate to the ICT industry
@@ -460,7 +460,7 @@ Learning Outcomes:
 - Commentate on relevant legislation and social responsibility issues as they relate to the ICT industry
 </value>
   </data>
-  <data name="tbxI302.ToolTip" xml:space="preserve">
+  <data name="textBox10.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 PREREQUISITES: 285 credits including I301 and all compulsory level 5 &amp; 6 papers 
 To enable students to undertake an industry based project of a complex nature.  
@@ -472,7 +472,7 @@ Learning Outcomes:
 - Record and evaluate project work and progress 
 - Present project outcomes to sponsors and academic supervisors</value>
   </data>
-  <data name="tbxI301.ToolTip" xml:space="preserve">
+  <data name="textBox17.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 PREREQUISITES: 240 credits includes all level 5 &amp; level 6 compulsory papers
 To apply communication theories and practice in a professional context.  Students will also source an industry project and produce appropriate documentation.
@@ -484,7 +484,7 @@ Learning Outcomes:
 - Demonstrate ability to work in teams
 </value>
   </data>
-  <data name="tbxD202.ToolTip" xml:space="preserve">
+  <data name="textBox21.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: D201
 To create quality software applications utilising a modern development approach
@@ -494,7 +494,7 @@ Learning Outcomes:
 - Implement processes to ensure quality
 - Compare and select an appropriate development method for a given problem</value>
   </data>
-  <data name="tbxD201.ToolTip" xml:space="preserve">
+  <data name="textBox22.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER 
 PREREQUSITE PAPER: D101
 To introduce standard algorithms required for business application programming.
@@ -503,7 +503,7 @@ Learning Outcomes:
 - Devise test plans to ensure quality software
 - Create system maintenance documentation</value>
   </data>
-  <data name="tbxD303.ToolTip" xml:space="preserve">
+  <data name="textBox20.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: D211
 To develop a small, enterprise-level Java application that provides support for a mobile workforce
@@ -511,7 +511,7 @@ Learning Outcomes:
 - Design and construct an application for a mobile device
 - Interface with business data held in a legacy relational database system</value>
   </data>
-  <data name="tbxD301.ToolTip" xml:space="preserve">
+  <data name="textBox19.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: D201
 To design and construct quality software ready for distribution
@@ -534,7 +534,7 @@ Learning Outcomes:
 - Analyse and process data for management reporting
 - View pre-processed information from the data warehouse from a separate application</value>
   </data>
-  <data name="tbxT211.ToolTip" xml:space="preserve">
+  <data name="textBox16.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T111
 To analyse and implement computer systems security, including operating systems, server applications &amp; networks;
@@ -552,7 +552,7 @@ Learning Outcomes:
 - Demonstrate an ability to practically implement network security technologies
 - Demonstrate knowledge of computer forensic practices</value>
   </data>
-  <data name="tbxT201.ToolTip" xml:space="preserve">
+  <data name="textBox15.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T101
 To implement key network services as used in modern LANs and to explain the network protocols that these services use.
@@ -565,7 +565,7 @@ Learning Outcomes:
 - Implement and explain the operation of time synchronisation in the LAN
 - Implement a mail gateway and explain the operation of common email protocols</value>
   </data>
-  <data name="tbxI211.ToolTip" xml:space="preserve">
+  <data name="textBox14.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I111
 To introduce principles and application of electronic commerce technologies
@@ -576,7 +576,7 @@ Learning Outcomes:
 - Develop an online commercial Web site for selling products
 - Implement user security and session management for the Web site</value>
   </data>
-  <data name="tbxI202.ToolTip" xml:space="preserve">
+  <data name="textBox13.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 PREREQUISITE PAPER: I102
 This paper will give an understanding of project management theory and practice as it relates to the ICT industry.
@@ -586,7 +586,7 @@ Learning Outcomes:
 - Develop a project plan for an IT related project
 - Demonstrate the practical application of a project management tool </value>
   </data>
-  <data name="tbxI221.ToolTip" xml:space="preserve">
+  <data name="textBox12.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 PREREQUISITE PAPER: I121
 To create quality analysis and design documentation for a moderately complex system		
@@ -596,7 +596,7 @@ Learning Outcomes:
 - Create design documentation for the system under investigation
 - Implement quality processes to ensure accuracy of analysis and design documentation</value>
   </data>
-  <data name="tbxI203.ToolTip" xml:space="preserve">
+  <data name="textBox11.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: I102
 To apply principles and techniques relating to the application of digital multimedia technologies
@@ -615,7 +615,7 @@ Learning Outcomes:
 - Create a prototype from a design
 - Formulate quality processes </value>
   </data>
-  <data name="tbxT111.ToolTip" xml:space="preserve">
+  <data name="textBox8.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To gain an understanding of the fundamentals of computer hardware, operating systems and troubleshooting techniques.
 Learning Outcomes:
@@ -626,7 +626,7 @@ Learning Outcomes:
 - Describe and demonstrate operating system management techniques. (e.g. process, memory, disk) 
 -Demonstrate a practical knowledge of writing operating system scripts</value>
   </data>
-  <data name="tbxT101.ToolTip" xml:space="preserve">
+  <data name="textBox7.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To provide an introduction to the fundamentals of computer networks as they currently exist in industry and to enable students to configure, test and troubleshoot local area networks.
 Learning Outcomes:
@@ -639,7 +639,7 @@ Learning Outcomes:
 - Construct a small LAN using current operating systems and technology
 - Test and troubleshoot network problems</value>
   </data>
-  <data name="tbxI111.ToolTip" xml:space="preserve">
+  <data name="textBox6.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To introduce the use of the World Wide Web (WWW) as an information medium
 Learning Outcomes:
@@ -649,7 +649,7 @@ Learning Outcomes:
 - Interpret end user needs and design a web site to meet these needs
 - Construct a web site from a design using common web development techniques and applying good web design principles</value>
   </data>
-  <data name="tbxI102.ToolTip" xml:space="preserve">
+  <data name="textBox5.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To enable students to understand the components of training and user support.  
 Learning Outcomes:
@@ -661,7 +661,7 @@ Learning Outcomes:
 - Evaluate training sessions
 - Demonstrate knowledge of user support</value>
   </data>
-  <data name="tbxI121.ToolTip" xml:space="preserve">
+  <data name="textBox4.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To provide an introduction to the principles of systems analysis and systems requirements elicitation techniques
 Learning Outcomes:
@@ -669,7 +669,7 @@ Learning Outcomes:
 - Elicit and model user requirements using a variety of techniques
 - Construct accurate systems analysis documentation reflecting requirements</value>
   </data>
-  <data name="tbxI101.ToolTip" xml:space="preserve">
+  <data name="textBox3.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To introduce students to business fundamentals and essential components of the ICT profession.
 Learning Outcomes:
@@ -679,7 +679,7 @@ Learning Outcomes:
 - Describe information systems principles, roles and functional business areas
 - Use APA referencing in academic writing</value>
   </data>
-  <data name="tbxD101.ToolTip" xml:space="preserve">
+  <data name="textBox2.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To provide an introduction to software engineering techniques and processes.
 Learning Outcomes:
@@ -701,6 +701,9 @@ Learning Outcomes:
   </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>258, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>46</value>
