@@ -193,5 +193,21 @@ namespace SoftwareProcess
             }
         }
 
+        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkWebDev.Checked == true)
+            {
+
+            }
+        }
+
+        private void chkAnal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAnal.Checked == true)
+            {
+               
+            }
+        }
+
     }
 }
