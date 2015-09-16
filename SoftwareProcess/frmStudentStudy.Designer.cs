@@ -47,6 +47,7 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.chkWebDev = new System.Windows.Forms.CheckBox();
             this.chkSoftwareArch = new System.Windows.Forms.CheckBox();
@@ -54,6 +55,8 @@
             this.chkNetwork = new System.Windows.Forms.CheckBox();
             this.chkDB = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkSem2 = new System.Windows.Forms.CheckBox();
+            this.chkSem1 = new System.Windows.Forms.CheckBox();
             this.chkYear2 = new System.Windows.Forms.CheckBox();
             this.chkYear3 = new System.Windows.Forms.CheckBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -61,6 +64,8 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
@@ -77,14 +82,14 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.tbxD311 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbxD211 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -92,7 +97,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxD111 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -210,27 +215,28 @@
             // lstPapers
             // 
             this.lstPapers.FormattingEnabled = true;
-            this.lstPapers.Location = new System.Drawing.Point(6, 183);
+            this.lstPapers.Location = new System.Drawing.Point(7, 261);
             this.lstPapers.Name = "lstPapers";
-            this.lstPapers.Size = new System.Drawing.Size(157, 134);
+            this.lstPapers.Size = new System.Drawing.Size(155, 160);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
+            this.lstPapers.DoubleClick += new System.EventHandler(this.lstPapers_DoubleClick);
             // 
             // lstSelected
             // 
             this.lstSelected.FormattingEnabled = true;
-            this.lstSelected.Location = new System.Drawing.Point(169, 183);
+            this.lstSelected.Location = new System.Drawing.Point(169, 261);
             this.lstSelected.Name = "lstSelected";
-            this.lstSelected.Size = new System.Drawing.Size(157, 342);
+            this.lstSelected.Size = new System.Drawing.Size(157, 264);
             this.lstSelected.TabIndex = 3;
             this.lstSelected.TabStop = false;
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnAdd.Location = new System.Drawing.Point(6, 327);
+            this.btnAdd.Location = new System.Drawing.Point(7, 429);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(157, 28);
+            this.btnAdd.Size = new System.Drawing.Size(75, 28);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -239,9 +245,9 @@
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnRemove.Location = new System.Drawing.Point(6, 361);
+            this.btnRemove.Location = new System.Drawing.Point(87, 429);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(157, 28);
+            this.btnRemove.Size = new System.Drawing.Size(75, 28);
             this.btnRemove.TabIndex = 8;
             this.btnRemove.Text = "REMOVE";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -250,24 +256,37 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnClear.Location = new System.Drawing.Point(6, 395);
+            this.btnClear.Location = new System.Drawing.Point(7, 463);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(157, 28);
+            this.btnClear.Size = new System.Drawing.Size(75, 28);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 171);
+            this.groupBox1.Size = new System.Drawing.Size(320, 236);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Criteria";
+            this.groupBox1.Text = "Filter Papers";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 26);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
+    "tion";
             // 
             // groupBox3
             // 
@@ -276,12 +295,12 @@
             this.groupBox3.Controls.Add(this.chkAnal);
             this.groupBox3.Controls.Add(this.chkNetwork);
             this.groupBox3.Controls.Add(this.chkDB);
-            this.groupBox3.Location = new System.Drawing.Point(6, 72);
+            this.groupBox3.Location = new System.Drawing.Point(6, 136);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(308, 90);
+            this.groupBox3.Size = new System.Drawing.Size(308, 94);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Specialization";
+            this.groupBox3.Text = "Filter by specialization";
             // 
             // chkWebDev
             // 
@@ -292,6 +311,7 @@
             this.chkWebDev.Size = new System.Drawing.Size(115, 17);
             this.chkWebDev.TabIndex = 4;
             this.chkWebDev.Text = "Web Development";
+            this.toolTip1.SetToolTip(this.chkWebDev, "Show papers with specialization in the field of Web Development");
             this.chkWebDev.UseVisualStyleBackColor = true;
             // 
             // chkSoftwareArch
@@ -304,6 +324,7 @@
             this.chkSoftwareArch.Size = new System.Drawing.Size(128, 17);
             this.chkSoftwareArch.TabIndex = 2;
             this.chkSoftwareArch.Text = "Software Architecture";
+            this.toolTip1.SetToolTip(this.chkSoftwareArch, "Show papers with specialization in the field of Software Architecture");
             this.chkSoftwareArch.UseVisualStyleBackColor = true;
             // 
             // chkAnal
@@ -315,6 +336,7 @@
             this.chkAnal.Size = new System.Drawing.Size(119, 17);
             this.chkAnal.TabIndex = 6;
             this.chkAnal.Text = "Analysis and design";
+            this.toolTip1.SetToolTip(this.chkAnal, "Show papers with specialization in the field of Analysis and Design\r\n");
             this.chkAnal.UseVisualStyleBackColor = true;
             // 
             // chkNetwork
@@ -326,6 +348,7 @@
             this.chkNetwork.Size = new System.Drawing.Size(80, 17);
             this.chkNetwork.TabIndex = 3;
             this.chkNetwork.Text = "Networking";
+            this.toolTip1.SetToolTip(this.chkNetwork, "Show papers with specialization in the field of Networking\r\n");
             this.chkNetwork.UseVisualStyleBackColor = true;
             // 
             // chkDB
@@ -337,18 +360,45 @@
             this.chkDB.Size = new System.Drawing.Size(138, 17);
             this.chkDB.TabIndex = 5;
             this.chkDB.Text = "Database Development";
+            this.toolTip1.SetToolTip(this.chkDB, "Show papers with specialization in the field of Database Development\r\n");
             this.chkDB.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.chkSem2);
+            this.groupBox2.Controls.Add(this.chkSem1);
             this.groupBox2.Controls.Add(this.chkYear2);
             this.groupBox2.Controls.Add(this.chkYear3);
-            this.groupBox2.Location = new System.Drawing.Point(6, 19);
+            this.groupBox2.Location = new System.Drawing.Point(6, 57);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 47);
+            this.groupBox2.Size = new System.Drawing.Size(308, 73);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Years";
+            this.groupBox2.Text = "Filter by year and semester";
+            // 
+            // chkSem2
+            // 
+            this.chkSem2.AutoSize = true;
+            this.chkSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem2.Location = new System.Drawing.Point(157, 42);
+            this.chkSem2.Name = "chkSem2";
+            this.chkSem2.Size = new System.Drawing.Size(79, 17);
+            this.chkSem2.TabIndex = 3;
+            this.chkSem2.Text = "Semester 2";
+            this.toolTip1.SetToolTip(this.chkSem2, "Show year 2 papers");
+            this.chkSem2.UseVisualStyleBackColor = true;
+            // 
+            // chkSem1
+            // 
+            this.chkSem1.AutoSize = true;
+            this.chkSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSem1.Location = new System.Drawing.Point(6, 42);
+            this.chkSem1.Name = "chkSem1";
+            this.chkSem1.Size = new System.Drawing.Size(79, 17);
+            this.chkSem1.TabIndex = 2;
+            this.chkSem1.Text = "Semester 1";
+            this.toolTip1.SetToolTip(this.chkSem1, "Show year 2 papers");
+            this.chkSem1.UseVisualStyleBackColor = true;
             // 
             // chkYear2
             // 
@@ -359,6 +409,7 @@
             this.chkYear2.Size = new System.Drawing.Size(93, 17);
             this.chkYear2.TabIndex = 0;
             this.chkYear2.Text = "Year 2 Papers";
+            this.toolTip1.SetToolTip(this.chkYear2, "Show year 2 papers");
             this.chkYear2.UseVisualStyleBackColor = true;
             // 
             // chkYear3
@@ -370,14 +421,15 @@
             this.chkYear3.Size = new System.Drawing.Size(93, 17);
             this.chkYear3.TabIndex = 1;
             this.chkYear3.Text = "Year 3 Papers";
+            this.toolTip1.SetToolTip(this.chkYear3, "Show year 3 papers");
             this.chkYear3.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnSave.Location = new System.Drawing.Point(6, 429);
+            this.btnSave.Location = new System.Drawing.Point(8, 497);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(157, 28);
+            this.btnSave.Size = new System.Drawing.Size(74, 28);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -385,9 +437,9 @@
             // btnLoad
             // 
             this.btnLoad.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnLoad.Location = new System.Drawing.Point(6, 463);
+            this.btnLoad.Location = new System.Drawing.Point(87, 497);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(157, 28);
+            this.btnLoad.Size = new System.Drawing.Size(75, 28);
             this.btnLoad.TabIndex = 11;
             this.btnLoad.Text = "LOAD";
             this.btnLoad.UseVisualStyleBackColor = false;
@@ -395,9 +447,9 @@
             // btnPrint
             // 
             this.btnPrint.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnPrint.Location = new System.Drawing.Point(6, 497);
+            this.btnPrint.Location = new System.Drawing.Point(87, 463);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(157, 28);
+            this.btnPrint.Size = new System.Drawing.Size(75, 28);
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "PRINT";
             this.btnPrint.UseVisualStyleBackColor = false;
@@ -415,6 +467,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.lstSelected);
             this.tabPage1.Controls.Add(this.btnPrint);
             this.tabPage1.Controls.Add(this.panel1);
@@ -431,6 +485,26 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(198, 245);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Selected Papers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Available Papers";
             // 
             // panel1
             // 
@@ -453,14 +527,14 @@
             this.panel1.Controls.Add(this.textBox22);
             this.panel1.Controls.Add(this.textBox20);
             this.panel1.Controls.Add(this.textBox19);
-            this.panel1.Controls.Add(this.textBox18);
+            this.panel1.Controls.Add(this.tbxD311);
             this.panel1.Controls.Add(this.textBox16);
             this.panel1.Controls.Add(this.textBox15);
             this.panel1.Controls.Add(this.textBox14);
             this.panel1.Controls.Add(this.textBox13);
             this.panel1.Controls.Add(this.textBox12);
             this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.tbxD211);
             this.panel1.Controls.Add(this.textBox8);
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.textBox6);
@@ -468,7 +542,7 @@
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbxD111);
             this.panel1.Location = new System.Drawing.Point(336, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 519);
@@ -508,7 +582,7 @@
             // 
             // textBox30
             // 
-            this.textBox30.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox30.BackColor = System.Drawing.Color.Violet;
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox30.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox30.Location = new System.Drawing.Point(461, 223);
@@ -588,7 +662,7 @@
             // 
             // textBox23
             // 
-            this.textBox23.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox23.BackColor = System.Drawing.Color.DarkGray;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox23.Location = new System.Drawing.Point(431, 444);
@@ -683,7 +757,7 @@
             // 
             // textBox20
             // 
-            this.textBox20.BackColor = System.Drawing.Color.PowderBlue;
+            this.textBox20.BackColor = System.Drawing.Color.Violet;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox20.Location = new System.Drawing.Point(133, 422);
@@ -713,21 +787,21 @@
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox19, resources.GetString("textBox19.ToolTip"));
             // 
-            // textBox18
+            // tbxD311
             // 
-            this.textBox18.BackColor = System.Drawing.Color.PowderBlue;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox18.Location = new System.Drawing.Point(51, 338);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(76, 55);
-            this.textBox18.TabIndex = 17;
-            this.textBox18.TabStop = false;
-            this.textBox18.Text = "D311\r\n\r\nAdvanced\r\nDatabase";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox18, resources.GetString("textBox18.ToolTip"));
+            this.tbxD311.BackColor = System.Drawing.Color.Khaki;
+            this.tbxD311.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD311.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD311.Location = new System.Drawing.Point(51, 338);
+            this.tbxD311.Multiline = true;
+            this.tbxD311.Name = "tbxD311";
+            this.tbxD311.ReadOnly = true;
+            this.tbxD311.Size = new System.Drawing.Size(76, 55);
+            this.tbxD311.TabIndex = 17;
+            this.tbxD311.TabStop = false;
+            this.tbxD311.Text = "D311\r\n\r\nAdvanced\r\nDatabase";
+            this.tbxD311.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD311, resources.GetString("tbxD311.ToolTip"));
             // 
             // textBox16
             // 
@@ -763,7 +837,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox14.BackColor = System.Drawing.Color.Violet;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox14.Location = new System.Drawing.Point(461, 137);
@@ -825,21 +899,21 @@
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox11, resources.GetString("textBox11.ToolTip"));
             // 
-            // textBox9
+            // tbxD211
             // 
-            this.textBox9.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox9.Location = new System.Drawing.Point(51, 137);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(76, 55);
-            this.textBox9.TabIndex = 8;
-            this.textBox9.TabStop = false;
-            this.textBox9.Text = "D211\r\n\r\nDatabase\r\nDevelopment";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
+            this.tbxD211.BackColor = System.Drawing.Color.Yellow;
+            this.tbxD211.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD211.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD211.Location = new System.Drawing.Point(51, 137);
+            this.tbxD211.Multiline = true;
+            this.tbxD211.Name = "tbxD211";
+            this.tbxD211.ReadOnly = true;
+            this.tbxD211.Size = new System.Drawing.Size(76, 55);
+            this.tbxD211.TabIndex = 8;
+            this.tbxD211.TabStop = false;
+            this.tbxD211.Text = "D211\r\n\r\nDatabase\r\nDevelopment";
+            this.tbxD211.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD211, resources.GetString("tbxD211.ToolTip"));
             // 
             // textBox8
             // 
@@ -875,7 +949,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.LimeGreen;
+            this.textBox6.BackColor = System.Drawing.Color.MediumOrchid;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox6.Location = new System.Drawing.Point(461, 18);
@@ -953,21 +1027,21 @@
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
             // 
-            // textBox1
+            // tbxD111
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Location = new System.Drawing.Point(51, 18);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(76, 55);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "D111\r\n\r\nData\r\nFundamentals";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
+            this.tbxD111.BackColor = System.Drawing.Color.Yellow;
+            this.tbxD111.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxD111.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbxD111.Location = new System.Drawing.Point(51, 18);
+            this.tbxD111.Multiline = true;
+            this.tbxD111.Name = "tbxD111";
+            this.tbxD111.ReadOnly = true;
+            this.tbxD111.Size = new System.Drawing.Size(76, 55);
+            this.tbxD111.TabIndex = 0;
+            this.tbxD111.TabStop = false;
+            this.tbxD111.Text = "D111\r\n\r\nData\r\nFundamentals";
+            this.tbxD111.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.tbxD111, resources.GetString("tbxD111.ToolTip"));
             // 
             // tabPage2
             // 
@@ -997,6 +1071,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.lblCareerOpp);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(576, 93);
@@ -1007,6 +1082,7 @@
             // lblCareerOpp
             // 
             this.lblCareerOpp.AutoSize = true;
+            this.lblCareerOpp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCareerOpp.Location = new System.Drawing.Point(7, 20);
             this.lblCareerOpp.Name = "lblCareerOpp";
             this.lblCareerOpp.Size = new System.Drawing.Size(35, 13);
@@ -1026,6 +1102,7 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.lblPrereq);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(576, 102);
@@ -1036,6 +1113,7 @@
             // lblPrereq
             // 
             this.lblPrereq.AutoSize = true;
+            this.lblPrereq.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrereq.Location = new System.Drawing.Point(7, 20);
             this.lblPrereq.Name = "lblPrereq";
             this.lblPrereq.Size = new System.Drawing.Size(35, 13);
@@ -1055,6 +1133,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lblPaperDesc);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(576, 216);
@@ -1065,7 +1144,9 @@
             // lblPaperDesc
             // 
             this.lblPaperDesc.AutoSize = true;
+            this.lblPaperDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaperDesc.Location = new System.Drawing.Point(7, 20);
+            this.lblPaperDesc.MaximumSize = new System.Drawing.Size(570, 0);
             this.lblPaperDesc.Name = "lblPaperDesc";
             this.lblPaperDesc.Size = new System.Drawing.Size(35, 13);
             this.lblPaperDesc.TabIndex = 0;
@@ -1084,9 +1165,10 @@
             // lblPaperName
             // 
             this.lblPaperName.AutoSize = true;
+            this.lblPaperName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaperName.Location = new System.Drawing.Point(10, 13);
             this.lblPaperName.Name = "lblPaperName";
-            this.lblPaperName.Size = new System.Drawing.Size(35, 13);
+            this.lblPaperName.Size = new System.Drawing.Size(57, 20);
             this.lblPaperName.TabIndex = 0;
             this.lblPaperName.Text = "label1";
             // 
@@ -1097,6 +1179,7 @@
             this.lstInfoPapers.Name = "lstInfoPapers";
             this.lstInfoPapers.Size = new System.Drawing.Size(193, 498);
             this.lstInfoPapers.TabIndex = 0;
+            this.lstInfoPapers.Click += new System.EventHandler(this.lstInfoPapers_Click);
             // 
             // statusStrip1
             // 
@@ -1121,12 +1204,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1210,14 +1295,14 @@
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tbxD311;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbxD211;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
@@ -1226,6 +1311,12 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxD111;
+        private System.Windows.Forms.CheckBox chkSem2;
+        private System.Windows.Forms.CheckBox chkSem1;
     }
 }
 

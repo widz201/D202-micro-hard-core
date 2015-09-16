@@ -19,10 +19,7 @@ namespace SoftwareProcess
             InitializeComponent();
             FillListbox();
         }
-        public class List<ListItem>
-        {
 
-        }
         void FillListbox()
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -69,6 +66,8 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
             if(lstSelected.Items.Contains(lstPapers.Text))
             {
                 MessageBox.Show("You have already selected this paper!");
@@ -77,7 +76,13 @@ namespace SoftwareProcess
             {
                 lstSelected.Items.Add(lstPapers.SelectedItem);
             }
+            }
+            catch
+            {
+                MessageBox.Show("You need to select a paper");
+            }
 
+            
             
         }
 
@@ -85,6 +90,108 @@ namespace SoftwareProcess
         {
             lstSelected.Items.Remove(lstSelected.Text);
         }
-        
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+            lstSelected.Items.Clear();
+
+
+        }
+
+        private void lstPapers_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lstSelected.Items.Contains(lstPapers.Text))
+                {
+                    MessageBox.Show("You have already selected this paper!");
+                }
+                else
+                {
+                   lstPapers.SelectedItem = lstSelected.Items.Add(lstPapers.SelectedItem);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("You need to select a paper");
+            }
+            
+            
+        }
+
+        private void lstInfoPapers_Click(object sender, EventArgs e)
+        {
+            string selectedPaper = lstInfoPapers.SelectedItem.ToString();
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
+            SqlConnection connection = new SqlConnection(constring);
+            SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+            SqlDataReader myReader;
+
+            
+            try
+            {
+                connection.Open();
+                myReader = cmdDatabase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    string sName = myReader.GetString(1);
+                    string sDescription = myReader.GetString(2);
+                    int sCatergory = myReader.GetInt32(6);
+                    lblPaperName.Text = sName;
+                    lblPaperDesc.Text = sDescription;
+
+                    switch (sCatergory)
+                    {
+                        case 1:
+                            lblCareerOpp.Text = "Software Architecture";
+                            panel2.BackColor = Color.PowderBlue;
+                            panel3.BackColor = Color.PowderBlue;
+                            panel4.BackColor = Color.PowderBlue;
+                            panel5.BackColor = Color.PowderBlue;
+                            break;
+
+                        case 2:
+                            lblCareerOpp.Text = "Web Development";
+                            panel2.BackColor = Color.LightCoral;
+                            panel3.BackColor = Color.LightCoral;
+                            panel4.BackColor = Color.LightCoral;
+                            panel5.BackColor = Color.LightCoral;
+                            break;
+
+                        case 3:
+                            lblCareerOpp.Text = "Analysis and Design";
+                            panel2.BackColor = Color.LightGreen;
+                            panel3.BackColor = Color.LightGreen;
+                            panel4.BackColor = Color.LightGreen;
+                            panel5.BackColor = Color.LightGreen;
+                            break;
+
+                        case 4:
+                            lblCareerOpp.Text = "Networking";
+                            panel2.BackColor = Color.Violet;
+                            panel3.BackColor = Color.Violet;
+                            panel4.BackColor = Color.Violet;
+                            panel5.BackColor = Color.Violet;
+                            break;
+
+                        case 5:
+                            lblCareerOpp.Text = "Database Development";
+                            panel2.BackColor = Color.Khaki;
+                            panel3.BackColor = Color.Khaki;
+                            panel4.BackColor = Color.Khaki;
+                            panel5.BackColor = Color.Khaki;
+                            break;
+                    }    
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Failed to pull information from the database","Connection error");
+            }
+        }
+
     }
 }

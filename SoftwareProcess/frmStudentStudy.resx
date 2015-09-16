@@ -120,6 +120,9 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>258, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -355,9 +358,6 @@
         IAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgP/Z
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>258, 17</value>
-  </metadata>
   <data name="textBox32.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: T205
@@ -522,7 +522,7 @@ Learning Outcomes:
 - Evaluate software user interfaces for accessibility and usability 
 - Design and implement comprehensive test plans</value>
   </data>
-  <data name="textBox18.ToolTip" xml:space="preserve">
+  <data name="tbxD311.ToolTip" xml:space="preserve">
     <value>ELLECTIVE PAPER
 PREREQUISITE PAPER: D211
 To enable a student to successfully design, create and administer a data warehouse using a server-based database management system.
@@ -605,7 +605,7 @@ Learning Outcomes:
 - Create and manipulate digital image, video and audio files according to a technical specification for distribution across the ICT infrastructure
 - Optimise digital multimedia for commonly used ICT mediums</value>
   </data>
-  <data name="textBox9.ToolTip" xml:space="preserve">
+  <data name="tbxD211.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 PREREQUISITE PAPER: D111
 To effectively design an information system for a complex business application
@@ -688,7 +688,7 @@ Learning Outcomes:
 - Write small programs in a current language
 - Systematically test and debug small programs</value>
   </data>
-  <data name="textBox1.ToolTip" xml:space="preserve">
+  <data name="tbxD111.ToolTip" xml:space="preserve">
     <value>COMPULSORY PAPER
 To provide an introduction to data characteristics, data organisation and data management relating to a business environment.
 Learning Outcomes:
@@ -701,6 +701,12 @@ Learning Outcomes:
   </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>258, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>46</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
