@@ -50,7 +50,7 @@ namespace SoftwareProcess
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This is a test");
+            
         }
 
         private void btnPreRemove_Click(object sender, EventArgs e)
@@ -61,6 +61,34 @@ namespace SoftwareProcess
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmAddPaper_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(constring))
+            
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Archived, Semester, Catergory, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Archived, @Semester, @category, @lecturer)");
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = connection;
+                cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
+                cmd.Parameters.AddWithValue("@PaperName", tbxPaperName.Text);
+                cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                tbxPaperName.Clear();
+                tbxPaperCode.Clear();
+                tbxDesc.Clear();
+
+            }
+
+            
         }
     }
 }
