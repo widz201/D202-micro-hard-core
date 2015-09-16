@@ -140,8 +140,10 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     string sDescription = myReader.GetString(3);
                     int sCatergory = myReader.GetInt32(6);
+                    //string sPrereq = myReader.GetString(1);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
+                    //lblPrereq.Text = sPrereq;
                     
                     switch (sCatergory)
                     {
