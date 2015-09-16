@@ -130,11 +130,11 @@ namespace SoftwareProcess
                 while (myReader.Read())
                 {
                     string sName = myReader.GetString(1);
-                    string sDescription = myReader.GetString(2);
+                    string sDescription = myReader.GetString(3);
                     int sCatergory = myReader.GetInt32(6);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
-
+                    
                     switch (sCatergory)
                     {
                         case 1:
@@ -176,7 +176,7 @@ namespace SoftwareProcess
                             panel4.BackColor = Color.Khaki;
                             panel5.BackColor = Color.Khaki;
                             break;
-                    }    
+                    }
                 }
             }
             catch (Exception)
@@ -184,6 +184,22 @@ namespace SoftwareProcess
                 MessageBox.Show("Failed to pull information from the database","Connection error");
             }
 
+        }
+
+        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkWebDev.Checked == true)
+            {
+
+            }
+        }
+
+        private void chkAnal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAnal.Checked == true)
+            {
+               
+            }
         }
 
     }
