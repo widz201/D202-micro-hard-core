@@ -132,10 +132,10 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     string sDescription = myReader.GetString(2);
                     int sCatergory = myReader.GetInt32(6);
-                    //string sPrereq = myReader.GetString(1);
+                    string sPrereq = myReader.GetString(8);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
-                    //lblPrereq.Text = sPrereq;
+                    lblPrereq.Text = sPrereq;
                     
                     switch (sCatergory)
                     {
@@ -149,10 +149,10 @@ namespace SoftwareProcess
 
                         case 2:
                             lblCareerOpp.Text = "Web Development";
-                            panel2.BackColor = Color.LightCoral;
-                            panel3.BackColor = Color.LightCoral;
-                            panel4.BackColor = Color.LightCoral;
-                            panel5.BackColor = Color.LightCoral;
+                            panel2.BackColor = Color.Violet;
+                            panel3.BackColor = Color.Violet;
+                            panel4.BackColor = Color.Violet;
+                            panel5.BackColor = Color.Violet;
                             break;
 
                         case 3:
@@ -165,10 +165,10 @@ namespace SoftwareProcess
 
                         case 4:
                             lblCareerOpp.Text = "Networking";
-                            panel2.BackColor = Color.Violet;
-                            panel3.BackColor = Color.Violet;
-                            panel4.BackColor = Color.Violet;
-                            panel5.BackColor = Color.Violet;
+                            panel2.BackColor = Color.LightCoral;
+                            panel3.BackColor = Color.LightCoral;
+                            panel4.BackColor = Color.LightCoral;
+                            panel5.BackColor = Color.LightCoral;
                             break;
 
                         case 5:
