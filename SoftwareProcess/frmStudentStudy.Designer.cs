@@ -1201,6 +1201,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmStudentStudy";
             this.Text = "Student Study Planner";
+            this.Load += new System.EventHandler(this.frmStudentStudy_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

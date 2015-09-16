@@ -138,7 +138,7 @@ namespace SoftwareProcess
                 while (myReader.Read())
                 {
                     string sName = myReader.GetString(1);
-                    string sDescription = myReader.GetString(3);
+                    string sDescription = myReader.GetString(2);
                     int sCatergory = myReader.GetInt32(6);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
@@ -191,6 +191,10 @@ namespace SoftwareProcess
             {
                 MessageBox.Show("Failed to pull information from the database","Connection error");
             }
+        }
+
+        private void frmStudentStudy_Load(object sender, EventArgs e)
+        {
 
         }
 
