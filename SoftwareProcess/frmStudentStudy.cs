@@ -124,8 +124,7 @@ namespace SoftwareProcess
         {
             string selectedPaper = lstInfoPapers.SelectedItem.ToString();
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            string Query = "select * from tblPaper";
-            string Query2 = "select * from tblPaper where Paper_Name = \"" + selectedPaper + "\"";
+            string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
             SqlConnection connection = new SqlConnection(constring);
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
@@ -143,8 +142,6 @@ namespace SoftwareProcess
                     int sCatergory = myReader.GetInt32(6);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
-
-                    lblPrereq.Text = Query2;
 
                     switch (sCatergory)
                     {
@@ -187,14 +184,12 @@ namespace SoftwareProcess
                             panel4.BackColor = Color.Khaki;
                             panel5.BackColor = Color.Khaki;
                             break;
-                    }
-                    
-                      
+                    }    
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Failed to pull information from the database","Connection error");
             }
         }
 
