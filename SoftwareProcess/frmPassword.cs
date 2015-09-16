@@ -12,7 +12,6 @@ namespace SoftwareProcess
 {
     public partial class frmPassword2 : Form
     {
-
         public frmPassword2()
         {
             InitializeComponent();
@@ -24,7 +23,7 @@ namespace SoftwareProcess
             string password = txtPassword.Text;
             string systempassword = "password";
 
-            if (password.Equals (systempassword))
+            if (password.Equals(systempassword))
             {
                 frmRemovePaper removeForm = new frmRemovePaper();
                 removeForm.Show();
@@ -35,14 +34,18 @@ namespace SoftwareProcess
             {
                 txtPassword.BackColor = Color.Red;
                 txtPassword.Text = "Incorrect Password";
-
-                txtPassword.Select();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.BackColor = Color.White;
+            txtPassword.Text = "";
         }
     }
 }

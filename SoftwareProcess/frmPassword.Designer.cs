@@ -49,6 +49,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(156, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // button1
             // 
