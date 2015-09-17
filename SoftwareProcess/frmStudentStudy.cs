@@ -14,6 +14,7 @@ namespace SoftwareProcess
 {
     public partial class frmStudentStudy : Form
     {
+
         public frmStudentStudy()
         {
             InitializeComponent();
@@ -37,7 +38,6 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     lstPapers.Items.Add(sName);
                     lstInfoPapers.Items.Add(sName);
-                    
                 }
             }
             catch (Exception)
@@ -52,16 +52,16 @@ namespace SoftwareProcess
 
         private void mnuAdminAdd_Click(object sender, EventArgs e)
         {
-            frmAddPaper addForm = new frmAddPaper();
+            frmAddPassword PasswordForm = new frmAddPassword();
 
-            addForm.Show();
+            PasswordForm.Show();
         }
 
         private void editPaperToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRemovePaper removeForm = new frmRemovePaper();
+            frmPassword2 PasswordForm2 = new frmPassword2();
 
-            removeForm.Show();
+            PasswordForm2.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -81,9 +81,6 @@ namespace SoftwareProcess
             {
                 MessageBox.Show("You need to select a paper");
             }
-
-            
-            
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -93,10 +90,7 @@ namespace SoftwareProcess
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
             lstSelected.Items.Clear();
-
-
         }
 
         private void lstPapers_DoubleClick(object sender, EventArgs e)
@@ -115,9 +109,7 @@ namespace SoftwareProcess
             catch
             {
                 MessageBox.Show("You need to select a paper");
-            }
-            
-            
+            } 
         }
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
@@ -140,8 +132,10 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     string sDescription = myReader.GetString(2);
                     int sCatergory = myReader.GetInt32(6);
+                    string sPrereq = myReader.GetString(8);
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
+                    lblPrereq.Text = sPrereq;
                     
                     switch (sCatergory)
                     {
@@ -155,10 +149,10 @@ namespace SoftwareProcess
 
                         case 2:
                             lblCareerOpp.Text = "Web Development";
-                            panel2.BackColor = Color.LightCoral;
-                            panel3.BackColor = Color.LightCoral;
-                            panel4.BackColor = Color.LightCoral;
-                            panel5.BackColor = Color.LightCoral;
+                            panel2.BackColor = Color.Violet;
+                            panel3.BackColor = Color.Violet;
+                            panel4.BackColor = Color.Violet;
+                            panel5.BackColor = Color.Violet;
                             break;
 
                         case 3:
@@ -171,10 +165,10 @@ namespace SoftwareProcess
 
                         case 4:
                             lblCareerOpp.Text = "Networking";
-                            panel2.BackColor = Color.Violet;
-                            panel3.BackColor = Color.Violet;
-                            panel4.BackColor = Color.Violet;
-                            panel5.BackColor = Color.Violet;
+                            panel2.BackColor = Color.LightCoral;
+                            panel3.BackColor = Color.LightCoral;
+                            panel4.BackColor = Color.LightCoral;
+                            panel5.BackColor = Color.LightCoral;
                             break;
 
                         case 5:
