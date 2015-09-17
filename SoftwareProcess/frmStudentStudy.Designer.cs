@@ -64,7 +64,6 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnLoadPapers = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -114,6 +113,7 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -218,7 +218,7 @@
             this.lstPapers.FormattingEnabled = true;
             this.lstPapers.Location = new System.Drawing.Point(7, 261);
             this.lstPapers.Name = "lstPapers";
-            this.lstPapers.Size = new System.Drawing.Size(155, 160);
+            this.lstPapers.Size = new System.Drawing.Size(155, 199);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
             this.lstPapers.DoubleClick += new System.EventHandler(this.lstPapers_DoubleClick);
@@ -228,14 +228,14 @@
             this.lstSelected.FormattingEnabled = true;
             this.lstSelected.Location = new System.Drawing.Point(169, 261);
             this.lstSelected.Name = "lstSelected";
-            this.lstSelected.Size = new System.Drawing.Size(157, 225);
+            this.lstSelected.Size = new System.Drawing.Size(157, 199);
             this.lstSelected.TabIndex = 3;
             this.lstSelected.TabStop = false;
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnAdd.Location = new System.Drawing.Point(7, 463);
+            this.btnAdd.Location = new System.Drawing.Point(7, 497);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 28);
             this.btnAdd.TabIndex = 7;
@@ -246,7 +246,7 @@
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnRemove.Location = new System.Drawing.Point(87, 463);
+            this.btnRemove.Location = new System.Drawing.Point(88, 497);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 28);
             this.btnRemove.TabIndex = 8;
@@ -257,7 +257,7 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnClear.Location = new System.Drawing.Point(7, 497);
+            this.btnClear.Location = new System.Drawing.Point(169, 466);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 28);
             this.btnClear.TabIndex = 9;
@@ -450,7 +450,7 @@
             // btnPrint
             // 
             this.btnPrint.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnPrint.Location = new System.Drawing.Point(87, 497);
+            this.btnPrint.Location = new System.Drawing.Point(251, 466);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 28);
             this.btnPrint.TabIndex = 12;
@@ -470,7 +470,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage1.Controls.Add(this.btnLoadPapers);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.lstSelected);
@@ -489,17 +489,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
-            // 
-            // btnLoadPapers
-            // 
-            this.btnLoadPapers.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnLoadPapers.Location = new System.Drawing.Point(7, 429);
-            this.btnLoadPapers.Name = "btnLoadPapers";
-            this.btnLoadPapers.Size = new System.Drawing.Size(155, 28);
-            this.btnLoadPapers.TabIndex = 14;
-            this.btnLoadPapers.Text = "LOAD PAPERS";
-            this.btnLoadPapers.UseVisualStyleBackColor = false;
-            this.btnLoadPapers.Click += new System.EventHandler(this.btnLoadPapers_Click);
             // 
             // label2
             // 
@@ -1204,6 +1193,16 @@
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.Location = new System.Drawing.Point(6, 466);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 28);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "LOAD PAPERS";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmStudentStudy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1333,7 +1332,7 @@
         private System.Windows.Forms.TextBox tbxD111;
         private System.Windows.Forms.CheckBox chkSem2;
         private System.Windows.Forms.CheckBox chkSem1;
-        private System.Windows.Forms.Button btnLoadPapers;
+        private System.Windows.Forms.Button button1;
     }
 }
 
