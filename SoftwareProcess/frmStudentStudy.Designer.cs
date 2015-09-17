@@ -64,6 +64,7 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnLoadPapers = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -113,7 +114,6 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -470,7 +470,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnLoadPapers);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.lstSelected);
@@ -489,6 +489,17 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
+            // 
+            // btnLoadPapers
+            // 
+            this.btnLoadPapers.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnLoadPapers.Location = new System.Drawing.Point(7, 429);
+            this.btnLoadPapers.Name = "btnLoadPapers";
+            this.btnLoadPapers.Size = new System.Drawing.Size(155, 28);
+            this.btnLoadPapers.TabIndex = 14;
+            this.btnLoadPapers.Text = "LOAD PAPERS";
+            this.btnLoadPapers.UseVisualStyleBackColor = false;
+            this.btnLoadPapers.Click += new System.EventHandler(this.btnLoadPapers_Click);
             // 
             // label2
             // 
@@ -1193,16 +1204,6 @@
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.Location = new System.Drawing.Point(7, 429);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "LOAD PAPERS";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // frmStudentStudy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1332,7 +1333,7 @@
         private System.Windows.Forms.TextBox tbxD111;
         private System.Windows.Forms.CheckBox chkSem2;
         private System.Windows.Forms.CheckBox chkSem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLoadPapers;
     }
 }
 
