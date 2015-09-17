@@ -287,6 +287,85 @@ namespace SoftwareProcess
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (chkAnal.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Catergory] = 3 ";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else if (chkSoftwareArch.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Catergory] = 1 ";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+        }
+
 
 
     }
