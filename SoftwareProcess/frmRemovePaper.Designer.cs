@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRemovePaper));
             this.lstERPapers = new System.Windows.Forms.ListBox();
             this.btnEREdit = new System.Windows.Forms.Button();
-            this.btnERRemove = new System.Windows.Forms.Button();
+            this.btnArchive = new System.Windows.Forms.Button();
             this.btnERCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -44,7 +44,6 @@
             this.lstERPapers.Size = new System.Drawing.Size(223, 316);
             this.lstERPapers.TabIndex = 0;
             this.lstERPapers.Click += new System.EventHandler(this.lstERPapers_Click);
-            this.lstERPapers.SelectedIndexChanged += new System.EventHandler(this.lstERPapers_SelectedIndexChanged);
             // 
             // btnEREdit
             // 
@@ -56,14 +55,15 @@
             this.btnEREdit.UseVisualStyleBackColor = true;
             this.btnEREdit.Click += new System.EventHandler(this.btnEREdit_Click);
             // 
-            // btnERRemove
+            // btnArchive
             // 
-            this.btnERRemove.Location = new System.Drawing.Point(129, 347);
-            this.btnERRemove.Name = "btnERRemove";
-            this.btnERRemove.Size = new System.Drawing.Size(106, 23);
-            this.btnERRemove.TabIndex = 2;
-            this.btnERRemove.Text = "Archive";
-            this.btnERRemove.UseVisualStyleBackColor = true;
+            this.btnArchive.Location = new System.Drawing.Point(129, 347);
+            this.btnArchive.Name = "btnArchive";
+            this.btnArchive.Size = new System.Drawing.Size(106, 23);
+            this.btnArchive.TabIndex = 2;
+            this.btnArchive.Text = "Archive";
+            this.btnArchive.UseVisualStyleBackColor = true;
+            this.btnArchive.Click += new System.EventHandler(this.btnArchive_Click);
             // 
             // btnERCancel
             // 
@@ -91,7 +91,7 @@
             this.ClientSize = new System.Drawing.Size(247, 409);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnERCancel);
-            this.Controls.Add(this.btnERRemove);
+            this.Controls.Add(this.btnArchive);
             this.Controls.Add(this.btnEREdit);
             this.Controls.Add(this.lstERPapers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -106,7 +106,7 @@
 
         private System.Windows.Forms.ListBox lstERPapers;
         private System.Windows.Forms.Button btnEREdit;
-        private System.Windows.Forms.Button btnERRemove;
+        private System.Windows.Forms.Button btnArchive;
         private System.Windows.Forms.Button btnERCancel;
         private System.Windows.Forms.Label label1;
     }
