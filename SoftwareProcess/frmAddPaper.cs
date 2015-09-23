@@ -33,14 +33,12 @@ namespace SoftwareProcess
                 while (myReader.Read())
                 {
                     string sName = myReader.GetString(1);
-                    lstAPapers.Items.Add(sName);
-                    
-
+                    cboAPapers.Items.Add(sName);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("NIGGER");
+                MessageBox.Show("This isn't supposed to show up...." + Environment.NewLine + "You broke something");
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)

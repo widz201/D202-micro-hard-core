@@ -36,6 +36,8 @@
             this.tbxDesc = new System.Windows.Forms.TextBox();
             this.lstAPapers = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbxPaperCode = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboAPapers = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,8 +54,6 @@
             this.chkAYear2 = new System.Windows.Forms.CheckBox();
             this.chkAYear3 = new System.Windows.Forms.CheckBox();
             this.chkAYear1 = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbxPaperCode = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -134,6 +134,24 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paper Information";
+            // 
+            // tbxPaperCode
+            // 
+            this.tbxPaperCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPaperCode.Location = new System.Drawing.Point(78, 39);
+            this.tbxPaperCode.Name = "tbxPaperCode";
+            this.tbxPaperCode.Size = new System.Drawing.Size(308, 20);
+            this.tbxPaperCode.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Paper Code:";
             // 
             // label2
             // 
@@ -316,24 +334,6 @@
             this.chkAYear1.TabIndex = 0;
             this.chkAYear1.Text = "Year 1";
             this.chkAYear1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Paper Code:";
-            // 
-            // tbxPaperCode
-            // 
-            this.tbxPaperCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPaperCode.Location = new System.Drawing.Point(78, 39);
-            this.tbxPaperCode.Name = "tbxPaperCode";
-            this.tbxPaperCode.Size = new System.Drawing.Size(308, 20);
-            this.tbxPaperCode.TabIndex = 8;
             // 
             // frmAddPaper
             // 
