@@ -33,14 +33,12 @@ namespace SoftwareProcess
                 while (myReader.Read())
                 {
                     string sName = myReader.GetString(1);
-                    lstAPapers.Items.Add(sName);
-
-
+                    cboAPapers.Items.Add(sName);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("NIGGER");
+                MessageBox.Show("This isn't supposed to show up...." + Environment.NewLine + "You broke something");
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
@@ -50,7 +48,7 @@ namespace SoftwareProcess
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnPreRemove_Click(object sender, EventArgs e)
@@ -70,7 +68,7 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            
             int year = 0;
             if (chkAYear1.Checked == true)
             {
@@ -85,7 +83,7 @@ namespace SoftwareProcess
                 year = 3;
             }
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(constring))
+            using (SqlConnection connection = new SqlConnection(constring)) 
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year) VALUES (@PaperID, @PaperName, @Desc, @Year)");
                 cmd.CommandType = CommandType.Text;
@@ -107,12 +105,12 @@ namespace SoftwareProcess
 
             }
 
-
+            
         }
 
         private void chkAYear1_CheckedChanged(object sender, EventArgs e)
         {
-
+           
 
 
         }
