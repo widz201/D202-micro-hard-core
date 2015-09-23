@@ -68,7 +68,7 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            
+            int career = 0;
             int year = 0;
             if (chkAYear1.Checked == true)
             {
@@ -81,6 +81,26 @@ namespace SoftwareProcess
             else if (chkAYear3.Checked == true)
             {
                 year = 3;
+            }
+            if (chkSoftwareArch.Checked == true)
+            {
+                career = 1;
+            }
+            else if (chkWebDev.Checked == true)
+            {
+                career = 2;
+            }
+            else if (chkAnal.Checked == true)
+            {
+                career = 3;
+            }
+            else if (chkNetwork.Checked == true)
+            {
+                career = 4;
+            }
+            else if (chkDB.Checked == true)
+            {
+                career = 5;
             }
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(constring)) 
