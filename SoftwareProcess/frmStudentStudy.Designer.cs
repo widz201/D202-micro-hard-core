@@ -48,23 +48,23 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.chkWebDev = new System.Windows.Forms.CheckBox();
-            this.chkSoftwareArch = new System.Windows.Forms.CheckBox();
-            this.chkAnal = new System.Windows.Forms.CheckBox();
-            this.chkNetwork = new System.Windows.Forms.CheckBox();
-            this.chkDB = new System.Windows.Forms.CheckBox();
+            this.radAllPapers = new System.Windows.Forms.RadioButton();
+            this.radDatabaseDev = new System.Windows.Forms.RadioButton();
+            this.radNetworking = new System.Windows.Forms.RadioButton();
+            this.radAnalDes = new System.Windows.Forms.RadioButton();
+            this.radWebDev = new System.Windows.Forms.RadioButton();
+            this.radSoftwareArch = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkSem2 = new System.Windows.Forms.CheckBox();
-            this.chkSem1 = new System.Windows.Forms.CheckBox();
-            this.chkYear2 = new System.Windows.Forms.CheckBox();
-            this.chkYear3 = new System.Windows.Forms.CheckBox();
+            this.radSemester2 = new System.Windows.Forms.RadioButton();
+            this.radYear3 = new System.Windows.Forms.RadioButton();
+            this.radSemester1 = new System.Windows.Forms.RadioButton();
+            this.radYear2 = new System.Windows.Forms.RadioButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLoadPapers = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -116,7 +116,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -268,7 +267,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
@@ -289,143 +287,140 @@
             this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
     "tion";
             // 
-            // groupBox3
+            // radAllPapers
             // 
-            this.groupBox3.Controls.Add(this.chkWebDev);
-            this.groupBox3.Controls.Add(this.chkSoftwareArch);
-            this.groupBox3.Controls.Add(this.chkAnal);
-            this.groupBox3.Controls.Add(this.chkNetwork);
-            this.groupBox3.Controls.Add(this.chkDB);
-            this.groupBox3.Location = new System.Drawing.Point(6, 136);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(308, 94);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Filter by specialization";
+            this.radAllPapers.AutoSize = true;
+            this.radAllPapers.Checked = true;
+            this.radAllPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAllPapers.Location = new System.Drawing.Point(157, 125);
+            this.radAllPapers.Name = "radAllPapers";
+            this.radAllPapers.Size = new System.Drawing.Size(72, 17);
+            this.radAllPapers.TabIndex = 13;
+            this.radAllPapers.TabStop = true;
+            this.radAllPapers.Text = "All Papers";
+            this.radAllPapers.UseVisualStyleBackColor = true;
             // 
-            // chkWebDev
+            // radDatabaseDev
             // 
-            this.chkWebDev.AutoSize = true;
-            this.chkWebDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkWebDev.Location = new System.Drawing.Point(6, 42);
-            this.chkWebDev.Name = "chkWebDev";
-            this.chkWebDev.Size = new System.Drawing.Size(115, 17);
-            this.chkWebDev.TabIndex = 4;
-            this.chkWebDev.Text = "Web Development";
-            this.toolTip1.SetToolTip(this.chkWebDev, "Show papers with specialization in the field of Web Development");
-            this.chkWebDev.UseVisualStyleBackColor = true;
-            this.chkWebDev.CheckedChanged += new System.EventHandler(this.chkWebDev_CheckedChanged);
+            this.radDatabaseDev.AutoSize = true;
+            this.radDatabaseDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radDatabaseDev.Location = new System.Drawing.Point(157, 102);
+            this.radDatabaseDev.Name = "radDatabaseDev";
+            this.radDatabaseDev.Size = new System.Drawing.Size(137, 17);
+            this.radDatabaseDev.TabIndex = 12;
+            this.radDatabaseDev.Text = "Database Development";
+            this.radDatabaseDev.UseVisualStyleBackColor = true;
             // 
-            // chkSoftwareArch
+            // radNetworking
             // 
-            this.chkSoftwareArch.AutoSize = true;
-            this.chkSoftwareArch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSoftwareArch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.chkSoftwareArch.Location = new System.Drawing.Point(6, 19);
-            this.chkSoftwareArch.Name = "chkSoftwareArch";
-            this.chkSoftwareArch.Size = new System.Drawing.Size(128, 17);
-            this.chkSoftwareArch.TabIndex = 2;
-            this.chkSoftwareArch.Text = "Software Architecture";
-            this.toolTip1.SetToolTip(this.chkSoftwareArch, "Show papers with specialization in the field of Software Architecture");
-            this.chkSoftwareArch.UseVisualStyleBackColor = true;
+            this.radNetworking.AutoSize = true;
+            this.radNetworking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNetworking.Location = new System.Drawing.Point(157, 78);
+            this.radNetworking.Name = "radNetworking";
+            this.radNetworking.Size = new System.Drawing.Size(79, 17);
+            this.radNetworking.TabIndex = 11;
+            this.radNetworking.Text = "Networking";
+            this.radNetworking.UseVisualStyleBackColor = true;
             // 
-            // chkAnal
+            // radAnalDes
             // 
-            this.chkAnal.AutoSize = true;
-            this.chkAnal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAnal.Location = new System.Drawing.Point(6, 65);
-            this.chkAnal.Name = "chkAnal";
-            this.chkAnal.Size = new System.Drawing.Size(119, 17);
-            this.chkAnal.TabIndex = 6;
-            this.chkAnal.Text = "Analysis and design";
-            this.toolTip1.SetToolTip(this.chkAnal, "Show papers with specialization in the field of Analysis and Design\r\n");
-            this.chkAnal.UseVisualStyleBackColor = true;
-            this.chkAnal.CheckedChanged += new System.EventHandler(this.chkAnal_CheckedChanged);
+            this.radAnalDes.AutoSize = true;
+            this.radAnalDes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAnalDes.Location = new System.Drawing.Point(6, 125);
+            this.radAnalDes.Name = "radAnalDes";
+            this.radAnalDes.Size = new System.Drawing.Size(120, 17);
+            this.radAnalDes.TabIndex = 10;
+            this.radAnalDes.Text = "Analysis and Design";
+            this.radAnalDes.UseVisualStyleBackColor = true;
             // 
-            // chkNetwork
+            // radWebDev
             // 
-            this.chkNetwork.AutoSize = true;
-            this.chkNetwork.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNetwork.Location = new System.Drawing.Point(157, 19);
-            this.chkNetwork.Name = "chkNetwork";
-            this.chkNetwork.Size = new System.Drawing.Size(80, 17);
-            this.chkNetwork.TabIndex = 3;
-            this.chkNetwork.Text = "Networking";
-            this.toolTip1.SetToolTip(this.chkNetwork, "Show papers with specialization in the field of Networking\r\n");
-            this.chkNetwork.UseVisualStyleBackColor = true;
+            this.radWebDev.AutoSize = true;
+            this.radWebDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radWebDev.Location = new System.Drawing.Point(6, 102);
+            this.radWebDev.Name = "radWebDev";
+            this.radWebDev.Size = new System.Drawing.Size(114, 17);
+            this.radWebDev.TabIndex = 9;
+            this.radWebDev.Text = "Web Development";
+            this.radWebDev.UseVisualStyleBackColor = true;
             // 
-            // chkDB
+            // radSoftwareArch
             // 
-            this.chkDB.AutoSize = true;
-            this.chkDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDB.Location = new System.Drawing.Point(157, 42);
-            this.chkDB.Name = "chkDB";
-            this.chkDB.Size = new System.Drawing.Size(138, 17);
-            this.chkDB.TabIndex = 5;
-            this.chkDB.Text = "Database Development";
-            this.toolTip1.SetToolTip(this.chkDB, "Show papers with specialization in the field of Database Development\r\n");
-            this.chkDB.UseVisualStyleBackColor = true;
+            this.radSoftwareArch.AutoSize = true;
+            this.radSoftwareArch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSoftwareArch.Location = new System.Drawing.Point(6, 78);
+            this.radSoftwareArch.Name = "radSoftwareArch";
+            this.radSoftwareArch.Size = new System.Drawing.Size(127, 17);
+            this.radSoftwareArch.TabIndex = 8;
+            this.radSoftwareArch.Text = "Software Architecture";
+            this.radSoftwareArch.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.chkSem2);
-            this.groupBox2.Controls.Add(this.chkSem1);
-            this.groupBox2.Controls.Add(this.chkYear2);
-            this.groupBox2.Controls.Add(this.chkYear3);
+            this.groupBox2.Controls.Add(this.radAllPapers);
+            this.groupBox2.Controls.Add(this.radSemester2);
+            this.groupBox2.Controls.Add(this.radYear3);
+            this.groupBox2.Controls.Add(this.radDatabaseDev);
+            this.groupBox2.Controls.Add(this.radSemester1);
+            this.groupBox2.Controls.Add(this.radYear2);
+            this.groupBox2.Controls.Add(this.radNetworking);
+            this.groupBox2.Controls.Add(this.radSoftwareArch);
+            this.groupBox2.Controls.Add(this.radWebDev);
+            this.groupBox2.Controls.Add(this.radAnalDes);
             this.groupBox2.Location = new System.Drawing.Point(6, 57);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 73);
+            this.groupBox2.Size = new System.Drawing.Size(308, 173);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Filter by year and semester";
+            this.groupBox2.Text = "Filter Criteria";
             // 
-            // chkSem2
+            // radSemester2
             // 
-            this.chkSem2.AutoSize = true;
-            this.chkSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSem2.Location = new System.Drawing.Point(157, 42);
-            this.chkSem2.Name = "chkSem2";
-            this.chkSem2.Size = new System.Drawing.Size(79, 17);
-            this.chkSem2.TabIndex = 3;
-            this.chkSem2.Text = "Semester 2";
-            this.toolTip1.SetToolTip(this.chkSem2, "Show year 2 papers");
-            this.chkSem2.UseVisualStyleBackColor = true;
+            this.radSemester2.AutoSize = true;
+            this.radSemester2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSemester2.Location = new System.Drawing.Point(157, 42);
+            this.radSemester2.Name = "radSemester2";
+            this.radSemester2.Size = new System.Drawing.Size(78, 17);
+            this.radSemester2.TabIndex = 8;
+            this.radSemester2.TabStop = true;
+            this.radSemester2.Text = "Semester 2";
+            this.radSemester2.UseVisualStyleBackColor = true;
             // 
-            // chkSem1
+            // radYear3
             // 
-            this.chkSem1.AutoSize = true;
-            this.chkSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSem1.Location = new System.Drawing.Point(6, 42);
-            this.chkSem1.Name = "chkSem1";
-            this.chkSem1.Size = new System.Drawing.Size(79, 17);
-            this.chkSem1.TabIndex = 2;
-            this.chkSem1.Text = "Semester 1";
-            this.toolTip1.SetToolTip(this.chkSem1, "Show year 2 papers");
-            this.chkSem1.UseVisualStyleBackColor = true;
+            this.radYear3.AutoSize = true;
+            this.radYear3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radYear3.Location = new System.Drawing.Point(157, 19);
+            this.radYear3.Name = "radYear3";
+            this.radYear3.Size = new System.Drawing.Size(92, 17);
+            this.radYear3.TabIndex = 7;
+            this.radYear3.TabStop = true;
+            this.radYear3.Text = "Year 3 Papers";
+            this.radYear3.UseVisualStyleBackColor = true;
             // 
-            // chkYear2
+            // radSemester1
             // 
-            this.chkYear2.AutoSize = true;
-            this.chkYear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkYear2.Location = new System.Drawing.Point(6, 19);
-            this.chkYear2.Name = "chkYear2";
-            this.chkYear2.Size = new System.Drawing.Size(93, 17);
-            this.chkYear2.TabIndex = 0;
-            this.chkYear2.Text = "Year 2 Papers";
-            this.toolTip1.SetToolTip(this.chkYear2, "Show year 2 papers");
-            this.chkYear2.UseVisualStyleBackColor = true;
+            this.radSemester1.AutoSize = true;
+            this.radSemester1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSemester1.Location = new System.Drawing.Point(6, 42);
+            this.radSemester1.Name = "radSemester1";
+            this.radSemester1.Size = new System.Drawing.Size(78, 17);
+            this.radSemester1.TabIndex = 7;
+            this.radSemester1.TabStop = true;
+            this.radSemester1.Text = "Semester 1";
+            this.radSemester1.UseVisualStyleBackColor = true;
             // 
-            // chkYear3
+            // radYear2
             // 
-            this.chkYear3.AutoSize = true;
-            this.chkYear3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkYear3.Location = new System.Drawing.Point(157, 19);
-            this.chkYear3.Name = "chkYear3";
-            this.chkYear3.Size = new System.Drawing.Size(93, 17);
-            this.chkYear3.TabIndex = 1;
-            this.chkYear3.Text = "Year 3 Papers";
-            this.toolTip1.SetToolTip(this.chkYear3, "Show year 3 papers");
-            this.chkYear3.UseVisualStyleBackColor = true;
+            this.radYear2.AutoSize = true;
+            this.radYear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radYear2.Location = new System.Drawing.Point(6, 18);
+            this.radYear2.Name = "radYear2";
+            this.radYear2.Size = new System.Drawing.Size(92, 17);
+            this.radYear2.TabIndex = 7;
+            this.radYear2.TabStop = true;
+            this.radYear2.Text = "Year 2 Papers";
+            this.radYear2.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -470,7 +465,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnLoadPapers);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.lstSelected);
@@ -490,16 +485,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
             // 
-            // button1
+            // btnLoadPapers
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.Location = new System.Drawing.Point(6, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "LOAD PAPERS";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLoadPapers.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnLoadPapers.Location = new System.Drawing.Point(6, 466);
+            this.btnLoadPapers.Name = "btnLoadPapers";
+            this.btnLoadPapers.Size = new System.Drawing.Size(157, 28);
+            this.btnLoadPapers.TabIndex = 14;
+            this.btnLoadPapers.Text = "LOAD PAPERS";
+            this.btnLoadPapers.UseVisualStyleBackColor = false;
+            this.btnLoadPapers.Click += new System.EventHandler(this.btnLoadPapers_Click_1);
             // 
             // label2
             // 
@@ -1221,8 +1216,6 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -1257,15 +1250,7 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox chkWebDev;
-        private System.Windows.Forms.CheckBox chkSoftwareArch;
-        private System.Windows.Forms.CheckBox chkAnal;
-        private System.Windows.Forms.CheckBox chkNetwork;
-        private System.Windows.Forms.CheckBox chkDB;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox chkYear2;
-        private System.Windows.Forms.CheckBox chkYear3;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnPrint;
@@ -1331,9 +1316,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxD111;
-        private System.Windows.Forms.CheckBox chkSem2;
-        private System.Windows.Forms.CheckBox chkSem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLoadPapers;
+        private System.Windows.Forms.RadioButton radAllPapers;
+        private System.Windows.Forms.RadioButton radDatabaseDev;
+        private System.Windows.Forms.RadioButton radNetworking;
+        private System.Windows.Forms.RadioButton radAnalDes;
+        private System.Windows.Forms.RadioButton radWebDev;
+        private System.Windows.Forms.RadioButton radSoftwareArch;
+        private System.Windows.Forms.RadioButton radSemester2;
+        private System.Windows.Forms.RadioButton radYear3;
+        private System.Windows.Forms.RadioButton radSemester1;
+        private System.Windows.Forms.RadioButton radYear2;
     }
 }
 

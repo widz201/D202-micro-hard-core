@@ -192,25 +192,9 @@ namespace SoftwareProcess
 
         }
 
-        private void chkWebDev_CheckedChanged(object sender, EventArgs e)
+        private void btnLoadPapers_Click_1(object sender, EventArgs e)
         {
-            if (chkWebDev.Checked == true)
-            {
-
-            }
-        }
-
-        private void chkAnal_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkAnal.Checked == true)
-            {
-               
-            }
-        }
-
-        private void btnLoadPapers_Click(object sender, EventArgs e)
-        {
-            if (chkAnal.Checked == true)
+            if (radAnalDes.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
                 string Query = "select * from tblPaper where [Catergory] = 3 ";
@@ -235,7 +219,7 @@ namespace SoftwareProcess
                     MessageBox.Show("");
                 }
             }
-            else if (chkSoftwareArch.Checked == true)
+            else if (radSoftwareArch.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
                 string Query = "select * from tblPaper where [Catergory] = 1 ";
@@ -260,10 +244,10 @@ namespace SoftwareProcess
                     MessageBox.Show("");
                 }
             }
-            else
+            else if (radWebDev.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-                string Query = "select * from tblPaper";
+                string Query = "select * from tblPaper where [Catergory] = 2 ";
                 SqlConnection connection = new SqlConnection(constring);
                 SqlCommand cmdDatabase = new SqlCommand(Query, connection);
                 SqlDataReader myReader;
@@ -285,14 +269,10 @@ namespace SoftwareProcess
                     MessageBox.Show("");
                 }
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (chkAnal.Checked == true)
+            else if (radNetworking.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-                string Query = "select * from tblPaper where [Catergory] = 3 ";
+                string Query = "select * from tblPaper where [Catergory] = 4 ";
                 SqlConnection connection = new SqlConnection(constring);
                 SqlCommand cmdDatabase = new SqlCommand(Query, connection);
                 SqlDataReader myReader;
@@ -314,10 +294,110 @@ namespace SoftwareProcess
                     MessageBox.Show("");
                 }
             }
-            else if (chkSoftwareArch.Checked == true)
+            else if (radDatabaseDev.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-                string Query = "select * from tblPaper where [Catergory] = 1 ";
+                string Query = "select * from tblPaper where [Catergory] = 5 ";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else if (radYear2.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Year] = 2 ";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else if (radYear3.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Year] = 3 ";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else if (radSemester1.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Semester] = 1 OR [Semester] = 0";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    lstPapers.Items.Clear();
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstPapers.Items.Add(sName);
+                        lstInfoPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("");
+                }
+            }
+            else if (radSemester2.Checked == true)
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where [Semester] = 2 OR [Semester] = 0 ";
                 SqlConnection connection = new SqlConnection(constring);
                 SqlCommand cmdDatabase = new SqlCommand(Query, connection);
                 SqlDataReader myReader;
