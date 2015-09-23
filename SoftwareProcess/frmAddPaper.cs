@@ -32,8 +32,9 @@ namespace SoftwareProcess
 
                 while (myReader.Read())
                 {
+                    string sID = myReader.GetString(0);
                     string sName = myReader.GetString(1);
-                    cboAPapers.Items.Add(sName);
+                    cboAPapers.Items.Add(sID + " " + sName);
                 }
             }
             catch (Exception)
