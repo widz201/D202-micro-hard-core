@@ -18,6 +18,7 @@ namespace SoftwareProcess
             InitializeComponent();
             FillListbox();
         }
+
         void FillListbox()
         {
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -108,12 +109,20 @@ namespace SoftwareProcess
                 category = 5;
             }
             
+            //Puts all prerequsite papers in lstAPapers into a string
+            List<string> values = new List<string>();
+
+            foreach(object o in lstAPapers.Items)
+            values.Add(o.ToString());
+
+            string selectedItems = String.Join(", ", values);
             
+            //Writes information into the database
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(constring)) 
             try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category)");
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq)");
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = connection;
                 cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
@@ -121,6 +130,7 @@ namespace SoftwareProcess
                 cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
                 cmd.Parameters.AddWithValue("@Year", year);
                 cmd.Parameters.AddWithValue("@Category", category);
+                cmd.Parameters.AddWithValue("@Prereq", selectedItems.ToString());
                 connection.Open();
                 cmd.ExecuteNonQuery();
                 tbxPaperName.Clear();

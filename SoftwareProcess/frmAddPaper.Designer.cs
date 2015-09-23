@@ -85,7 +85,7 @@
             // tbxPaperName
             // 
             this.tbxPaperName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPaperName.Location = new System.Drawing.Point(78, 20);
+            this.tbxPaperName.Location = new System.Drawing.Point(78, 46);
             this.tbxPaperName.Name = "tbxPaperName";
             this.tbxPaperName.Size = new System.Drawing.Size(308, 20);
             this.tbxPaperName.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 23);
+            this.label1.Location = new System.Drawing.Point(6, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 3;
@@ -107,7 +107,7 @@
             this.tbxDesc.Multiline = true;
             this.tbxDesc.Name = "tbxDesc";
             this.tbxDesc.Size = new System.Drawing.Size(308, 108);
-            this.tbxDesc.TabIndex = 4;
+            this.tbxDesc.TabIndex = 3;
             // 
             // lstAPapers
             // 
@@ -137,16 +137,16 @@
             // tbxPaperCode
             // 
             this.tbxPaperCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPaperCode.Location = new System.Drawing.Point(78, 46);
+            this.tbxPaperCode.Location = new System.Drawing.Point(78, 20);
             this.tbxPaperCode.Name = "tbxPaperCode";
-            this.tbxPaperCode.Size = new System.Drawing.Size(308, 20);
-            this.tbxPaperCode.TabIndex = 8;
+            this.tbxPaperCode.Size = new System.Drawing.Size(82, 20);
+            this.tbxPaperCode.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 49);
+            this.label3.Location = new System.Drawing.Point(6, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 7;
@@ -192,7 +192,7 @@
             this.chkWebDev.Location = new System.Drawing.Point(6, 42);
             this.chkWebDev.Name = "chkWebDev";
             this.chkWebDev.Size = new System.Drawing.Size(115, 17);
-            this.chkWebDev.TabIndex = 10;
+            this.chkWebDev.TabIndex = 5;
             this.chkWebDev.Text = "Web Development";
             this.chkWebDev.UseVisualStyleBackColor = true;
             // 
@@ -204,7 +204,7 @@
             this.chkSoftwareArch.Location = new System.Drawing.Point(6, 19);
             this.chkSoftwareArch.Name = "chkSoftwareArch";
             this.chkSoftwareArch.Size = new System.Drawing.Size(128, 17);
-            this.chkSoftwareArch.TabIndex = 8;
+            this.chkSoftwareArch.TabIndex = 4;
             this.chkSoftwareArch.Text = "Software Architecture";
             this.chkSoftwareArch.UseVisualStyleBackColor = true;
             // 
@@ -215,7 +215,7 @@
             this.chkAnal.Location = new System.Drawing.Point(6, 65);
             this.chkAnal.Name = "chkAnal";
             this.chkAnal.Size = new System.Drawing.Size(119, 17);
-            this.chkAnal.TabIndex = 12;
+            this.chkAnal.TabIndex = 6;
             this.chkAnal.Text = "Analysis and design";
             this.chkAnal.UseVisualStyleBackColor = true;
             // 
@@ -226,7 +226,7 @@
             this.chkNetwork.Location = new System.Drawing.Point(157, 19);
             this.chkNetwork.Name = "chkNetwork";
             this.chkNetwork.Size = new System.Drawing.Size(80, 17);
-            this.chkNetwork.TabIndex = 9;
+            this.chkNetwork.TabIndex = 7;
             this.chkNetwork.Text = "Networking";
             this.chkNetwork.UseVisualStyleBackColor = true;
             // 
@@ -237,7 +237,7 @@
             this.chkDB.Location = new System.Drawing.Point(157, 42);
             this.chkDB.Name = "chkDB";
             this.chkDB.Size = new System.Drawing.Size(138, 17);
-            this.chkDB.TabIndex = 11;
+            this.chkDB.TabIndex = 8;
             this.chkDB.Text = "Database Development";
             this.chkDB.UseVisualStyleBackColor = true;
             // 
@@ -297,7 +297,7 @@
             this.chkACompulsory.Location = new System.Drawing.Point(157, 42);
             this.chkACompulsory.Name = "chkACompulsory";
             this.chkACompulsory.Size = new System.Drawing.Size(80, 17);
-            this.chkACompulsory.TabIndex = 3;
+            this.chkACompulsory.TabIndex = 12;
             this.chkACompulsory.Text = "Compulsory";
             this.chkACompulsory.UseVisualStyleBackColor = true;
             // 
@@ -308,7 +308,7 @@
             this.chkAYear2.Location = new System.Drawing.Point(6, 42);
             this.chkAYear2.Name = "chkAYear2";
             this.chkAYear2.Size = new System.Drawing.Size(57, 17);
-            this.chkAYear2.TabIndex = 2;
+            this.chkAYear2.TabIndex = 10;
             this.chkAYear2.Text = "Year 2";
             this.chkAYear2.UseVisualStyleBackColor = true;
             // 
@@ -319,7 +319,7 @@
             this.chkAYear3.Location = new System.Drawing.Point(157, 19);
             this.chkAYear3.Name = "chkAYear3";
             this.chkAYear3.Size = new System.Drawing.Size(57, 17);
-            this.chkAYear3.TabIndex = 1;
+            this.chkAYear3.TabIndex = 11;
             this.chkAYear3.Text = "Year 3";
             this.chkAYear3.UseVisualStyleBackColor = true;
             // 
@@ -330,7 +330,7 @@
             this.chkAYear1.Location = new System.Drawing.Point(6, 19);
             this.chkAYear1.Name = "chkAYear1";
             this.chkAYear1.Size = new System.Drawing.Size(57, 17);
-            this.chkAYear1.TabIndex = 0;
+            this.chkAYear1.TabIndex = 9;
             this.chkAYear1.Text = "Year 1";
             this.chkAYear1.UseVisualStyleBackColor = true;
             // 
