@@ -73,7 +73,7 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            
+            int category = 0;
             int year = 0;
             if (chkAYear1.Checked == true)
             {
@@ -87,16 +87,40 @@ namespace SoftwareProcess
             {
                 year = 3;
             }
+            if (chkSoftwareArch.Checked == true)
+            {
+                category = 1;
+            }
+            else if (chkWebDev.Checked == true)
+            {
+                category = 2;
+            }
+            else if (chkAnal.Checked == true)
+            {
+                category = 3;
+            }
+            else if (chkNetwork.Checked == true)
+            {
+                category = 4;
+            }
+            else if (chkDB.Checked == true)
+            {
+                category = 5;
+            }
+            
+            
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(constring)) 
+            try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year) VALUES (@PaperID, @PaperName, @Desc, @Year)");
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category)");
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = connection;
                 cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
                 cmd.Parameters.AddWithValue("@PaperName", tbxPaperName.Text);
                 cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
                 cmd.Parameters.AddWithValue("@Year", year);
+                cmd.Parameters.AddWithValue("@Category", category);
                 connection.Open();
                 cmd.ExecuteNonQuery();
                 tbxPaperName.Clear();
@@ -107,6 +131,15 @@ namespace SoftwareProcess
                 chkWebDev.Checked = false;
                 chkDB.Checked = false;
                 chkAnal.Checked = false;
+                chkAYear1.Checked = false;
+                chkAYear2.Checked = false;
+                chkAYear3.Checked = false;
+                chkACompulsory.Checked = false;
+                MessageBox.Show("Paper successfully added");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Unable to add paper");
             }
         }
 
