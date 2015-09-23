@@ -145,6 +145,7 @@ namespace SoftwareProcess
                 chkAYear2.Checked = false;
                 chkAYear3.Checked = false;
                 chkACompulsory.Checked = false;
+                lstAPapers.Items.Clear();
                 MessageBox.Show("Paper successfully added");
             }
             catch(Exception)

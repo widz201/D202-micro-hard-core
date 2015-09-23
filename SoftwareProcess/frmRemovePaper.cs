@@ -41,7 +41,7 @@ namespace SoftwareProcess
             }
             catch (Exception)
             {
-                MessageBox.Show("NIGGER");
+                MessageBox.Show("This isn't supposed to show up...." + Environment.NewLine + "You broke something");
             }
         }
         private void btnERCancel_Click(object sender, EventArgs e)
@@ -52,6 +52,16 @@ namespace SoftwareProcess
         private void lstERPapers_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEREdit_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lstERPapers_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
