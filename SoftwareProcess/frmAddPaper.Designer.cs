@@ -99,7 +99,6 @@
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Paper Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbxDesc
             // 
@@ -118,7 +117,6 @@
             this.lstAPapers.Name = "lstAPapers";
             this.lstAPapers.Size = new System.Drawing.Size(120, 160);
             this.lstAPapers.TabIndex = 7;
-            this.lstAPapers.Click += new System.EventHandler(this.lstAPapers_Click);
             // 
             // groupBox1
             // 
@@ -335,7 +333,6 @@
             this.chkAYear1.TabIndex = 0;
             this.chkAYear1.Text = "Year 1";
             this.chkAYear1.UseVisualStyleBackColor = true;
-            this.chkAYear1.CheckedChanged += new System.EventHandler(this.chkAYear1_CheckedChanged);
             // 
             // frmAddPaper
             // 
@@ -351,7 +348,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddPaper";
             this.Text = "Add Paper";
-            this.Load += new System.EventHandler(this.frmAddPaper_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

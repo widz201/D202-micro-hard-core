@@ -48,22 +48,26 @@ namespace SoftwareProcess
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (lstAPapers.Items.Contains(cboAPapers.Text))
+                {
+                    MessageBox.Show("This pre-requisite has already been added");
+        }
+                else
+        {
+                    lstAPapers.Items.Add(cboAPapers.SelectedItem);
+        }
+            }
+            catch
+        {
+                MessageBox.Show("You need to select a paper");
+            }
         }
 
         private void btnPreRemove_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmAddPaper_Load(object sender, EventArgs e)
-        {
-
+            lstAPapers.Items.Remove(lstAPapers.Text);
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -122,22 +126,8 @@ namespace SoftwareProcess
                 chkWebDev.Checked = false;
                 chkDB.Checked = false;
                 chkAnal.Checked = false;
-
             }
-
-            
         }
 
-        private void chkAYear1_CheckedChanged(object sender, EventArgs e)
-        {
-           
-
-
-        }
-
-        private void lstAPapers_Click(object sender, EventArgs e)
-        {
-            
         }
     }
-}
