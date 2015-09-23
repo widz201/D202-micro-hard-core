@@ -78,13 +78,11 @@ namespace SoftwareProcess
                     string sName = myReader.GetString(1);
                     lstERPapers.Items.Add(sName);
 
-
-
                 }
             }
             catch
             {
-                MessageBox.Show("");
+                MessageBox.Show("Unable to show archived items");
             } 
         }
 
