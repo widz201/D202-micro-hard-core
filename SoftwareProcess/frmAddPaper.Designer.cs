@@ -117,6 +117,7 @@
             this.lstAPapers.Name = "lstAPapers";
             this.lstAPapers.Size = new System.Drawing.Size(120, 160);
             this.lstAPapers.TabIndex = 7;
+            this.lstAPapers.Click += new System.EventHandler(this.lstAPapers_Click);
             // 
             // groupBox1
             // 

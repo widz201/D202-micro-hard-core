@@ -53,14 +53,14 @@ namespace SoftwareProcess
                 if (lstAPapers.Items.Contains(cboAPapers.Text))
                 {
                     MessageBox.Show("This pre-requisite has already been added");
-                }
+        }
                 else
-                {
+        {
                     lstAPapers.Items.Add(cboAPapers.SelectedItem);
-                }
+        }
             }
             catch
-            {
+        {
                 MessageBox.Show("You need to select a paper");
             }
         }
@@ -72,7 +72,6 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            
             
             int year = 0;
             if (chkAYear1.Checked == true)
@@ -107,8 +106,8 @@ namespace SoftwareProcess
                 chkWebDev.Checked = false;
                 chkDB.Checked = false;
                 chkAnal.Checked = false;
-            }     
+            }
         }
 
+        }
     }
-}
