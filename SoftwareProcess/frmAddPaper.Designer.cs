@@ -63,7 +63,7 @@
             // btnPreAdd
             // 
             this.btnPreAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreAdd.Location = new System.Drawing.Point(6, 211);
+            this.btnPreAdd.Location = new System.Drawing.Point(6, 253);
             this.btnPreAdd.Name = "btnPreAdd";
             this.btnPreAdd.Size = new System.Drawing.Size(121, 23);
             this.btnPreAdd.TabIndex = 0;
@@ -74,9 +74,9 @@
             // btnPreRemove
             // 
             this.btnPreRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreRemove.Location = new System.Drawing.Point(6, 240);
+            this.btnPreRemove.Location = new System.Drawing.Point(133, 253);
             this.btnPreRemove.Name = "btnPreRemove";
-            this.btnPreRemove.Size = new System.Drawing.Size(121, 23);
+            this.btnPreRemove.Size = new System.Drawing.Size(120, 23);
             this.btnPreRemove.TabIndex = 1;
             this.btnPreRemove.Text = "Remove";
             this.btnPreRemove.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             // tbxPaperName
             // 
             this.tbxPaperName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPaperName.Location = new System.Drawing.Point(78, 13);
+            this.tbxPaperName.Location = new System.Drawing.Point(78, 20);
             this.tbxPaperName.Name = "tbxPaperName";
             this.tbxPaperName.Size = new System.Drawing.Size(308, 20);
             this.tbxPaperName.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 3;
@@ -113,9 +113,9 @@
             // 
             this.lstAPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstAPapers.FormattingEnabled = true;
-            this.lstAPapers.Location = new System.Drawing.Point(7, 39);
+            this.lstAPapers.Location = new System.Drawing.Point(7, 48);
             this.lstAPapers.Name = "lstAPapers";
-            this.lstAPapers.Size = new System.Drawing.Size(120, 160);
+            this.lstAPapers.Size = new System.Drawing.Size(246, 199);
             this.lstAPapers.TabIndex = 7;
             // 
             // groupBox1
@@ -137,7 +137,7 @@
             // tbxPaperCode
             // 
             this.tbxPaperCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPaperCode.Location = new System.Drawing.Point(78, 39);
+            this.tbxPaperCode.Location = new System.Drawing.Point(78, 46);
             this.tbxPaperCode.Name = "tbxPaperCode";
             this.tbxPaperCode.Size = new System.Drawing.Size(308, 20);
             this.tbxPaperCode.TabIndex = 8;
@@ -146,7 +146,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 39);
+            this.label3.Location = new System.Drawing.Point(6, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 7;
@@ -156,19 +156,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 72);
+            this.label2.Location = new System.Drawing.Point(9, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Description";
+            this.label2.Text = "Description:";
             // 
             // cboAPapers
             // 
             this.cboAPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboAPapers.FormattingEnabled = true;
-            this.cboAPapers.Location = new System.Drawing.Point(7, 13);
+            this.cboAPapers.Location = new System.Drawing.Point(6, 20);
             this.cboAPapers.Name = "cboAPapers";
-            this.cboAPapers.Size = new System.Drawing.Size(120, 21);
+            this.cboAPapers.Size = new System.Drawing.Size(247, 21);
             this.cboAPapers.TabIndex = 9;
             // 
             // groupBox2
@@ -180,7 +180,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(410, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(133, 284);
+            this.groupBox2.Size = new System.Drawing.Size(261, 284);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prerequisites";
@@ -258,7 +258,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(416, 346);
+            this.btnCancel.Location = new System.Drawing.Point(543, 352);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 23);
             this.btnCancel.TabIndex = 14;
@@ -268,7 +268,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(416, 317);
+            this.btnConfirm.Location = new System.Drawing.Point(417, 352);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(120, 23);
             this.btnConfirm.TabIndex = 15;
@@ -338,7 +338,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 385);
+            this.ClientSize = new System.Drawing.Size(678, 385);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
