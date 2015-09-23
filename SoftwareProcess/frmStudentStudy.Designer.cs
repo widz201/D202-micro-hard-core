@@ -48,17 +48,17 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.radAllPapers = new System.Windows.Forms.RadioButton();
-            this.radDatabaseDev = new System.Windows.Forms.RadioButton();
-            this.radNetworking = new System.Windows.Forms.RadioButton();
-            this.radAnalDes = new System.Windows.Forms.RadioButton();
-            this.radWebDev = new System.Windows.Forms.RadioButton();
-            this.radSoftwareArch = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radAllPapers = new System.Windows.Forms.RadioButton();
             this.radSemester2 = new System.Windows.Forms.RadioButton();
             this.radYear3 = new System.Windows.Forms.RadioButton();
+            this.radDatabaseDev = new System.Windows.Forms.RadioButton();
             this.radSemester1 = new System.Windows.Forms.RadioButton();
             this.radYear2 = new System.Windows.Forms.RadioButton();
+            this.radNetworking = new System.Windows.Forms.RadioButton();
+            this.radSoftwareArch = new System.Windows.Forms.RadioButton();
+            this.radWebDev = new System.Windows.Forms.RadioButton();
+            this.radAnalDes = new System.Windows.Forms.RadioButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -287,74 +287,6 @@
             this.label3.Text = "Use the filters to show available papers for you to study by \r\nyear or specializa" +
     "tion";
             // 
-            // radAllPapers
-            // 
-            this.radAllPapers.AutoSize = true;
-            this.radAllPapers.Checked = true;
-            this.radAllPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAllPapers.Location = new System.Drawing.Point(157, 125);
-            this.radAllPapers.Name = "radAllPapers";
-            this.radAllPapers.Size = new System.Drawing.Size(72, 17);
-            this.radAllPapers.TabIndex = 13;
-            this.radAllPapers.TabStop = true;
-            this.radAllPapers.Text = "All Papers";
-            this.radAllPapers.UseVisualStyleBackColor = true;
-            // 
-            // radDatabaseDev
-            // 
-            this.radDatabaseDev.AutoSize = true;
-            this.radDatabaseDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radDatabaseDev.Location = new System.Drawing.Point(157, 102);
-            this.radDatabaseDev.Name = "radDatabaseDev";
-            this.radDatabaseDev.Size = new System.Drawing.Size(137, 17);
-            this.radDatabaseDev.TabIndex = 12;
-            this.radDatabaseDev.Text = "Database Development";
-            this.radDatabaseDev.UseVisualStyleBackColor = true;
-            // 
-            // radNetworking
-            // 
-            this.radNetworking.AutoSize = true;
-            this.radNetworking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radNetworking.Location = new System.Drawing.Point(157, 78);
-            this.radNetworking.Name = "radNetworking";
-            this.radNetworking.Size = new System.Drawing.Size(79, 17);
-            this.radNetworking.TabIndex = 11;
-            this.radNetworking.Text = "Networking";
-            this.radNetworking.UseVisualStyleBackColor = true;
-            // 
-            // radAnalDes
-            // 
-            this.radAnalDes.AutoSize = true;
-            this.radAnalDes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAnalDes.Location = new System.Drawing.Point(6, 125);
-            this.radAnalDes.Name = "radAnalDes";
-            this.radAnalDes.Size = new System.Drawing.Size(120, 17);
-            this.radAnalDes.TabIndex = 10;
-            this.radAnalDes.Text = "Analysis and Design";
-            this.radAnalDes.UseVisualStyleBackColor = true;
-            // 
-            // radWebDev
-            // 
-            this.radWebDev.AutoSize = true;
-            this.radWebDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radWebDev.Location = new System.Drawing.Point(6, 102);
-            this.radWebDev.Name = "radWebDev";
-            this.radWebDev.Size = new System.Drawing.Size(114, 17);
-            this.radWebDev.TabIndex = 9;
-            this.radWebDev.Text = "Web Development";
-            this.radWebDev.UseVisualStyleBackColor = true;
-            // 
-            // radSoftwareArch
-            // 
-            this.radSoftwareArch.AutoSize = true;
-            this.radSoftwareArch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radSoftwareArch.Location = new System.Drawing.Point(6, 78);
-            this.radSoftwareArch.Name = "radSoftwareArch";
-            this.radSoftwareArch.Size = new System.Drawing.Size(127, 17);
-            this.radSoftwareArch.TabIndex = 8;
-            this.radSoftwareArch.Text = "Software Architecture";
-            this.radSoftwareArch.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radAllPapers);
@@ -373,6 +305,19 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter Criteria";
+            // 
+            // radAllPapers
+            // 
+            this.radAllPapers.AutoSize = true;
+            this.radAllPapers.Checked = true;
+            this.radAllPapers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAllPapers.Location = new System.Drawing.Point(157, 125);
+            this.radAllPapers.Name = "radAllPapers";
+            this.radAllPapers.Size = new System.Drawing.Size(72, 17);
+            this.radAllPapers.TabIndex = 13;
+            this.radAllPapers.TabStop = true;
+            this.radAllPapers.Text = "All Papers";
+            this.radAllPapers.UseVisualStyleBackColor = true;
             // 
             // radSemester2
             // 
@@ -398,6 +343,17 @@
             this.radYear3.Text = "Year 3 Papers";
             this.radYear3.UseVisualStyleBackColor = true;
             // 
+            // radDatabaseDev
+            // 
+            this.radDatabaseDev.AutoSize = true;
+            this.radDatabaseDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radDatabaseDev.Location = new System.Drawing.Point(157, 102);
+            this.radDatabaseDev.Name = "radDatabaseDev";
+            this.radDatabaseDev.Size = new System.Drawing.Size(137, 17);
+            this.radDatabaseDev.TabIndex = 12;
+            this.radDatabaseDev.Text = "Database Development";
+            this.radDatabaseDev.UseVisualStyleBackColor = true;
+            // 
             // radSemester1
             // 
             this.radSemester1.AutoSize = true;
@@ -421,6 +377,51 @@
             this.radYear2.TabStop = true;
             this.radYear2.Text = "Year 2 Papers";
             this.radYear2.UseVisualStyleBackColor = true;
+            // 
+            // radNetworking
+            // 
+            this.radNetworking.AutoSize = true;
+            this.radNetworking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNetworking.Location = new System.Drawing.Point(157, 78);
+            this.radNetworking.Name = "radNetworking";
+            this.radNetworking.Size = new System.Drawing.Size(79, 17);
+            this.radNetworking.TabIndex = 11;
+            this.radNetworking.Text = "Networking";
+            this.radNetworking.UseVisualStyleBackColor = true;
+            // 
+            // radSoftwareArch
+            // 
+            this.radSoftwareArch.AutoSize = true;
+            this.radSoftwareArch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSoftwareArch.Location = new System.Drawing.Point(6, 78);
+            this.radSoftwareArch.Name = "radSoftwareArch";
+            this.radSoftwareArch.Size = new System.Drawing.Size(127, 17);
+            this.radSoftwareArch.TabIndex = 8;
+            this.radSoftwareArch.Text = "Software Architecture";
+            this.radSoftwareArch.UseVisualStyleBackColor = true;
+            this.radSoftwareArch.CheckedChanged += new System.EventHandler(this.radSoftwareArch_CheckedChanged);
+            // 
+            // radWebDev
+            // 
+            this.radWebDev.AutoSize = true;
+            this.radWebDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radWebDev.Location = new System.Drawing.Point(6, 102);
+            this.radWebDev.Name = "radWebDev";
+            this.radWebDev.Size = new System.Drawing.Size(114, 17);
+            this.radWebDev.TabIndex = 9;
+            this.radWebDev.Text = "Web Development";
+            this.radWebDev.UseVisualStyleBackColor = true;
+            // 
+            // radAnalDes
+            // 
+            this.radAnalDes.AutoSize = true;
+            this.radAnalDes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAnalDes.Location = new System.Drawing.Point(6, 125);
+            this.radAnalDes.Name = "radAnalDes";
+            this.radAnalDes.Size = new System.Drawing.Size(120, 17);
+            this.radAnalDes.TabIndex = 10;
+            this.radAnalDes.Text = "Analysis and Design";
+            this.radAnalDes.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 

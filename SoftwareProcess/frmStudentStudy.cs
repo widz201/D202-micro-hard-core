@@ -446,6 +446,11 @@ namespace SoftwareProcess
             }
         }
 
+        private void radSoftwareArch_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }
