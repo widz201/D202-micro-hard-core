@@ -43,6 +43,7 @@
             this.lstERPapers.Name = "lstERPapers";
             this.lstERPapers.Size = new System.Drawing.Size(223, 316);
             this.lstERPapers.TabIndex = 0;
+            this.lstERPapers.Click += new System.EventHandler(this.lstERPapers_Click);
             this.lstERPapers.SelectedIndexChanged += new System.EventHandler(this.lstERPapers_SelectedIndexChanged);
             // 
             // btnEREdit
@@ -53,6 +54,7 @@
             this.btnEREdit.TabIndex = 1;
             this.btnEREdit.Text = "Edit";
             this.btnEREdit.UseVisualStyleBackColor = true;
+            this.btnEREdit.Click += new System.EventHandler(this.btnEREdit_Click);
             // 
             // btnERRemove
             // 
