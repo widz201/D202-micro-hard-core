@@ -334,6 +334,7 @@
             this.chkAYear1.TabIndex = 0;
             this.chkAYear1.Text = "Year 1";
             this.chkAYear1.UseVisualStyleBackColor = true;
+            this.chkAYear1.CheckedChanged += new System.EventHandler(this.chkAYear1_CheckedChanged);
             // 
             // frmAddPaper
             // 

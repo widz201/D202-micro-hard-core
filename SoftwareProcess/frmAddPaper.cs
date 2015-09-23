@@ -68,23 +68,50 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(constring))
             
+            
+            int year = 0;
+            if (chkAYear1.Checked == true)
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Archived, Semester, Catergory, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Archived, @Semester, @category, @lecturer)");
+                year = 1;
+            }
+            else if (chkAYear2.Checked == true)
+            {
+                year = 2;
+            }
+            else if (chkAYear3.Checked == true)
+            {
+                year = 3;
+            }
+            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(constring)) 
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year) VALUES (@PaperID, @PaperName, @Desc, @Year)");
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = connection;
                 cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
                 cmd.Parameters.AddWithValue("@PaperName", tbxPaperName.Text);
                 cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
+                cmd.Parameters.AddWithValue("@Year", year);
                 connection.Open();
                 cmd.ExecuteNonQuery();
                 tbxPaperName.Clear();
                 tbxPaperCode.Clear();
                 tbxDesc.Clear();
+                chkSoftwareArch.Checked = false;
+                chkNetwork.Checked = false;
+                chkWebDev.Checked = false;
+                chkDB.Checked = false;
+                chkAnal.Checked = false;
 
             }
+
+            
+        }
+
+        private void chkAYear1_CheckedChanged(object sender, EventArgs e)
+        {
+           
 
             
         }

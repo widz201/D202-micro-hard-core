@@ -64,6 +64,7 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -113,7 +114,6 @@
             this.lstInfoPapers = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -489,6 +489,17 @@
             this.tabPage1.Size = new System.Drawing.Size(1090, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Study Plan";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.Location = new System.Drawing.Point(6, 466);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 28);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "LOAD PAPERS";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -1192,16 +1203,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1098, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.Location = new System.Drawing.Point(6, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "LOAD PAPERS";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // frmStudentStudy
             // 
