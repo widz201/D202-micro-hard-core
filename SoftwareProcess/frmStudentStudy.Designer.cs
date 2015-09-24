@@ -444,7 +444,6 @@
             this.radSoftwareArch.TabIndex = 8;
             this.radSoftwareArch.Text = "Software Architecture";
             this.radSoftwareArch.UseVisualStyleBackColor = true;
-            this.radSoftwareArch.CheckedChanged += new System.EventHandler(this.radSoftwareArch_CheckedChanged);
             // 
             // radWebDev
             // 
