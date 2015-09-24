@@ -159,7 +159,7 @@ namespace SoftwareProcess
             {
                 lecturer = 5;
             };
-
+            
             //Puts all prerequsite papers in lstAPapers into a string
             List<string> values = new List<string>();
 
