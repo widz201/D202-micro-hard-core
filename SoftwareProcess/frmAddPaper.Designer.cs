@@ -54,16 +54,24 @@
             this.chkAYear2 = new System.Windows.Forms.CheckBox();
             this.chkAYear3 = new System.Windows.Forms.CheckBox();
             this.chkAYear1 = new System.Windows.Forms.CheckBox();
+            this.chkArchive = new System.Windows.Forms.CheckBox();
+            this.cboLecturer = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radSem1 = new System.Windows.Forms.RadioButton();
+            this.radSemBoth = new System.Windows.Forms.RadioButton();
+            this.radSem2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPreAdd
             // 
             this.btnPreAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreAdd.Location = new System.Drawing.Point(6, 253);
+            this.btnPreAdd.Location = new System.Drawing.Point(7, 318);
             this.btnPreAdd.Name = "btnPreAdd";
             this.btnPreAdd.Size = new System.Drawing.Size(121, 23);
             this.btnPreAdd.TabIndex = 0;
@@ -74,7 +82,7 @@
             // btnPreRemove
             // 
             this.btnPreRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreRemove.Location = new System.Drawing.Point(133, 253);
+            this.btnPreRemove.Location = new System.Drawing.Point(133, 318);
             this.btnPreRemove.Name = "btnPreRemove";
             this.btnPreRemove.Size = new System.Drawing.Size(120, 23);
             this.btnPreRemove.TabIndex = 1;
@@ -115,7 +123,7 @@
             this.lstAPapers.FormattingEnabled = true;
             this.lstAPapers.Location = new System.Drawing.Point(7, 48);
             this.lstAPapers.Name = "lstAPapers";
-            this.lstAPapers.Size = new System.Drawing.Size(246, 199);
+            this.lstAPapers.Size = new System.Drawing.Size(246, 264);
             this.lstAPapers.TabIndex = 7;
             // 
             // groupBox1
@@ -180,7 +188,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(410, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(261, 284);
+            this.groupBox2.Size = new System.Drawing.Size(261, 352);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prerequisites";
@@ -258,7 +266,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(543, 352);
+            this.btnCancel.Location = new System.Drawing.Point(543, 420);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 23);
             this.btnCancel.TabIndex = 14;
@@ -268,7 +276,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(417, 352);
+            this.btnConfirm.Location = new System.Drawing.Point(543, 391);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(120, 23);
             this.btnConfirm.TabIndex = 15;
@@ -285,7 +293,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(12, 302);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(392, 73);
+            this.groupBox4.Size = new System.Drawing.Size(392, 62);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Year/Compulsory";
@@ -334,11 +342,97 @@
             this.chkAYear1.Text = "Year 1";
             this.chkAYear1.UseVisualStyleBackColor = true;
             // 
+            // chkArchive
+            // 
+            this.chkArchive.AutoSize = true;
+            this.chkArchive.Location = new System.Drawing.Point(169, 426);
+            this.chkArchive.Name = "chkArchive";
+            this.chkArchive.Size = new System.Drawing.Size(68, 17);
+            this.chkArchive.TabIndex = 17;
+            this.chkArchive.Text = "Archived";
+            this.chkArchive.UseVisualStyleBackColor = true;
+            // 
+            // cboLecturer
+            // 
+            this.cboLecturer.FormattingEnabled = true;
+            this.cboLecturer.Items.AddRange(new object[] {
+            "SC",
+            "AS",
+            "GR",
+            "RD",
+            "KT"});
+            this.cboLecturer.Location = new System.Drawing.Point(67, 422);
+            this.cboLecturer.Name = "cboLecturer";
+            this.cboLecturer.Size = new System.Drawing.Size(79, 21);
+            this.cboLecturer.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 425);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Lecturer";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.radSem2);
+            this.groupBox5.Controls.Add(this.radSemBoth);
+            this.groupBox5.Controls.Add(this.radSem1);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(12, 370);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(235, 45);
+            this.groupBox5.TabIndex = 20;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Semester";
+            // 
+            // radSem1
+            // 
+            this.radSem1.AutoSize = true;
+            this.radSem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSem1.Location = new System.Drawing.Point(6, 19);
+            this.radSem1.Name = "radSem1";
+            this.radSem1.Size = new System.Drawing.Size(31, 17);
+            this.radSem1.TabIndex = 0;
+            this.radSem1.TabStop = true;
+            this.radSem1.Text = "1";
+            this.radSem1.UseVisualStyleBackColor = true;
+            // 
+            // radSemBoth
+            // 
+            this.radSemBoth.AutoSize = true;
+            this.radSemBoth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSemBoth.Location = new System.Drawing.Point(167, 19);
+            this.radSemBoth.Name = "radSemBoth";
+            this.radSemBoth.Size = new System.Drawing.Size(47, 17);
+            this.radSemBoth.TabIndex = 1;
+            this.radSemBoth.TabStop = true;
+            this.radSemBoth.Text = "Both";
+            this.radSemBoth.UseVisualStyleBackColor = true;
+            // 
+            // radSem2
+            // 
+            this.radSem2.AutoSize = true;
+            this.radSem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSem2.Location = new System.Drawing.Point(90, 19);
+            this.radSem2.Name = "radSem2";
+            this.radSem2.Size = new System.Drawing.Size(31, 17);
+            this.radSem2.TabIndex = 2;
+            this.radSem2.TabStop = true;
+            this.radSem2.Text = "2";
+            this.radSem2.UseVisualStyleBackColor = true;
+            // 
             // frmAddPaper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 385);
+            this.ClientSize = new System.Drawing.Size(678, 451);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboLecturer);
+            this.Controls.Add(this.chkArchive);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
@@ -348,6 +442,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddPaper";
             this.Text = "Add Paper";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddPaper_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -355,7 +450,10 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -386,5 +484,12 @@
         private System.Windows.Forms.CheckBox chkAYear1;
         private System.Windows.Forms.TextBox tbxPaperCode;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chkArchive;
+        private System.Windows.Forms.ComboBox cboLecturer;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.RadioButton radSem2;
+        private System.Windows.Forms.RadioButton radSemBoth;
+        private System.Windows.Forms.RadioButton radSem1;
     }
 }

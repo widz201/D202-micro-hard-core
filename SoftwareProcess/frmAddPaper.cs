@@ -76,6 +76,11 @@ namespace SoftwareProcess
         {
             int category = 0;
             int year = 0;
+            int semester = 0;
+            int lecturer = 0;
+            string archive = "N";
+
+            //Selects year
             if (chkAYear1.Checked == true)
             {
                 year = 1;
@@ -108,7 +113,53 @@ namespace SoftwareProcess
             {
                 category = 5;
             }
-            
+
+            //Selects Semester
+            if (radSem1.Checked == true)
+            {
+                semester = 1;
+            }
+            else if (radSem2.Checked == true)
+            {
+                semester = 2;
+            }
+            else if (radSemBoth.Checked == true)
+            {
+                semester = 0;
+            }
+
+            //Selects to Archive paper
+            if (chkArchive.Checked == true)
+            {
+                archive = "Y";
+            }
+            else
+            {
+                archive = "N";
+            }
+
+            //Selects Lecturer
+            if ((cboLecturer.SelectedItem.ToString()) == "SC")
+            {
+                lecturer = 1;
+            }
+            else if ((cboLecturer.SelectedItem.ToString()) == "AS")
+            {
+                lecturer = 2;
+            }
+            else if ((cboLecturer.SelectedItem.ToString()) == "GR")
+            {
+                lecturer = 3;
+            }
+            else if ((cboLecturer.SelectedItem.ToString()) == "RD")
+            {
+                lecturer = 4;
+            }
+            else if ((cboLecturer.SelectedItem.ToString()) == "KT")
+            {
+                lecturer = 5;
+            };
+
             //Puts all prerequsite papers in lstAPapers into a string
             List<string> values = new List<string>();
 
@@ -122,7 +173,7 @@ namespace SoftwareProcess
             using (SqlConnection connection = new SqlConnection(constring)) 
             try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq)");
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite, Semester, Archived, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq, @Semester, @Archived, @Lecturer)");
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = connection;
                 cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
@@ -131,6 +182,9 @@ namespace SoftwareProcess
                 cmd.Parameters.AddWithValue("@Year", year);
                 cmd.Parameters.AddWithValue("@Category", category);
                 cmd.Parameters.AddWithValue("@Prereq", selectedItems.ToString());
+                cmd.Parameters.AddWithValue("@Semester", semester);
+                cmd.Parameters.AddWithValue("@Archived", archive);
+                cmd.Parameters.AddWithValue("@Lecturer", lecturer);
                 connection.Open();
                 cmd.ExecuteNonQuery();
                 tbxPaperName.Clear();
@@ -145,12 +199,24 @@ namespace SoftwareProcess
                 chkAYear2.Checked = false;
                 chkAYear3.Checked = false;
                 chkACompulsory.Checked = false;
+                lstAPapers.Items.Clear();
+                radSem1.Checked = false;
+                radSem2.Checked = false;
+                radSemBoth.Checked = false;
+                chkArchive.Checked = false;
                 MessageBox.Show("Paper successfully added");
+                cboAPapers.SelectedIndex = -1;
+                cboLecturer.SelectedIndex = -1;
             }
             catch(Exception)
             {
                 MessageBox.Show("Unable to add paper");
             }
+        }
+
+        private void frmAddPaper_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
 
         }
