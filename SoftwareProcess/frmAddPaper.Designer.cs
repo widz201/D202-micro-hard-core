@@ -266,7 +266,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(543, 420);
+            this.btnCancel.Location = new System.Drawing.Point(543, 399);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 23);
             this.btnCancel.TabIndex = 14;
@@ -276,7 +276,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(543, 391);
+            this.btnConfirm.Location = new System.Drawing.Point(543, 370);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(120, 23);
             this.btnConfirm.TabIndex = 15;
@@ -345,7 +345,7 @@
             // chkArchive
             // 
             this.chkArchive.AutoSize = true;
-            this.chkArchive.Location = new System.Drawing.Point(169, 426);
+            this.chkArchive.Location = new System.Drawing.Point(417, 390);
             this.chkArchive.Name = "chkArchive";
             this.chkArchive.Size = new System.Drawing.Size(68, 17);
             this.chkArchive.TabIndex = 17;
@@ -361,7 +361,7 @@
             "GR",
             "RD",
             "KT"});
-            this.cboLecturer.Location = new System.Drawing.Point(67, 422);
+            this.cboLecturer.Location = new System.Drawing.Point(313, 388);
             this.cboLecturer.Name = "cboLecturer";
             this.cboLecturer.Size = new System.Drawing.Size(79, 21);
             this.cboLecturer.TabIndex = 18;
@@ -369,7 +369,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 425);
+            this.label4.Location = new System.Drawing.Point(261, 391);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 19;
@@ -428,7 +428,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 451);
+            this.ClientSize = new System.Drawing.Size(678, 430);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cboLecturer);
