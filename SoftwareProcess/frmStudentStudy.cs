@@ -506,6 +506,67 @@ namespace SoftwareProcess
             }
         }
 
+        private void radSoftwareArch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radSoftwareArch.Checked == true)
+            {
+                tbxD303.Visible = false;
+                tbxD311.Visible = false;
+                tbxI303.Visible = false;
+                tbxI309.Visible = false;
+                tbxI321.Visible = false;
+                tbxT301.Visible = false;
+                tbxT302.Visible = false;
+                tbxT311.Visible = false;
+                tbxI203.Visible = false;
+                tbxI211.Visible = false;
+                tbxT201.Visible = false;
+                tbxT211.Visible = false;
+                tbxI213.Visible = false;
+                tbxT205.Visible = false;
+                tbxT206.Visible = false;
+
+
+            }
+            else
+            {
+                tbxD101.Visible = true;
+                tbxD111.Visible = true;
+                tbxD201.Visible = true;
+                tbxD202.Visible = true;
+                tbxD211.Visible = true;
+                tbxD301.Visible = true;
+                tbxD303.Visible = true;
+                tbxD311.Visible = true;
+                tbxI101.Visible = true;
+                tbxI102.Visible = true;
+                tbxI111.Visible = true;
+                tbxI121.Visible = true;
+                tbxI202.Visible = true;
+                tbxI203.Visible = true;
+                tbxI211.Visible = true;
+                tbxI213.Visible = true;
+                tbxI221.Visible = true;
+                tbxI301.Visible = true;
+                tbxI302.Visible = true;
+                tbxI303.Visible = true;
+                tbxI309.Visible = true;
+                tbxI321.Visible = true;
+                tbxT101.Visible = true;
+                tbxT111.Visible = true;
+                tbxT201.Visible = true;
+                tbxT205.Visible = true;
+                tbxT206.Visible = true;
+                tbxT211.Visible = true;
+                tbxT301.Visible = true;
+                tbxT302.Visible = true;
+                tbxT311.Visible = true;
+            }
+        }
+
+
+        
+
 
 
 
