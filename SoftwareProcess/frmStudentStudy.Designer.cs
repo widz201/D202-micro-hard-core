@@ -342,6 +342,7 @@
             this.radYear3.TabStop = true;
             this.radYear3.Text = "Year 3 Papers";
             this.radYear3.UseVisualStyleBackColor = true;
+            this.radYear3.CheckedChanged += new System.EventHandler(this.radYear3_CheckedChanged);
             // 
             // radDatabaseDev
             // 
@@ -365,6 +366,7 @@
             this.radSemester1.TabStop = true;
             this.radSemester1.Text = "Semester 1";
             this.radSemester1.UseVisualStyleBackColor = true;
+            this.radSemester1.CheckedChanged += new System.EventHandler(this.radSemester1_CheckedChanged);
             // 
             // radYear2
             // 
