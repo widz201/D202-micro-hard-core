@@ -49,19 +49,13 @@ namespace SoftwareProcess
         }
         private void btnERCancel_Click(object sender, EventArgs e)
         {
-        
             this.Close();
         }
 
 
         private void btnEREdit_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void lstERPapers_Click(object sender, EventArgs e)
-        {
-           
+            //This button will eventually pass the paper information through to the add paper screen in order to allow it to be edited
         }
 
         private void btnArchive_Click(object sender, EventArgs e)
