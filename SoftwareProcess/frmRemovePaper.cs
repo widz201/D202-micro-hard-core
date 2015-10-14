@@ -59,11 +59,6 @@ namespace SoftwareProcess
             
         }
 
-        private void lstERPapers_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnArchive_Click(object sender, EventArgs e)
         {
             if (btnArchive.Text == "Archived")
