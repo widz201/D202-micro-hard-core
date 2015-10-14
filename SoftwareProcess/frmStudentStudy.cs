@@ -540,7 +540,7 @@ namespace SoftwareProcess
         private void radSoftwareArch_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Software Architecture radio button is checked display only the Software Architecture papers - hide the papers that aren't Software Architecture papers.
             if (radSoftwareArch.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -618,7 +618,7 @@ namespace SoftwareProcess
         private void radYear3_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Year 3 radio button is checked display only the Year 3 papers - hide the papers that aren'tYear 3 papers.
             if (radYear3.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -682,7 +682,7 @@ namespace SoftwareProcess
         private void radSemester1_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Semester 1 radio button is checked display only the Semester 1 papers - hide the papers that aren't Semester 1 papers.
             if (radSemester1.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -757,7 +757,7 @@ namespace SoftwareProcess
         private void radSemester2_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Semester 2 radio button is checked display only the Semester 2 papers - hide the papers that aren't Semester 2 papers.
             if (radSemester2.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -832,7 +832,7 @@ namespace SoftwareProcess
         private void radWebDev_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Web Development radio button is checked display only the Web Development papers - hide the papers that aren't Web Development papers.
             if (radWebDev.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -907,7 +907,7 @@ namespace SoftwareProcess
         private void radAnalDes_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Analysis & Design radio button is checked display only the Analysis & Design papers - hide the papers that aren't Analysis & Design papers.
             if (radAnalDes.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -982,7 +982,7 @@ namespace SoftwareProcess
         private void radNetworking_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Networking radio button is checked display only the Networking papers - hide the papers that aren't Networking papers.
             if (radNetworking.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -1057,7 +1057,7 @@ namespace SoftwareProcess
         private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
         // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Database Development radio button is checked display only the Database Development papers - hide the papers that aren't Database Development papers.
             if (radDatabaseDev.Checked == true)
             {
                 tbxD101.Visible = false;
