@@ -16,11 +16,16 @@ namespace SoftwareProcess
         public frmAddPaper()
         {
             InitializeComponent();
+            //Calls method to fill list box
             FillListbox();
         }
 
         void FillListbox()
         {
+            //Method to create new database connection and query to select all data from the Paper table.
+            //Declare data reader then using a try catch statement open the connection and execute the data reader to read from the database.
+            //Declare variables sID to hold the paper code (using the reader to get the data from the database) and sName to hold the Paper Name.
+            //Gets the Papers combo box to take the data from the variables (sID and sName) and display it together in the combo box.
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper";
             SqlConnection connection = new SqlConnection(constring);
@@ -45,11 +50,15 @@ namespace SoftwareProcess
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            //Closes the add paper form
             this.Close();
         }
 
         private void btnPreAdd_Click(object sender, EventArgs e)
         {
+            //Uses a try catch to see if the prequisite has already been added from the combo to the list box.
+            //If the prerequisite isn't already in the list box it adds it to the list box.
+            //Catches if there is no prerequisite selected when the Prerequisite Add button is pressed.
             try
             {
                 if (lstAPapers.Items.Contains(cboAPapers.Text))
@@ -69,11 +78,13 @@ namespace SoftwareProcess
 
         private void btnPreRemove_Click(object sender, EventArgs e)
         {
+            //Removes the item selected in the add papers listbox
             lstAPapers.Items.Remove(lstAPapers.Text);
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            //declares variables and sets them to 
             int category = 0;
             int year = 0;
             int semester = 0;
