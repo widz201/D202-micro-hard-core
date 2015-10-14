@@ -174,7 +174,7 @@ namespace SoftwareProcess
             //Puts all prerequsite papers in lstAPapers into a string
             List<string> values = new List<string>();
 
-            foreach(object o in lstAPapers.Items)
+                foreach (object o in lstAPapers.Items)
             values.Add(o.ToString());
 
             string selectedItems = String.Join(", ", values);
@@ -219,9 +219,14 @@ namespace SoftwareProcess
                 cboAPapers.SelectedIndex = -1;
                 cboLecturer.SelectedIndex = -1;
             }
-            catch(Exception)
+                    catch (Exception)
             {
                 MessageBox.Show("Unable to add paper");
+            }
+        }
+            catch (Exception)
+            {
+                MessageBox.Show("Please complete all fields");
             }
         }
 
