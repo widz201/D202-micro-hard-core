@@ -998,7 +998,7 @@ namespace SoftwareProcess
 
         private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
         {
-            if (radDatabaseDev.Checked == true)
+            if (radDatabaseDev.Checked == true) 
             {
                 tbxD101.Visible = false;
                 tbxD111.Visible = true;
@@ -1032,7 +1032,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
             }
-            else
+            else 
             {
                 tbxD101.Visible = true;
                 tbxD111.Visible = true;
