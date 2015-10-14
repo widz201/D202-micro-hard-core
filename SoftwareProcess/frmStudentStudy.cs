@@ -18,11 +18,16 @@ namespace SoftwareProcess
         public frmStudentStudy()
         {
             InitializeComponent();
+            //Calls method to fill list box
             FillListbox();
         }
 
         void FillListbox()
         {
+            //Method to create new database connection and query to select all data from the Paper table.
+            //Declare data reader then using a try catch statement open the connection and execute the data reader to read from the database.
+            //While the data reader is working it gets the string from the first column(PaperName) and holds it in the variable 'sName' then adds it to two
+            //list boxes.
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper";
             SqlConnection connection = new SqlConnection(constring);
@@ -52,8 +57,9 @@ namespace SoftwareProcess
 
         private void mnuAdminAdd_Click(object sender, EventArgs e)
         {
+            //New password form
             frmAddPassword PasswordForm = new frmAddPassword();
-
+            //Show password form
             PasswordForm.Show();
         }
 
@@ -66,6 +72,9 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //If the list contains the paper name messagebox displays you've already selected this paper.
+            //Otherwise it adds the seelected paper to the list box.
+            //If nothing is selected when button is clicked it displays message box saying you need to select a paper.
             try
             {
             if(lstSelected.Items.Contains(lstPapers.Text))
@@ -85,16 +94,21 @@ namespace SoftwareProcess
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            //Removes selected item from the listbox
             lstSelected.Items.Remove(lstSelected.Text);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            //Clears the list box
             lstSelected.Items.Clear();
         }
 
         private void lstPapers_DoubleClick(object sender, EventArgs e)
         {
+            //If the list contains the paper name messagebox displays you've already selected this paper.
+            //Otherwise it adds the selected paper to the list box.
+            //If nothing is selected when listbox item is double clicked it displays message box saying you need to select a paper.
             try
             {
                 if (lstSelected.Items.Contains(lstPapers.Text))
@@ -114,6 +128,10 @@ namespace SoftwareProcess
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
         {
+            //Declares string to take the selected item from the list and uses a ToString method.
+            //Uses the recurring constring to point to the appropriate data source.
+            //Uses a query to select all from the Paper table where a record in the Paper Name column is equal to the selected item in the listbox.
+            //New sql connection, command and data reader.
             string selectedPaper = lstInfoPapers.SelectedItem.ToString();
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
@@ -121,7 +139,11 @@ namespace SoftwareProcess
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
 
-            
+            //Try open database connection then execute the data reader.
+            //While the data reader reads, declare variables to hold name, description, category and prerequisite using the corresponding column in the database.
+            //i.e. sName variable holds data from the index of '1' in the columns of the table - index of '1' is the Paper Name column.
+            //Display the record from the variable to corresponding label i.e. sName = Paper Name label, sDescription = Paper description label.
+            //Catches if the data fails to be pulled from the database.
             try
             {
                 connection.Open();
@@ -136,7 +158,7 @@ namespace SoftwareProcess
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
                     lblPrereq.Text = sPrereq;
-                    
+                    //Switch statement that changes the background colour of the paper information depending on the category
                     switch (sCatergory)
                     {
                         case 1:
@@ -194,6 +216,9 @@ namespace SoftwareProcess
 
         private void btnLoadPapers_Click_1(object sender, EventArgs e)
         {
+            //If the radio button is checked select all from the paper table where the category is corresponding to the radio button
+            //i.e. If Web Development radio button is checked select all from the Paper Table where the category is Web Development and 
+            //display it in the lists. 
             if (radAnalDes.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -446,8 +471,13 @@ namespace SoftwareProcess
             }
         }
 
+
+
+
         private void radYear2_CheckedChanged(object sender, EventArgs e)
+            // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            //If the Year 2 radio button is checked display only the year 2 papers - hide the papers that aren't year 2 papers.
             if (radYear2.Checked == true)
             {
                 tbxD301.Visible = false;
@@ -470,6 +500,7 @@ namespace SoftwareProcess
                 tbxT101.Visible = false;
                 tbxT111.Visible = false; 
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -507,7 +538,9 @@ namespace SoftwareProcess
         }
 
         private void radSoftwareArch_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSoftwareArch.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -541,9 +574,8 @@ namespace SoftwareProcess
                 tbxT301.Visible = false;
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
-
-
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -584,7 +616,9 @@ namespace SoftwareProcess
         
 
         private void radYear3_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radYear3.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -608,6 +642,7 @@ namespace SoftwareProcess
                 tbxT206.Visible = false;
                 tbxT211.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -645,7 +680,9 @@ namespace SoftwareProcess
         }
 
         private void radSemester1_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSemester1.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -680,6 +717,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -717,7 +755,9 @@ namespace SoftwareProcess
         }
 
         private void radSemester2_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSemester2.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -752,6 +792,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -789,7 +830,9 @@ namespace SoftwareProcess
         }
 
         private void radWebDev_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radWebDev.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -824,6 +867,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -861,7 +905,9 @@ namespace SoftwareProcess
         }
 
         private void radAnalDes_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radAnalDes.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -896,6 +942,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -933,7 +980,9 @@ namespace SoftwareProcess
         }
 
         private void radNetworking_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radNetworking.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -968,44 +1017,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
-        }
-
-        private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radDatabaseDev.Checked == true)
-            {
-                tbxD101.Visible = false;
-                tbxD111.Visible = true;
-                tbxD201.Visible = false;
-                tbxD202.Visible = false;
-                tbxD211.Visible = true;
-                tbxD301.Visible = false;
-                tbxD303.Visible = false;
-                tbxD311.Visible = true;
-                tbxI101.Visible = false;
-                tbxI102.Visible = false;
-                tbxI111.Visible = false;
-                tbxI121.Visible = false;
-                tbxI202.Visible = false;
-                tbxI203.Visible = false;
-                tbxI211.Visible = false;
-                tbxI213.Visible = false;
-                tbxI221.Visible = false;
-                tbxI301.Visible = false;
-                tbxI302.Visible = false;
-                tbxI303.Visible = false;
-                tbxI309.Visible = false;
-                tbxI321.Visible = false;
-                tbxT101.Visible = false;
-                tbxT111.Visible = false;
-                tbxT201.Visible = false;
-                tbxT205.Visible = false;
-                tbxT206.Visible = false;
-                tbxT211.Visible = false;
-                tbxT301.Visible = false;
-                tbxT302.Visible = false;
-                tbxT311.Visible = false;
-            }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -1042,14 +1054,79 @@ namespace SoftwareProcess
             }
         }
 
-        private void lstPapers_SelectedIndexChanged(object sender, EventArgs e)
+        private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-
+            // Paper Boxes to become not visible
+            if (radDatabaseDev.Checked == true)
+            {
+                tbxD101.Visible = false;
+                tbxD111.Visible = true;
+                tbxD201.Visible = false;
+                tbxD202.Visible = false;
+                tbxD211.Visible = true;
+                tbxD301.Visible = false;
+                tbxD303.Visible = false;
+                tbxD311.Visible = true;
+                tbxI101.Visible = false;
+                tbxI102.Visible = false;
+                tbxI111.Visible = false;
+                tbxI121.Visible = false;
+                tbxI202.Visible = false;
+                tbxI203.Visible = false;
+                tbxI211.Visible = false;
+                tbxI213.Visible = false;
+                tbxI221.Visible = false;
+                tbxI301.Visible = false;
+                tbxI302.Visible = false;
+                tbxI303.Visible = false;
+                tbxI309.Visible = false;
+                tbxI321.Visible = false;
+                tbxT101.Visible = false;
+                tbxT111.Visible = false;
+                tbxT201.Visible = false;
+                tbxT205.Visible = false;
+                tbxT206.Visible = false;
+                tbxT211.Visible = false;
+                tbxT301.Visible = false;
+                tbxT302.Visible = false;
+                tbxT311.Visible = false;
+            }
+            // Reset of vibility so all text boxes become visible again
+            else
+            {
+                tbxD101.Visible = true;
+                tbxD111.Visible = true;
+                tbxD201.Visible = true;
+                tbxD202.Visible = true;
+                tbxD211.Visible = true;
+                tbxD301.Visible = true;
+                tbxD303.Visible = true;
+                tbxD311.Visible = true;
+                tbxI101.Visible = true;
+                tbxI102.Visible = true;
+                tbxI111.Visible = true;
+                tbxI121.Visible = true;
+                tbxI202.Visible = true;
+                tbxI203.Visible = true;
+                tbxI211.Visible = true;
+                tbxI213.Visible = true;
+                tbxI221.Visible = true;
+                tbxI301.Visible = true;
+                tbxI302.Visible = true;
+                tbxI303.Visible = true;
+                tbxI309.Visible = true;
+                tbxI321.Visible = true;
+                tbxT101.Visible = true;
+                tbxT111.Visible = true;
+                tbxT201.Visible = true;
+                tbxT205.Visible = true;
+                tbxT206.Visible = true;
+                tbxT211.Visible = true;
+                tbxT301.Visible = true;
+                tbxT302.Visible = true;
+                tbxT311.Visible = true;
+            }
         }
-
-
-
-
-
     }
 }
