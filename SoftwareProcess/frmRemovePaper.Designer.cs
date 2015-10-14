@@ -43,7 +43,6 @@
             this.lstERPapers.Name = "lstERPapers";
             this.lstERPapers.Size = new System.Drawing.Size(223, 316);
             this.lstERPapers.TabIndex = 0;
-            this.lstERPapers.Click += new System.EventHandler(this.lstERPapers_Click);
             // 
             // btnEREdit
             // 
@@ -61,7 +60,7 @@
             this.btnArchive.Name = "btnArchive";
             this.btnArchive.Size = new System.Drawing.Size(106, 23);
             this.btnArchive.TabIndex = 2;
-            this.btnArchive.Text = "Archive";
+            this.btnArchive.Text = "Archived";
             this.btnArchive.UseVisualStyleBackColor = true;
             this.btnArchive.Click += new System.EventHandler(this.btnArchive_Click);
             // 

@@ -39,7 +39,7 @@ namespace SoftwareProcess
                 {
                     string sName = myReader.GetString(1);
                     lstERPapers.Items.Add(sName);
-
+                    
                 }
             }
             catch (Exception)
@@ -49,24 +49,19 @@ namespace SoftwareProcess
         }
         private void btnERCancel_Click(object sender, EventArgs e)
         {
-        
             this.Close();
         }
 
 
         private void btnEREdit_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void lstERPapers_Click(object sender, EventArgs e)
-        {
-           
+            //This button will eventually pass the paper information through to the add paper screen in order to allow it to be edited
         }
 
         private void btnArchive_Click(object sender, EventArgs e)
         {
-            //Clears list box and displays the archived items
+            if (btnArchive.Text == "Archived")
+            {
             lstERPapers.Items.Clear();
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper where Archived = 'Y'";
@@ -82,13 +77,41 @@ namespace SoftwareProcess
                 {
                     string sName = myReader.GetString(1);
                     lstERPapers.Items.Add(sName);
-
                 }
             }
             catch
             {
                 MessageBox.Show("Unable to show archived items");
             } 
+
+                btnArchive.Text = "Active";
+            }
+            else
+            {
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                string Query = "select * from tblPaper where Archived = 'N'";
+                SqlConnection connection = new SqlConnection(constring);
+                SqlCommand cmdDatabase = new SqlCommand(Query, connection);
+                SqlDataReader myReader;
+                try
+                {
+                    connection.Open();
+                    myReader = cmdDatabase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                        string sName = myReader.GetString(1);
+                        lstERPapers.Items.Add(sName);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("This isn't supposed to show up...." + Environment.NewLine + "You broke something");
+                }
+
+                btnArchive.Text = "Archived";
+            }
+
         }
 
 

@@ -442,7 +442,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddPaper";
             this.Text = "Add Paper";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddPaper_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
