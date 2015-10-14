@@ -18,11 +18,16 @@ namespace SoftwareProcess
         public frmStudentStudy()
         {
             InitializeComponent();
+            //Calls method to fill list box
             FillListbox();
         }
 
         void FillListbox()
         {
+            //Method to create new database connection and query to select all data from the Paper table.
+            //Declare data reader then using a try catch statement open the connection and execute the data reader to read from the database.
+            //While the data reader is working it gets the string from the first column(PaperName) and holds it in the variable 'sName' then adds it to two
+            //list boxes.
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper";
             SqlConnection connection = new SqlConnection(constring);
@@ -52,8 +57,9 @@ namespace SoftwareProcess
 
         private void mnuAdminAdd_Click(object sender, EventArgs e)
         {
+            //New password form
             frmAddPassword PasswordForm = new frmAddPassword();
-
+            //Show password form
             PasswordForm.Show();
         }
 
@@ -66,6 +72,9 @@ namespace SoftwareProcess
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //If the list contains the paper name messagebox displays you've already selected this paper.
+            //Otherwise it adds the seelected paper to the list box.
+            //If nothing is selected when button is clicked it displays message box saying you need to select a paper.
             try
             {
             if(lstSelected.Items.Contains(lstPapers.Text))
@@ -85,16 +94,21 @@ namespace SoftwareProcess
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            //Removes selected item from the listbox
             lstSelected.Items.Remove(lstSelected.Text);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            //Clears the list box
             lstSelected.Items.Clear();
         }
 
         private void lstPapers_DoubleClick(object sender, EventArgs e)
         {
+            //If the list contains the paper name messagebox displays you've already selected this paper.
+            //Otherwise it adds the selected paper to the list box.
+            //If nothing is selected when listbox item is double clicked it displays message box saying you need to select a paper.
             try
             {
                 if (lstSelected.Items.Contains(lstPapers.Text))
@@ -114,6 +128,10 @@ namespace SoftwareProcess
 
         private void lstInfoPapers_Click(object sender, EventArgs e)
         {
+            //Declares string to take the selected item from the list and uses a ToString method.
+            //Uses the recurring constring to point to the appropriate data source.
+            //Uses a query to select all from the Paper table where a record in the Paper Name column is equal to the selected item in the listbox.
+            //New sql connection, command and data reader.
             string selectedPaper = lstInfoPapers.SelectedItem.ToString();
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
             string Query = "select * from tblPaper where Paper_Name = '" + selectedPaper + "'";
@@ -121,7 +139,11 @@ namespace SoftwareProcess
             SqlCommand cmdDatabase = new SqlCommand(Query, connection);
             SqlDataReader myReader;
 
-            
+            //Try open database connection then execute the data reader.
+            //While the data reader reads, declare variables to hold name, description, category and prerequisite using the corresponding column in the database.
+            //i.e. sName variable holds data from the index of '1' in the columns of the table - index of '1' is the Paper Name column.
+            //Display the record from the variable to corresponding label i.e. sName = Paper Name label, sDescription = Paper description label.
+            //Catches if the data fails to be pulled from the database.
             try
             {
                 connection.Open();
@@ -136,7 +158,7 @@ namespace SoftwareProcess
                     lblPaperName.Text = sName;
                     lblPaperDesc.Text = sDescription;
                     lblPrereq.Text = sPrereq;
-                    
+                    //Switch statement that changes the background colour of the paper information depending on the category
                     switch (sCatergory)
                     {
                         case 1:
@@ -194,6 +216,9 @@ namespace SoftwareProcess
 
         private void btnLoadPapers_Click_1(object sender, EventArgs e)
         {
+            //If the radio button is checked select all from the paper table where the category is corresponding to the radio button
+            //i.e. If Web Development radio button is checked select all from the Paper Table where the category is Web Development and 
+            //display it in the lists. 
             if (radAnalDes.Checked == true)
             {
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
@@ -452,7 +477,7 @@ namespace SoftwareProcess
         private void radYear2_CheckedChanged(object sender, EventArgs e)
             // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-            // Paper Boxes to become not visible
+            //If the Year 2 radio button is checked display only the year 2 papers - hide the papers that aren't year 2 papers.
             if (radYear2.Checked == true)
             {
                 tbxD301.Visible = false;
