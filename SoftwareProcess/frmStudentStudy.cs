@@ -446,8 +446,13 @@ namespace SoftwareProcess
             }
         }
 
+
+
+
         private void radYear2_CheckedChanged(object sender, EventArgs e)
+            // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radYear2.Checked == true)
             {
                 tbxD301.Visible = false;
@@ -470,6 +475,7 @@ namespace SoftwareProcess
                 tbxT101.Visible = false;
                 tbxT111.Visible = false; 
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -507,7 +513,9 @@ namespace SoftwareProcess
         }
 
         private void radSoftwareArch_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSoftwareArch.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -541,9 +549,8 @@ namespace SoftwareProcess
                 tbxT301.Visible = false;
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
-
-
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -584,7 +591,9 @@ namespace SoftwareProcess
         
 
         private void radYear3_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radYear3.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -608,6 +617,7 @@ namespace SoftwareProcess
                 tbxT206.Visible = false;
                 tbxT211.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -645,7 +655,9 @@ namespace SoftwareProcess
         }
 
         private void radSemester1_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSemester1.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -680,6 +692,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -717,7 +730,9 @@ namespace SoftwareProcess
         }
 
         private void radSemester2_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radSemester2.Checked == true)
             {
                 tbxD101.Visible = true;
@@ -752,6 +767,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -789,7 +805,9 @@ namespace SoftwareProcess
         }
 
         private void radWebDev_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radWebDev.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -824,6 +842,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -861,7 +880,9 @@ namespace SoftwareProcess
         }
 
         private void radAnalDes_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radAnalDes.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -896,6 +917,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = false;
                 tbxT311.Visible = false;
             }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -933,7 +955,9 @@ namespace SoftwareProcess
         }
 
         private void radNetworking_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
+            // Paper Boxes to become not visible
             if (radNetworking.Checked == true)
             {
                 tbxD101.Visible = false;
@@ -968,44 +992,7 @@ namespace SoftwareProcess
                 tbxT302.Visible = true;
                 tbxT311.Visible = true;
             }
-        }
-
-        private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radDatabaseDev.Checked == true)
-            {
-                tbxD101.Visible = false;
-                tbxD111.Visible = true;
-                tbxD201.Visible = false;
-                tbxD202.Visible = false;
-                tbxD211.Visible = true;
-                tbxD301.Visible = false;
-                tbxD303.Visible = false;
-                tbxD311.Visible = true;
-                tbxI101.Visible = false;
-                tbxI102.Visible = false;
-                tbxI111.Visible = false;
-                tbxI121.Visible = false;
-                tbxI202.Visible = false;
-                tbxI203.Visible = false;
-                tbxI211.Visible = false;
-                tbxI213.Visible = false;
-                tbxI221.Visible = false;
-                tbxI301.Visible = false;
-                tbxI302.Visible = false;
-                tbxI303.Visible = false;
-                tbxI309.Visible = false;
-                tbxI321.Visible = false;
-                tbxT101.Visible = false;
-                tbxT111.Visible = false;
-                tbxT201.Visible = false;
-                tbxT205.Visible = false;
-                tbxT206.Visible = false;
-                tbxT211.Visible = false;
-                tbxT301.Visible = false;
-                tbxT302.Visible = false;
-                tbxT311.Visible = false;
-            }
+            // Reset of vibility so all text boxes become visible again
             else
             {
                 tbxD101.Visible = true;
@@ -1042,14 +1029,79 @@ namespace SoftwareProcess
             }
         }
 
-        private void lstPapers_SelectedIndexChanged(object sender, EventArgs e)
+        private void radDatabaseDev_CheckedChanged(object sender, EventArgs e)
+        // Simple IF ELSE statement to make the paper textboxes visable/not visable on radio button check
         {
-
+            // Paper Boxes to become not visible
+            if (radDatabaseDev.Checked == true)
+            {
+                tbxD101.Visible = false;
+                tbxD111.Visible = true;
+                tbxD201.Visible = false;
+                tbxD202.Visible = false;
+                tbxD211.Visible = true;
+                tbxD301.Visible = false;
+                tbxD303.Visible = false;
+                tbxD311.Visible = true;
+                tbxI101.Visible = false;
+                tbxI102.Visible = false;
+                tbxI111.Visible = false;
+                tbxI121.Visible = false;
+                tbxI202.Visible = false;
+                tbxI203.Visible = false;
+                tbxI211.Visible = false;
+                tbxI213.Visible = false;
+                tbxI221.Visible = false;
+                tbxI301.Visible = false;
+                tbxI302.Visible = false;
+                tbxI303.Visible = false;
+                tbxI309.Visible = false;
+                tbxI321.Visible = false;
+                tbxT101.Visible = false;
+                tbxT111.Visible = false;
+                tbxT201.Visible = false;
+                tbxT205.Visible = false;
+                tbxT206.Visible = false;
+                tbxT211.Visible = false;
+                tbxT301.Visible = false;
+                tbxT302.Visible = false;
+                tbxT311.Visible = false;
+            }
+            // Reset of vibility so all text boxes become visible again
+            else
+            {
+                tbxD101.Visible = true;
+                tbxD111.Visible = true;
+                tbxD201.Visible = true;
+                tbxD202.Visible = true;
+                tbxD211.Visible = true;
+                tbxD301.Visible = true;
+                tbxD303.Visible = true;
+                tbxD311.Visible = true;
+                tbxI101.Visible = true;
+                tbxI102.Visible = true;
+                tbxI111.Visible = true;
+                tbxI121.Visible = true;
+                tbxI202.Visible = true;
+                tbxI203.Visible = true;
+                tbxI211.Visible = true;
+                tbxI213.Visible = true;
+                tbxI221.Visible = true;
+                tbxI301.Visible = true;
+                tbxI302.Visible = true;
+                tbxI303.Visible = true;
+                tbxI309.Visible = true;
+                tbxI321.Visible = true;
+                tbxT101.Visible = true;
+                tbxT111.Visible = true;
+                tbxT201.Visible = true;
+                tbxT205.Visible = true;
+                tbxT206.Visible = true;
+                tbxT211.Visible = true;
+                tbxT301.Visible = true;
+                tbxT302.Visible = true;
+                tbxT311.Visible = true;
+            }
         }
-
-
-
-
-
     }
 }
