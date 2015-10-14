@@ -84,14 +84,14 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            //declares variables and sets them to 
+            //declares int variables and sets them to '0', sets string variable as 'N'
             int category = 0;
             int year = 0;
             int semester = 0;
             int lecturer = 0;
             string archive = "N";
 
-            //Selects year
+            //If else statement to set the Year variable to the corresponding checked checkbox
             if (chkAYear1.Checked == true)
             {
                 year = 1;
@@ -125,7 +125,7 @@ namespace SoftwareProcess
                 category = 5;
             }
 
-            //Selects Semester
+            //If else statement to set the Semester variable to the corresponding checked radio button/s
             if (radSem1.Checked == true)
             {
                 semester = 1;
@@ -139,7 +139,7 @@ namespace SoftwareProcess
                 semester = 0;
             }
 
-            //Selects to Archive paper
+            //If else statement to set the archive variable whether the Archive checkbox is checked or unchecked
             if (chkArchive.Checked == true)
             {
                 archive = "Y";
@@ -149,7 +149,7 @@ namespace SoftwareProcess
                 archive = "N";
             }
 
-            //Selects Lecturer
+            //If else statement to set the lecturer variable depending which item is selected in the combo box
             if ((cboLecturer.SelectedItem.ToString()) == "SC")
             {
                 lecturer = 1;
@@ -181,7 +181,8 @@ namespace SoftwareProcess
             
             //Writes information into the database
             string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(constring)) 
+            using (SqlConnection connection = new SqlConnection(constring))
+             
             try
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite, Semester, Archived, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq, @Semester, @Archived, @Lecturer)");
@@ -223,17 +224,14 @@ namespace SoftwareProcess
             {
                 MessageBox.Show("Unable to add paper");
             }
-        }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show("Please complete all fields");
             }
-        }
-
-        private void frmAddPaper_FormClosed(object sender, FormClosedEventArgs e)
-        {
+          
+        }  
             
         }
 
-        }
+     
     }
