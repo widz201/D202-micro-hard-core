@@ -220,6 +220,7 @@
             this.lstPapers.Size = new System.Drawing.Size(155, 199);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
+            this.lstPapers.SelectedIndexChanged += new System.EventHandler(this.lstPapers_SelectedIndexChanged);
             this.lstPapers.DoubleClick += new System.EventHandler(this.lstPapers_DoubleClick);
             // 
             // lstSelected
@@ -330,6 +331,7 @@
             this.radSemester2.TabStop = true;
             this.radSemester2.Text = "Semester 2";
             this.radSemester2.UseVisualStyleBackColor = true;
+            this.radSemester2.CheckedChanged += new System.EventHandler(this.radSemester2_CheckedChanged);
             // 
             // radYear3
             // 
@@ -354,6 +356,7 @@
             this.radDatabaseDev.TabIndex = 12;
             this.radDatabaseDev.Text = "Database Development";
             this.radDatabaseDev.UseVisualStyleBackColor = true;
+            this.radDatabaseDev.CheckedChanged += new System.EventHandler(this.radDatabaseDev_CheckedChanged);
             // 
             // radSemester1
             // 
@@ -391,50 +394,7 @@
             this.radNetworking.TabIndex = 11;
             this.radNetworking.Text = "Networking";
             this.radNetworking.UseVisualStyleBackColor = true;
-            // 
-            // radSoftwareArch
-            // 
-            this.radSoftwareArch.AutoSize = true;
-            this.radSoftwareArch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radSoftwareArch.Location = new System.Drawing.Point(6, 78);
-            this.radSoftwareArch.Name = "radSoftwareArch";
-            this.radSoftwareArch.Size = new System.Drawing.Size(127, 17);
-            this.radSoftwareArch.TabIndex = 8;
-            this.radSoftwareArch.Text = "Software Architecture";
-            this.radSoftwareArch.UseVisualStyleBackColor = true;
-            // 
-            // radWebDev
-            // 
-            this.radWebDev.AutoSize = true;
-            this.radWebDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radWebDev.Location = new System.Drawing.Point(6, 102);
-            this.radWebDev.Name = "radWebDev";
-            this.radWebDev.Size = new System.Drawing.Size(114, 17);
-            this.radWebDev.TabIndex = 9;
-            this.radWebDev.Text = "Web Development";
-            this.radWebDev.UseVisualStyleBackColor = true;
-            // 
-            // radAnalDes
-            // 
-            this.radAnalDes.AutoSize = true;
-            this.radAnalDes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAnalDes.Location = new System.Drawing.Point(6, 125);
-            this.radAnalDes.Name = "radAnalDes";
-            this.radAnalDes.Size = new System.Drawing.Size(120, 17);
-            this.radAnalDes.TabIndex = 10;
-            this.radAnalDes.Text = "Analysis and Design";
-            this.radAnalDes.UseVisualStyleBackColor = true;
-            // 
-            // radNetworking
-            // 
-            this.radNetworking.AutoSize = true;
-            this.radNetworking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radNetworking.Location = new System.Drawing.Point(157, 78);
-            this.radNetworking.Name = "radNetworking";
-            this.radNetworking.Size = new System.Drawing.Size(79, 17);
-            this.radNetworking.TabIndex = 11;
-            this.radNetworking.Text = "Networking";
-            this.radNetworking.UseVisualStyleBackColor = true;
+            this.radNetworking.CheckedChanged += new System.EventHandler(this.radNetworking_CheckedChanged);
             // 
             // radSoftwareArch
             // 
@@ -458,6 +418,7 @@
             this.radWebDev.TabIndex = 9;
             this.radWebDev.Text = "Web Development";
             this.radWebDev.UseVisualStyleBackColor = true;
+            this.radWebDev.CheckedChanged += new System.EventHandler(this.radWebDev_CheckedChanged);
             // 
             // radAnalDes
             // 
@@ -469,6 +430,7 @@
             this.radAnalDes.TabIndex = 10;
             this.radAnalDes.Text = "Analysis and Design";
             this.radAnalDes.UseVisualStyleBackColor = true;
+            this.radAnalDes.CheckedChanged += new System.EventHandler(this.radAnalDes_CheckedChanged);
             // 
             // btnSave
             // 
