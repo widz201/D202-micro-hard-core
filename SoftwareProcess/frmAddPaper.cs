@@ -16,7 +16,7 @@ namespace SoftwareProcess
         public frmAddPaper()
         {
             InitializeComponent();
-            //Calls method to fill list box
+            //Calls method to query all the data from database and fills combo box
             FillListbox();
         }
 
@@ -181,7 +181,9 @@ namespace SoftwareProcess
 
                 string selectedItems = String.Join(", ", values);
 
-                //Writes information into the database
+                //Inserts data into the database from the textboxes and variables using parameters to correspond with the columns in the database.
+                //Once the data has been successfully added it clears all the textboxes, checkboxes, radio buttons, combo boxes and displays a 
+                //message box showing 'Paper successfully added'. If there is a missing field displays message box showing 'Complete all fields'.
                 string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
                 using (SqlConnection connection = new SqlConnection(constring))
 

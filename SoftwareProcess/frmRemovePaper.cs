@@ -16,7 +16,7 @@ namespace SoftwareProcess
         public frmRemovePaper()
         {
             InitializeComponent();
-            //Calls method to fill list box
+            //Calls method to select all the data from database and fills list box/s
             FillListbox();
         }
         void FillListbox()
