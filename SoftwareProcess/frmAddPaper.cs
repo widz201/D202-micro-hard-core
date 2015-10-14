@@ -74,143 +74,150 @@ namespace SoftwareProcess
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            int category = 0;
-            int year = 0;
-            int semester = 0;
-            int lecturer = 0;
-            string archive = "N";
-
-            //Selects year
-            if (chkAYear1.Checked == true)
-            {
-                year = 1;
-            }
-            else if (chkAYear2.Checked == true)
-            {
-                year = 2;
-            }
-            else if (chkAYear3.Checked == true)
-            {
-                year = 3;
-            }
-            if (chkSoftwareArch.Checked == true)
-            {
-                category = 1;
-            }
-            else if (chkWebDev.Checked == true)
-            {
-                category = 2;
-            }
-            else if (chkAnal.Checked == true)
-            {
-                category = 3;
-            }
-            else if (chkNetwork.Checked == true)
-            {
-                category = 4;
-            }
-            else if (chkDB.Checked == true)
-            {
-                category = 5;
-            }
-
-            //Selects Semester
-            if (radSem1.Checked == true)
-            {
-                semester = 1;
-            }
-            else if (radSem2.Checked == true)
-            {
-                semester = 2;
-            }
-            else if (radSemBoth.Checked == true)
-            {
-                semester = 0;
-            }
-
-            //Selects to Archive paper
-            if (chkArchive.Checked == true)
-            {
-                archive = "Y";
-            }
-            else
-            {
-                archive = "N";
-            }
-
-            //Selects Lecturer
-            if ((cboLecturer.SelectedItem.ToString()) == "SC")
-            {
-                lecturer = 1;
-            }
-            else if ((cboLecturer.SelectedItem.ToString()) == "AS")
-            {
-                lecturer = 2;
-            }
-            else if ((cboLecturer.SelectedItem.ToString()) == "GR")
-            {
-                lecturer = 3;
-            }
-            else if ((cboLecturer.SelectedItem.ToString()) == "RD")
-            {
-                lecturer = 4;
-            }
-            else if ((cboLecturer.SelectedItem.ToString()) == "KT")
-            {
-                lecturer = 5;
-            };
-            
-            //Puts all prerequsite papers in lstAPapers into a string
-            List<string> values = new List<string>();
-
-            foreach(object o in lstAPapers.Items)
-            values.Add(o.ToString());
-
-            string selectedItems = String.Join(", ", values);
-            
-            //Writes information into the database
-            string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(constring)) 
             try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite, Semester, Archived, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq, @Semester, @Archived, @Lecturer)");
-                cmd.CommandType = CommandType.Text;
-                cmd.Connection = connection;
-                cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
-                cmd.Parameters.AddWithValue("@PaperName", tbxPaperName.Text);
-                cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
-                cmd.Parameters.AddWithValue("@Year", year);
-                cmd.Parameters.AddWithValue("@Category", category);
-                cmd.Parameters.AddWithValue("@Prereq", selectedItems.ToString());
-                cmd.Parameters.AddWithValue("@Semester", semester);
-                cmd.Parameters.AddWithValue("@Archived", archive);
-                cmd.Parameters.AddWithValue("@Lecturer", lecturer);
-                connection.Open();
-                cmd.ExecuteNonQuery();
-                tbxPaperName.Clear();
-                tbxPaperCode.Clear();
-                tbxDesc.Clear();
-                chkSoftwareArch.Checked = false;
-                chkNetwork.Checked = false;
-                chkWebDev.Checked = false;
-                chkDB.Checked = false;
-                chkAnal.Checked = false;
-                chkAYear1.Checked = false;
-                chkAYear2.Checked = false;
-                chkAYear3.Checked = false;
-                chkACompulsory.Checked = false;
-                lstAPapers.Items.Clear();
-                radSem1.Checked = false;
-                radSem2.Checked = false;
-                radSemBoth.Checked = false;
-                chkArchive.Checked = false;
-                MessageBox.Show("Paper successfully added");
-                cboAPapers.SelectedIndex = -1;
-                cboLecturer.SelectedIndex = -1;
+                int category = 0;
+                int year = 0;
+                int semester = 0;
+                int lecturer = 0;
+                string archive = "N";
+
+                //Selects year
+                if (chkAYear1.Checked == true)
+                {
+                    year = 1;
+                }
+                else if (chkAYear2.Checked == true)
+                {
+                    year = 2;
+                }
+                else if (chkAYear3.Checked == true)
+                {
+                    year = 3;
+                }
+                if (chkSoftwareArch.Checked == true)
+                {
+                    category = 1;
+                }
+                else if (chkWebDev.Checked == true)
+                {
+                    category = 2;
+                }
+                else if (chkAnal.Checked == true)
+                {
+                    category = 3;
+                }
+                else if (chkNetwork.Checked == true)
+                {
+                    category = 4;
+                }
+                else if (chkDB.Checked == true)
+                {
+                    category = 5;
+                }
+
+                //Selects Semester
+                if (radSem1.Checked == true)
+                {
+                    semester = 1;
+                }
+                else if (radSem2.Checked == true)
+                {
+                    semester = 2;
+                }
+                else if (radSemBoth.Checked == true)
+                {
+                    semester = 0;
+                }
+
+                //Selects to Archive paper
+                if (chkArchive.Checked == true)
+                {
+                    archive = "Y";
+                }
+                else
+                {
+                    archive = "N";
+                }
+
+                //Selects Lecturer
+                if ((cboLecturer.SelectedItem.ToString()) == "SC")
+                {
+                    lecturer = 1;
+                }
+                else if ((cboLecturer.SelectedItem.ToString()) == "AS")
+                {
+                    lecturer = 2;
+                }
+                else if ((cboLecturer.SelectedItem.ToString()) == "GR")
+                {
+                    lecturer = 3;
+                }
+                else if ((cboLecturer.SelectedItem.ToString()) == "RD")
+                {
+                    lecturer = 4;
+                }
+                else if ((cboLecturer.SelectedItem.ToString()) == "KT")
+                {
+                    lecturer = 5;
+                };
+
+                //Puts all prerequsite papers in lstAPapers into a string
+                List<string> values = new List<string>();
+
+                foreach (object o in lstAPapers.Items)
+                    values.Add(o.ToString());
+
+                string selectedItems = String.Join(", ", values);
+
+                //Writes information into the database
+                string constring = "Data Source=tfs;Initial Catalog=study1;Integrated Security=True";
+                using (SqlConnection connection = new SqlConnection(constring))
+                    try
+                    {
+                        SqlCommand cmd = new SqlCommand("INSERT INTO tblPaper (Paper_ID, Paper_Name, Description, Year, Catergory, Prerequisite, Semester, Archived, Lecturer) VALUES (@PaperID, @PaperName, @Desc, @Year, @Category, @Prereq, @Semester, @Archived, @Lecturer)");
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Connection = connection;
+                        cmd.Parameters.AddWithValue("@PaperID", tbxPaperCode.Text);
+                        cmd.Parameters.AddWithValue("@PaperName", tbxPaperName.Text);
+                        cmd.Parameters.AddWithValue("@Desc", tbxDesc.Text);
+                        cmd.Parameters.AddWithValue("@Year", year);
+                        cmd.Parameters.AddWithValue("@Category", category);
+                        cmd.Parameters.AddWithValue("@Prereq", selectedItems.ToString());
+                        cmd.Parameters.AddWithValue("@Semester", semester);
+                        cmd.Parameters.AddWithValue("@Archived", archive);
+                        cmd.Parameters.AddWithValue("@Lecturer", lecturer);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                        tbxPaperName.Clear();
+                        tbxPaperCode.Clear();
+                        tbxDesc.Clear();
+                        chkSoftwareArch.Checked = false;
+                        chkNetwork.Checked = false;
+                        chkWebDev.Checked = false;
+                        chkDB.Checked = false;
+                        chkAnal.Checked = false;
+                        chkAYear1.Checked = false;
+                        chkAYear2.Checked = false;
+                        chkAYear3.Checked = false;
+                        chkACompulsory.Checked = false;
+                        lstAPapers.Items.Clear();
+                        radSem1.Checked = false;
+                        radSem2.Checked = false;
+                        radSemBoth.Checked = false;
+                        chkArchive.Checked = false;
+                        MessageBox.Show("Paper successfully added");
+                        cboAPapers.SelectedIndex = -1;
+                        cboLecturer.SelectedIndex = -1;
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Unable to add paper");
+                    }
             }
-            catch(Exception)
+            catch (Exception)
             {
-                MessageBox.Show("Unable to add paper");
+                MessageBox.Show("Please complete all fields");
             }
         }
 
