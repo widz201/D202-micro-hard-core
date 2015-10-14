@@ -220,6 +220,7 @@
             this.lstPapers.Size = new System.Drawing.Size(155, 199);
             this.lstPapers.TabIndex = 2;
             this.lstPapers.TabStop = false;
+            this.lstPapers.SelectedIndexChanged += new System.EventHandler(this.lstPapers_SelectedIndexChanged);
             this.lstPapers.DoubleClick += new System.EventHandler(this.lstPapers_DoubleClick);
             // 
             // lstSelected
