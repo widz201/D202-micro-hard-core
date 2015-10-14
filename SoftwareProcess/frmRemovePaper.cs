@@ -49,7 +49,6 @@ namespace SoftwareProcess
         }
         private void btnERCancel_Click(object sender, EventArgs e)
         {
-        
             this.Close();
         }
 
